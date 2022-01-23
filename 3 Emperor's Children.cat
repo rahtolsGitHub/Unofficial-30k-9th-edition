@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c6dd-878e-ff01-6361" name="3 Emperor&apos;s Children" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="c6dd-878e-ff01-6361" name="3 Emperor&apos;s Children" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="4d04-572c-f6c1-9c56" name="Phoenix Terminators" hidden="false"/>
     <categoryEntry id="a8b7-c2e5-f785-cc96" name="Palatine Blades" hidden="false"/>
@@ -737,9 +737,9 @@
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="PL" typeId="b1e1-0497-949d-68af" value="9.0"/>
+        <cost name="PL" typeId="b1e1-0497-949d-68af" value="8.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="170.0"/>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="160.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ac40-d50a-ea90-09e4" name="Lord Commander Eidolon" hidden="false" collective="false" import="true" type="upgrade">

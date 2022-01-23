@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4ea7-b77b-fea1-d31f" name="9 Blood Angels" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4ea7-b77b-fea1-d31f" name="9 Blood Angels" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="c6d3-76be-1e8c-52d7" name="Dawnbreaker Cohort" hidden="false"/>
     <categoryEntry id="09d9-dc6e-a65c-da76" name="Crimson Paladins" hidden="false"/>
@@ -389,7 +389,7 @@
         <infoLink id="8904-6fbd-855c-6bbe" name="Teleport Assault" hidden="false" targetId="25df-ace3-faa2-7b4f" type="profile"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="8e46-04aa-022b-cf89" name="Crimson Paladins" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="8e46-04aa-022b-cf89" name="Crimson Paladins" hidden="false" collective="false" import="true" defaultSelectionEntryId="8106-1cca-653f-6ac1">
           <selectionEntries>
             <selectionEntry id="d103-f2b3-d840-35a2" name="Crimson Paladin/Special Weapon" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -434,6 +434,21 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e581-550a-e768-700e" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b89-c1f3-e165-4e2f" type="min"/>
               </constraints>
+              <profiles>
+                <profile id="0ed6-857f-4df1-3c13" name="Crimson Exemplar" hidden="false" typeId="67c9-ee36-a193-36de" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="37d7-d298-a04a-4e6c">4&quot;</characteristic>
+                    <characteristic name="WS" typeId="e065-bda1-02de-6f2e">2+</characteristic>
+                    <characteristic name="BS" typeId="8003-bae2-5072-d024">3+</characteristic>
+                    <characteristic name="S" typeId="430a-b60b-2a15-6186">4</characteristic>
+                    <characteristic name="T" typeId="b550-6ea2-7a76-d49f">4</characteristic>
+                    <characteristic name="W" typeId="3461-fc7e-2d85-5568">4</characteristic>
+                    <characteristic name="A" typeId="0fd1-a74f-329d-e60e">3</characteristic>
+                    <characteristic name="Ld" typeId="d8ad-d2df-5b05-f70c">9</characteristic>
+                    <characteristic name="Save" typeId="33be-eb18-f17d-e4cc">2+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <selectionEntryGroups>
                 <selectionEntryGroup id="6530-4168-7dc3-d9c4" name="Weapon Option" hidden="false" collective="false" import="true" defaultSelectionEntryId="6c32-4328-4b35-cd64">
                   <modifiers>
@@ -510,6 +525,21 @@
                 <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3eaa-9ca3-af36-4034" type="max"/>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b068-7698-4638-4b46" type="min"/>
               </constraints>
+              <profiles>
+                <profile id="6b8d-0337-9748-398a" name="Crimson Paladins" hidden="false" typeId="67c9-ee36-a193-36de" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="37d7-d298-a04a-4e6c">4&quot;</characteristic>
+                    <characteristic name="WS" typeId="e065-bda1-02de-6f2e">2+</characteristic>
+                    <characteristic name="BS" typeId="8003-bae2-5072-d024">3+</characteristic>
+                    <characteristic name="S" typeId="430a-b60b-2a15-6186">4</characteristic>
+                    <characteristic name="T" typeId="b550-6ea2-7a76-d49f">4</characteristic>
+                    <characteristic name="W" typeId="3461-fc7e-2d85-5568">3</characteristic>
+                    <characteristic name="A" typeId="0fd1-a74f-329d-e60e">2</characteristic>
+                    <characteristic name="Ld" typeId="d8ad-d2df-5b05-f70c">9</characteristic>
+                    <characteristic name="Save" typeId="33be-eb18-f17d-e4cc">2+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <selectionEntries>
                 <selectionEntry id="ce30-9184-cb32-961c" name="Coriolis power shield" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
@@ -574,7 +604,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="PL" typeId="b1e1-0497-949d-68af" value="9.0"/>
+        <cost name="PL" typeId="b1e1-0497-949d-68af" value="6.0"/>
         <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
       </costs>

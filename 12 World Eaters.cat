@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="525b-fa7d-5930-4b16" name="12 World Eaters" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="525b-fa7d-5930-4b16" name="12 World Eaters" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Cat Red Butchers -&gt; Standard _&gt; Volkite charger
 Endryd -&gt; Archaeotech
 Knight Errant -&gt; Blackshields</comment>
@@ -303,7 +303,7 @@ Knight Errant -&gt; Blackshields</comment>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="PL" typeId="b1e1-0497-949d-68af" value="14.0"/>
+        <cost name="PL" typeId="b1e1-0497-949d-68af" value="13.0"/>
         <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
       </costs>

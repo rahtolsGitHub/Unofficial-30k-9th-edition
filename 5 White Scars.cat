@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="1609-2b92-ff59-b3c9" name="5 White Scars" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="1609-2b92-ff59-b3c9" name="5 White Scars" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="df08-ec04-c0ec-94d3" name="Golden Keshig" hidden="false"/>
     <categoryEntry id="bc1b-3753-48e1-7ea2" name="Ebon Keshig" hidden="false"/>
@@ -109,7 +109,7 @@
         <infoLink id="7641-09a8-c0de-0691" name="Turbo-boost" hidden="false" targetId="ca91-2c46-0948-ec14" type="profile"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="3530-090f-8da8-fc4e" name="Golden Keshig" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="3530-090f-8da8-fc4e" name="Golden Keshig" hidden="false" collective="false" import="true" defaultSelectionEntryId="177e-8b2c-1b82-0b47">
           <selectionEntries>
             <selectionEntry id="1c28-07c6-7aa4-28a0" name="Golden Keshig Champion" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -131,54 +131,6 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <selectionEntries>
-                <selectionEntry id="03c4-261d-dda7-8596" name="Shamshir jetbike" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7959-18ff-8756-0c3c" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d261-97c1-d236-5332" type="min"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="0756-00c4-6647-ffce" name="Scatterbolt launcher" hidden="false" typeId="27fa-2a60-59a3-6273" typeName="Weapon(s)">
-                      <characteristics>
-                        <characteristic name="Range" typeId="fb7b-3fd3-e596-3848">8&quot;</characteristic>
-                        <characteristic name="Type" typeId="198a-7eca-0c54-6f0a">Assault D6</characteristic>
-                        <characteristic name="S" typeId="591d-883a-73fa-87d9">4</characteristic>
-                        <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">-1</characteristic>
-                        <characteristic name="D" typeId="fde9-623c-a082-78b0">1</characteristic>
-                        <characteristic name="Abilities" typeId="8f3c-b1ed-80b8-dbfe">Blast weapon. Attacks from this weapon hit automatically. You may reroll To Wound rolls with this weapon. </characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="pts" typeId="9484-733c-9847-f18b" value="15.0"/>
-                    <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
-                    <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="d7bb-1c15-e975-4fb3" name="Kontos power lance" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ec4-545c-c340-41c1" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b07-d423-fa9d-e31f" type="min"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="77a7-f21d-f500-c604" name="Kontos power lance" hidden="false" typeId="27fa-2a60-59a3-6273" typeName="Weapon(s)">
-                      <characteristics>
-                        <characteristic name="Range" typeId="fb7b-3fd3-e596-3848">Melee</characteristic>
-                        <characteristic name="Type" typeId="198a-7eca-0c54-6f0a">Melee</characteristic>
-                        <characteristic name="S" typeId="591d-883a-73fa-87d9">7/User</characteristic>
-                        <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">-3/-1</characteristic>
-                        <characteristic name="D" typeId="fde9-623c-a082-78b0">D3</characteristic>
-                        <characteristic name="Abilities" typeId="8f3c-b1ed-80b8-dbfe">A model may only make a single attack with this weapon, using the first profile if this model has charged this turn. You may reroll To Wound rolls made with this weapon. Roll 2d3 for damage, and choose the highest.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="pts" typeId="9484-733c-9847-f18b" value="8.0"/>
-                    <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
-                    <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
               <selectionEntryGroups>
                 <selectionEntryGroup id="0388-fe33-98cf-d034" name="Weapon Option" hidden="false" collective="false" import="true" defaultSelectionEntryId="0c99-04eb-17df-8622">
                   <constraints>
@@ -217,6 +169,16 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bfcc-f7b2-9342-effb" type="min"/>
                   </constraints>
                 </entryLink>
+                <entryLink id="37b7-106a-f081-624a" name="Kontos power lance" hidden="false" collective="false" import="true" targetId="369a-8f45-6a04-eb4b" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73ec-a9fd-0cdd-e34a" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="f679-df65-cfd5-dbf8" name="Shamshir jetbike" hidden="false" collective="false" import="true" targetId="5b2a-2187-eced-8021" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ed3-98f4-00f2-15df" type="min"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="9484-733c-9847-f18b" value="40.0"/>
@@ -244,54 +206,6 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <selectionEntries>
-                <selectionEntry id="633f-6eb7-57fc-5640" name="Kontos power lance" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a798-9a48-7a0f-6626" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fef5-f483-7dd9-fd33" type="min"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="bc05-3d98-a270-3f62" name="Kontos power lance" hidden="false" typeId="27fa-2a60-59a3-6273" typeName="Weapon(s)">
-                      <characteristics>
-                        <characteristic name="Range" typeId="fb7b-3fd3-e596-3848">Melee</characteristic>
-                        <characteristic name="Type" typeId="198a-7eca-0c54-6f0a">Melee</characteristic>
-                        <characteristic name="S" typeId="591d-883a-73fa-87d9">7/User</characteristic>
-                        <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">-3/-1</characteristic>
-                        <characteristic name="D" typeId="fde9-623c-a082-78b0">D3</characteristic>
-                        <characteristic name="Abilities" typeId="8f3c-b1ed-80b8-dbfe">A model may only make a single attack with this weapon, using the first profile if this model has charged this turn. You may reroll To Wound rolls made with this weapon. Roll 2d3 for damage, and choose the highest.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="pts" typeId="9484-733c-9847-f18b" value="8.0"/>
-                    <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
-                    <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="98f5-c8c8-2d73-fdc3" name="Shamshir jetbike" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5189-3dee-2d60-0a7c" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e609-e1e4-d18b-eb50" type="min"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="1636-bf1f-5926-d348" name="Scatterbolt launcher" hidden="false" typeId="27fa-2a60-59a3-6273" typeName="Weapon(s)">
-                      <characteristics>
-                        <characteristic name="Range" typeId="fb7b-3fd3-e596-3848">8&quot;</characteristic>
-                        <characteristic name="Type" typeId="198a-7eca-0c54-6f0a">Assault D6</characteristic>
-                        <characteristic name="S" typeId="591d-883a-73fa-87d9">4</characteristic>
-                        <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">-1</characteristic>
-                        <characteristic name="D" typeId="fde9-623c-a082-78b0">1</characteristic>
-                        <characteristic name="Abilities" typeId="8f3c-b1ed-80b8-dbfe">Blast weapon. Attacks from this weapon hit automatically. You may reroll To Wound rolls with this weapon. </characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="pts" typeId="9484-733c-9847-f18b" value="15.0"/>
-                    <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
-                    <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
               <selectionEntryGroups>
                 <selectionEntryGroup id="f033-ef62-cc46-987b" name="Weapon Option" hidden="false" collective="false" import="true" defaultSelectionEntryId="5609-c745-f3e9-5a90">
                   <constraints>
@@ -325,6 +239,16 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="07ca-9701-06eb-86ed" type="min"/>
                   </constraints>
                 </entryLink>
+                <entryLink id="1c16-6bc8-e962-aab7" name="Kontos power lance" hidden="false" collective="false" import="true" targetId="369a-8f45-6a04-eb4b" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88ea-f066-30df-eb98" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="2c19-8a45-3772-9b51" name="Shamshir jetbike" hidden="false" collective="false" import="true" targetId="5b2a-2187-eced-8021" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d096-ebe4-c777-988e" type="min"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="9484-733c-9847-f18b" value="40.0"/>
@@ -336,7 +260,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="PL" typeId="b1e1-0497-949d-68af" value="7.0"/>
+        <cost name="PL" typeId="b1e1-0497-949d-68af" value="9.0"/>
         <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
       </costs>
@@ -484,7 +408,7 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="036a-f045-2c0a-8c85" name="Armour" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="036a-f045-2c0a-8c85" name="Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="fa5b-f825-d852-4480">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b55e-beaf-b967-a6d9" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4afb-732e-aa56-eeef" type="min"/>
@@ -549,7 +473,7 @@
         <infoLink id="284c-b854-7c63-7cf9" name="Shroud bombs" hidden="false" targetId="cb53-e286-bd16-6bb8" type="profile"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="daa1-5023-207f-de6e" name="Falcon&apos;s Claws" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="daa1-5023-207f-de6e" name="Falcon&apos;s Claws" hidden="false" collective="false" import="true" defaultSelectionEntryId="8c1b-4c31-a396-a164">
           <selectionEntries>
             <selectionEntry id="b0e2-219a-75e9-4a22" name="Falcon&apos;s Claw Champion" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -1087,7 +1011,7 @@
       </entryLinks>
       <costs>
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="7.0"/>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="160.0"/>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="120.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -1266,6 +1190,65 @@
         <cost name="pts" typeId="9484-733c-9847-f18b" value="320.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="18.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="369a-8f45-6a04-eb4b" name="Kontos power lance" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6873-ec10-eefa-37cd" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="6a1f-1429-8760-90d7" name="Kontos power lance" hidden="false" typeId="27fa-2a60-59a3-6273" typeName="Weapon(s)">
+          <characteristics>
+            <characteristic name="Range" typeId="fb7b-3fd3-e596-3848">Melee</characteristic>
+            <characteristic name="Type" typeId="198a-7eca-0c54-6f0a">Melee</characteristic>
+            <characteristic name="S" typeId="591d-883a-73fa-87d9">7/User</characteristic>
+            <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">-3/-1</characteristic>
+            <characteristic name="D" typeId="fde9-623c-a082-78b0">D3</characteristic>
+            <characteristic name="Abilities" typeId="8f3c-b1ed-80b8-dbfe">A model may only make a single attack with this weapon, using the first profile if this model has charged this turn. You may reroll To Wound rolls made with this weapon. Roll 2d3 for damage, and choose the highest.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="10.0"/>
+        <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+        <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5b2a-2187-eced-8021" name="Shamshir jetbike" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10a6-7614-1809-4634" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="1cae-53b5-1495-cdc9" name="Scatterbolt launcher" hidden="false" collective="false" import="true" targetId="763e-90e9-90ef-046f" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2054-2628-c3da-de54" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="15.0"/>
+        <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+        <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="763e-90e9-90ef-046f" name="Scatterbolt launcher" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb49-7d07-7ea8-6a9b" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="c3ea-63f1-2a5b-9fa7" name="Scatterbolt launcher" hidden="false" typeId="27fa-2a60-59a3-6273" typeName="Weapon(s)">
+          <characteristics>
+            <characteristic name="Range" typeId="fb7b-3fd3-e596-3848">8&quot;</characteristic>
+            <characteristic name="Type" typeId="198a-7eca-0c54-6f0a">Assault D6</characteristic>
+            <characteristic name="S" typeId="591d-883a-73fa-87d9">4</characteristic>
+            <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">-1</characteristic>
+            <characteristic name="D" typeId="fde9-623c-a082-78b0">1</characteristic>
+            <characteristic name="Abilities" typeId="8f3c-b1ed-80b8-dbfe">Blast weapon. Attacks from this weapon hit automatically. You may reroll To Wound rolls with this weapon. </characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="10.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>

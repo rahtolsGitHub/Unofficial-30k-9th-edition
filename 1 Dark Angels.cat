@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6c8a-a156-45f2-b831" name="1 Dark Angels" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6c8a-a156-45f2-b831" name="1 Dark Angels" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="1190-7c0d-b54b-e320" name="Dreadwing" hidden="false"/>
     <categoryEntry id="cf22-0f0c-39d6-7a6c" name="Deathwing" hidden="false"/>
@@ -242,7 +242,7 @@
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="21.0"/>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="18.0"/>
                 <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
                 <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
               </costs>
@@ -309,7 +309,7 @@
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="21.0"/>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="18.0"/>
                 <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
                 <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
               </costs>
@@ -413,7 +413,7 @@
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="21.0"/>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="18.0"/>
                 <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
                 <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
               </costs>
@@ -727,7 +727,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="PL" typeId="b1e1-0497-949d-68af" value="11.0"/>
+        <cost name="PL" typeId="b1e1-0497-949d-68af" value="10.0"/>
         <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
       </costs>
@@ -1398,7 +1398,7 @@
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="PL" typeId="b1e1-0497-949d-68af" value="6.0"/>
+        <cost name="PL" typeId="b1e1-0497-949d-68af" value="5.0"/>
         <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
       </costs>
