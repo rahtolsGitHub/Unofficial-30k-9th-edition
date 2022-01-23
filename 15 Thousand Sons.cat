@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="718d-4c5c-8cb9-2bc1" name="15 Thousand Sons" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="718d-4c5c-8cb9-2bc1" name="15 Thousand Sons" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="a83f-9bf4-0e23-2d1f" name="Castellax-Achea" hidden="false"/>
     <categoryEntry id="27ac-6143-d865-4659" name="Thousand Sons" hidden="false"/>
@@ -11,6 +11,8 @@
     <categoryEntry id="a271-1d8c-9de5-91c9" name="Athanean" hidden="false"/>
     <categoryEntry id="1c81-b643-5e95-9b94" name="Amon" hidden="false"/>
     <categoryEntry id="f3b5-af55-31ba-4ec6" name="Magnus" hidden="false"/>
+    <categoryEntry id="be17-ccdf-95ac-bc2e" name="Contekar" hidden="false"/>
+    <categoryEntry id="08a6-3dd0-3084-4222" name="Atramentar" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry id="0bc9-84c2-25ac-b6ce" name="15 Thousand Sons" hidden="false" collective="false" import="true" type="upgrade">
@@ -110,6 +112,25 @@
         <categoryLink id="e722-b45e-3f49-e795" name="Psyker" hidden="false" targetId="8278-c2c7-5e4d-036c" primary="false"/>
         <categoryLink id="6030-ba89-44e8-a4e6" name="Magnus" hidden="false" targetId="f3b5-af55-31ba-4ec6" primary="false"/>
         <categoryLink id="cc59-21b5-6215-0d35" name="Traitor" hidden="false" targetId="8e10-6a5e-d7db-c85d" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="59ad-b609-4bb3-1b54" name="Contekar Terminator Squad" hidden="false" collective="false" import="true" targetId="8ff2-6287-f62f-2038" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="14d1-2c52-c553-b90d" name="New CategoryLink" hidden="false" targetId="c39a-99d8-e84f-b5f9" primary="true"/>
+        <categoryLink id="3a82-45dc-b4b9-55d8" name="Infantry" hidden="false" targetId="c9bb-6ccb-efae-6184" primary="false"/>
+        <categoryLink id="b54b-9e55-a2f8-3825" name="Terminator" hidden="false" targetId="a148-87de-90c9-d041" primary="false"/>
+        <categoryLink id="373a-6885-2cc2-a6c9" name="Astartes" hidden="false" targetId="8eb7-c779-b4ba-c4ec" primary="false"/>
+        <categoryLink id="3439-b62d-886c-d8bf" name="Contekar" hidden="false" targetId="be17-ccdf-95ac-bc2e" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="96ea-b9e6-dad6-202d" name="Atramentar Squad" hidden="false" collective="false" import="true" targetId="3b57-1b35-25a0-e396" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="86df-02b2-eca2-fcd4" name="New CategoryLink" hidden="false" targetId="c39a-99d8-e84f-b5f9" primary="true"/>
+        <categoryLink id="2fc2-525a-4b4a-96c4" name="Infantry" hidden="false" targetId="c9bb-6ccb-efae-6184" primary="false"/>
+        <categoryLink id="6029-5887-caf4-8910" name="Core" hidden="false" targetId="dc0f-a3bb-f2c4-93ad" primary="false"/>
+        <categoryLink id="ab4e-b04e-6f35-cd59" name="Terminator" hidden="false" targetId="a148-87de-90c9-d041" primary="false"/>
+        <categoryLink id="30aa-14cd-5591-8db4" name="Atramentar" hidden="false" targetId="08a6-3dd0-3084-4222" primary="false"/>
+        <categoryLink id="ff83-fa9f-a3e8-2a67" name="Astartes" hidden="false" targetId="8eb7-c779-b4ba-c4ec" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
