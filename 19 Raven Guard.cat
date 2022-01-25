@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b8cc-b412-f8a6-e9b7" name="19 Raven Guard" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b8cc-b412-f8a6-e9b7" name="19 Raven Guard" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Category Mor Deythan -&gt; Standard catalogue, as selection of vulkite charger hidden.
 Category Corvus -&gt; Standard catalogue, as selection of Archeotech true.</comment>
   <categoryEntries>
@@ -8,6 +8,44 @@ Category Corvus -&gt; Standard catalogue, as selection of Archeotech true.</comm
     <categoryEntry id="a975-c8ab-1c44-287a" name="Alvarex Maun" hidden="false"/>
     <categoryEntry id="22c1-9a15-786e-850b" name="Kaedes Nex" hidden="false"/>
   </categoryEntries>
+  <selectionEntries>
+    <selectionEntry id="874c-96b7-930d-82f4" name="Rites of War" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="increment" field="ff3d-4a1a-f100-6111" value="1.0">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5142-9e49-4ae3-54f8" type="atLeast"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="9484-733c-9847-f18b" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" type="atLeast"/>
+                    <condition field="b1e1-0497-949d-68af" scope="roster" value="50.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff3d-4a1a-f100-6111" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="c203-7143-1a59-7003" name="New CategoryLink" hidden="false" targetId="6772-cf1b-71fc-53b4" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="72b0-5f17-b112-21fb" name="Legion Specific Rites of War" hidden="false" collective="false" import="true" targetId="97f9-27da-375d-b751" type="selectionEntryGroup"/>
+        <entryLink id="1632-ccfa-8ea1-f179" name="General Rites of War" hidden="false" collective="false" import="true" targetId="e31f-ddb7-bc77-60ea" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+        <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+        <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
   <entryLinks>
     <entryLink id="9413-44ee-5290-1b02" name="Mor Deythan Strike Squad" hidden="false" collective="false" import="true" targetId="845a-22ac-6fae-f0de" type="selectionEntry">
       <categoryLinks>
@@ -1019,6 +1057,59 @@ up the space of two other models).</characteristic>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="97f9-27da-375d-b751" name="Legion Specific Rites of War" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f707-62c6-afb3-93bf" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="ec69-ac21-eebc-8b89" name="Liberation Force" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="69f8-36cb-4f41-8222" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4f23-15fd-4ba5-d3b2" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d81-475e-3e40-8293" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b7c8-1330-80cd-a58a" name="Decapitation Strike" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="69f8-36cb-4f41-8222" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4f23-15fd-4ba5-d3b2" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c5f-3d9e-91bf-a717" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
   <catalogueLinks>
     <catalogueLink id="d985-a3d3-a0ef-edf5" name="Standard Units and Equipment Library" targetId="da54-2db0-7d98-7b89" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>

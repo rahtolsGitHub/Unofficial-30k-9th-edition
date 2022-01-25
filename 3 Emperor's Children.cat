@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c6dd-878e-ff01-6361" name="3 Emperor&apos;s Children" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="c6dd-878e-ff01-6361" name="3 Emperor&apos;s Children" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="4d04-572c-f6c1-9c56" name="Phoenix Terminators" hidden="false"/>
     <categoryEntry id="a8b7-c2e5-f785-cc96" name="Palatine Blades" hidden="false"/>
@@ -9,6 +9,44 @@
     <categoryEntry id="7499-9d2d-fb82-1c17" name="Fulgrim" hidden="false"/>
     <categoryEntry id="d2c5-8afb-cd1f-ab8d" name="Saul Tarvitz" hidden="false"/>
   </categoryEntries>
+  <selectionEntries>
+    <selectionEntry id="7c57-f021-211b-79c4" name="Rites of War" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="increment" field="e038-d0ab-6729-7483" value="1.0">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5142-9e49-4ae3-54f8" type="atLeast"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="9484-733c-9847-f18b" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" type="atLeast"/>
+                    <condition field="b1e1-0497-949d-68af" scope="roster" value="50.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e038-d0ab-6729-7483" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="5d4e-a416-0a02-d4b6" name="New CategoryLink" hidden="false" targetId="6772-cf1b-71fc-53b4" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="2c41-a31c-c892-d918" name="Legion Specific Rites of War" hidden="false" collective="false" import="true" targetId="fcd5-0e23-4fb0-c6ad" type="selectionEntryGroup"/>
+        <entryLink id="6ae7-61bb-5a51-9ca7" name="General Rites of War" hidden="false" collective="false" import="true" targetId="e31f-ddb7-bc77-60ea" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+        <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+        <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
   <entryLinks>
     <entryLink id="1c31-1a4b-efc2-5177" name="Phoenix Terminators" hidden="false" collective="false" import="true" targetId="28d7-9e7f-88c0-5042" type="selectionEntry">
       <categoryLinks>
@@ -1194,6 +1232,55 @@
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="fcd5-0e23-4fb0-c6ad" name="Legion Specific Rites of War" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62c9-4f0c-75eb-3e60" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="33d4-9fc9-31e6-d846" name="3rd Company Elite" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="37d4-24b9-b237-2453" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc20-63f5-3c84-aec7" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="78c9-1485-5788-e115" name="The Maru Skara" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="69f8-36cb-4f41-8222" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="77e3-e16a-09c2-6059" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4f23-15fd-4ba5-d3b2" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30d2-fc00-13db-47b4" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
   <sharedProfiles>
     <profile id="fba7-961e-e120-b70f" name="Sonic shriekers (Aura)" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
       <characteristics>

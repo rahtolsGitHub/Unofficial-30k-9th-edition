@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="525b-fa7d-5930-4b16" name="12 World Eaters" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="525b-fa7d-5930-4b16" name="12 World Eaters" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Cat Red Butchers -&gt; Standard _&gt; Volkite charger
 Endryd -&gt; Archaeotech
 Knight Errant -&gt; Blackshields</comment>
@@ -11,6 +11,44 @@ Knight Errant -&gt; Blackshields</comment>
     <categoryEntry id="df5b-b595-9249-8914" name="Khârn" hidden="false"/>
     <categoryEntry id="cd23-77c9-ecac-5fdd" name="Gahlan Surlak" hidden="false"/>
   </categoryEntries>
+  <selectionEntries>
+    <selectionEntry id="a938-d5d1-8410-a803" name="Rites of War" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="increment" field="8f3d-2f23-731e-1d53" value="1.0">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5142-9e49-4ae3-54f8" type="atLeast"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="9484-733c-9847-f18b" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" type="atLeast"/>
+                    <condition field="b1e1-0497-949d-68af" scope="roster" value="50.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f3d-2f23-731e-1d53" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="e471-a9bb-d835-fb6e" name="New CategoryLink" hidden="false" targetId="6772-cf1b-71fc-53b4" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="206b-5755-7e38-b1c4" name="Legion Specific Rites of War" hidden="false" collective="false" import="true" targetId="f091-1d18-57fd-2638" type="selectionEntryGroup"/>
+        <entryLink id="0031-b75a-2266-b152" name="General Rites of War" hidden="false" collective="false" import="true" targetId="e31f-ddb7-bc77-60ea" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+        <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+        <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
   <entryLinks>
     <entryLink id="6d07-edae-64bb-283b" name="The Red Butchers" hidden="false" collective="false" import="true" targetId="bb26-6b04-0984-d718" type="selectionEntry">
       <categoryLinks>
@@ -1892,6 +1930,60 @@ Scout: At the start of the first battle round but before the first turn begins, 
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="f091-1d18-57fd-2638" name="Legion Specific Rites of War" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5456-ea68-2bf3-649e" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="d5e5-3aa6-29ff-c026" name="The Crimson Path" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="69f8-36cb-4f41-8222" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="77e3-e16a-09c2-6059" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4f23-15fd-4ba5-d3b2" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8971-898a-6241-af2a" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c173-8614-fabc-4d25" name="Berserker Assault" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="69f8-36cb-4f41-8222" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4f23-15fd-4ba5-d3b2" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c64b-43e7-b2c3-375e" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
   <catalogueLinks>
     <catalogueLink id="8c93-1f8d-399c-4523" name="Standard Units and Equipment Library" targetId="da54-2db0-7d98-7b89" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
