@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6030-1e69-d3ca-6a48" name="6 Space Wolves" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6030-1e69-d3ca-6a48" name="6 Space Wolves" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Category:
 Varagyr in Standard, as Combiweapons -&gt; Volkite</comment>
   <categoryEntries>
@@ -1162,7 +1162,7 @@ Flanking Manoeuvres: During deployment, you can set up this unit moving around t
                     <characteristic name="S" typeId="591d-883a-73fa-87d9">4</characteristic>
                     <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">-2</characteristic>
                     <characteristic name="D" typeId="fde9-623c-a082-78b0">2</characteristic>
-                    <characteristic name="Abilities" typeId="8f3c-b1ed-80b8-dbfe">-</characteristic>
+                    <characteristic name="Abilities" typeId="8f3c-b1ed-80b8-dbfe">Each time you make a unmodified wound roll of 6+ for this weapon, that hit is resolved with an AP of -4.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1206,8 +1206,8 @@ Flanking Manoeuvres: During deployment, you can set up this unit moving around t
                     <characteristic name="Range" typeId="fb7b-3fd3-e596-3848">Melee</characteristic>
                     <characteristic name="Type" typeId="198a-7eca-0c54-6f0a">Melee</characteristic>
                     <characteristic name="S" typeId="591d-883a-73fa-87d9">+3</characteristic>
-                    <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">-4</characteristic>
-                    <characteristic name="D" typeId="fde9-623c-a082-78b0">3</characteristic>
+                    <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">-3</characteristic>
+                    <characteristic name="D" typeId="fde9-623c-a082-78b0">4</characteristic>
                     <characteristic name="Abilities" typeId="8f3c-b1ed-80b8-dbfe">Each time an attack made with this weapon is allocated to an VEHICLE model, that attack has a Damage characteristic of D3+3.</characteristic>
                   </characteristics>
                 </profile>

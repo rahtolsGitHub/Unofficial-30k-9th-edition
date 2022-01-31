@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4ea7-b77b-fea1-d31f" name="9 Blood Angels" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4ea7-b77b-fea1-d31f" name="9 Blood Angels" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="c6d3-76be-1e8c-52d7" name="Dawnbreaker Cohort" hidden="false"/>
     <categoryEntry id="09d9-dc6e-a65c-da76" name="Crimson Paladins" hidden="false"/>
@@ -703,6 +703,7 @@
         <infoLink id="c996-a9d8-7ee3-0a60" name="Duty Eternal" hidden="false" targetId="36e3-3525-d90a-6fc0" type="profile"/>
         <infoLink id="2a43-79d5-7d0a-65d5" name="Explodes (6&quot;/D3)" hidden="false" targetId="26e4-c01e-24f3-31ed" type="profile"/>
         <infoLink id="be7c-8b18-507f-39fd" name="Atomantic Shielding" hidden="false" targetId="70cc-fbfa-9148-c59b" type="profile"/>
+        <infoLink id="b1df-7e96-b667-5a18" name="Unstoppable Fury" hidden="false" targetId="4e03-9113-11cf-d745" type="profile"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry id="7d1b-62da-ab01-b1ba" name="Contemptor-Incaendius Dreadnought" hidden="false" collective="false" import="true" type="model">

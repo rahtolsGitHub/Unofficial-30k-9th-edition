@@ -13,44 +13,6 @@
     <categoryEntry id="1af7-4dfc-62ff-f556" name="Holguin" hidden="false"/>
     <categoryEntry id="f5d8-9c73-9d9a-4158" name="Lion El&apos;Jonson" hidden="false"/>
   </categoryEntries>
-  <selectionEntries>
-    <selectionEntry id="d094-f439-d6e2-c7f5" name="Rites of War" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="increment" field="1bf9-ea43-2790-771c" value="1.0">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5142-9e49-4ae3-54f8" type="atLeast"/>
-              </conditions>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="9484-733c-9847-f18b" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" type="atLeast"/>
-                    <condition field="b1e1-0497-949d-68af" scope="roster" value="50.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bf9-ea43-2790-771c" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="4827-0ec2-93d8-cc6f" name="New CategoryLink" hidden="false" targetId="6772-cf1b-71fc-53b4" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="54e0-66f3-8b8f-8634" name="Legion Specific Rites of War" hidden="false" collective="false" import="true" targetId="0741-c020-230f-ab54" type="selectionEntryGroup"/>
-        <entryLink id="ece0-7884-ad2c-4f61" name="General Rites of War" hidden="false" collective="false" import="true" targetId="e31f-ddb7-bc77-60ea" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
-        <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
-        <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
-      </costs>
-    </selectionEntry>
-  </selectionEntries>
   <entryLinks>
     <entryLink id="d636-b7d5-4c1a-b6c1" name="Dreadwing Interemptor Squad" hidden="false" collective="false" import="true" targetId="8eaf-4de8-253d-af8a" type="selectionEntry">
       <categoryLinks>
@@ -170,6 +132,11 @@
         <categoryLink id="8d6f-32c3-04c2-07eb" name="Primarch" hidden="false" targetId="549b-ebaa-4b3d-3eb9" primary="false"/>
         <categoryLink id="5720-490a-4f27-3996" name="Lion El&apos;Jonson" hidden="false" targetId="f5d8-9c73-9d9a-4158" primary="false"/>
         <categoryLink id="b952-53c0-fa1e-abe0" name="New CategoryLink" hidden="false" targetId="1912-f8ea-2f8e-8a02" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8df6-9946-b2af-4f7b" name="Rites of War" hidden="false" collective="false" import="true" targetId="8111-37ce-3023-5a94" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="a4e9-0197-5c00-53cb" name="New CategoryLink" hidden="false" targetId="6772-cf1b-71fc-53b4" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -2524,7 +2491,7 @@ litanies).</characteristic>
             <characteristic name="Type" typeId="198a-7eca-0c54-6f0a">Melee</characteristic>
             <characteristic name="S" typeId="591d-883a-73fa-87d9">+1</characteristic>
             <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">-5/-4</characteristic>
-            <characteristic name="D" typeId="fde9-623c-a082-78b0">3</characteristic>
+            <characteristic name="D" typeId="fde9-623c-a082-78b0">4/3</characteristic>
             <characteristic name="Abilities" typeId="8f3c-b1ed-80b8-dbfe">Use the first profile on a turn in which this unit has charged, or has performed a heroic intervention. This weapon always wounds on a 2+, unless the target model is a VEHICLE or PRIMARCH.</characteristic>
           </characteristics>
         </profile>
@@ -2554,13 +2521,59 @@ litanies).</characteristic>
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="54b3-01a3-5273-0ae8" name="Legion Specific Rites of War" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="8111-37ce-3023-5a94" name="Rites of War  (1.000 pts/50 PL, Master of the Legion)" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="name" value="Rites of War">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5142-9e49-4ae3-54f8" type="atLeast"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="9484-733c-9847-f18b" scope="roster" value="999.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" type="greaterThan"/>
+                    <condition field="b1e1-0497-949d-68af" scope="roster" value="49.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="f6a9-7e15-7412-5535" value="1.0">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5142-9e49-4ae3-54f8" type="atLeast"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="9484-733c-9847-f18b" scope="force" value="999.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="atLeast"/>
+                    <condition field="b1e1-0497-949d-68af" scope="force" value="49.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39bb-bdc8-74a2-6e23" type="max"/>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6a9-7e15-7412-5535" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe6d-f871-14d3-5da2" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e01-3ce8-2247-7fd6" type="min"/>
       </constraints>
-      <entryLinks>
-        <entryLink id="728e-af05-d302-659e" name="Legion Specific Rites of War" hidden="false" collective="false" import="true" targetId="0741-c020-230f-ab54" type="selectionEntryGroup"/>
-      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="f689-ca47-0418-0964" name="Rites of War" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="27af-09c4-3053-500e" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="7103-28fb-221a-0d9b" name="Legion Rites of War" hidden="false" collective="false" import="true" targetId="3663-fdcb-4e26-bad8" type="selectionEntryGroup"/>
+            <entryLink id="f9fa-bad9-fb7f-936c" name="Rites of War" hidden="false" collective="false" import="true" targetId="e31f-ddb7-bc77-60ea" type="selectionEntryGroup"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
@@ -2569,68 +2582,12 @@ litanies).</characteristic>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="0741-c020-230f-ab54" name="Legion Specific Rites of War" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="3663-fdcb-4e26-bad8" name="Legion Rites of War" hidden="false" collective="false" import="true">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b763-ba3f-3fec-efeb" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e74d-0ca8-6c0f-10ab" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="2b73-f854-9318-5dc9" name="Storm of War - Stormwing Protocol" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="69f8-36cb-4f41-8222" type="instanceOf"/>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="37d4-24b9-b237-2453" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0eb2-e493-2d8c-b2a8" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
-            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
-            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="c33e-ba42-f1e1-f88c" name="The Seeker&apos;s Arrow - Ravenwing Protocol" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7827-1a3f-842c-7033" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="09bd-611d-8dc7-0154" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
-            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
-            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="8b18-f477-91db-84f0" name="Serpent&apos;s Bane - Firewing Protocol" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7827-1a3f-842c-7033" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0332-c132-498b-170e" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
-            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
-            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="7960-1577-d989-e737" name="Eskaton Imperative - Dreadwing Protocol" hidden="true" collective="false" import="true" type="upgrade">
+        <selectionEntry id="2895-26cb-98ed-6b66" name=" Eskaton Imperative - Dreadwing Protocol" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -2639,7 +2596,7 @@ litanies).</characteristic>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e589-2f4b-07bb-8a5b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a964-bcc0-db89-f8c1" type="max"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
@@ -2647,16 +2604,16 @@ litanies).</characteristic>
             <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="5e46-4f7d-ce68-5dcb" name="The Unbroken Vow - Deathwing Protocol" hidden="true" collective="false" import="true" type="upgrade">
+        <selectionEntry id="aa59-e275-8e9b-7c49" name=" Serpent&apos;s Bane - Firewing Protocol" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3692-0084-3e72-3eee" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7827-1a3f-842c-7033" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3da3-bfc9-f487-f43a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b04f-05e4-e8a2-b31e" type="max"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
@@ -2664,7 +2621,7 @@ litanies).</characteristic>
             <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="e1d3-2602-a9ea-1b91" name="Steel Fist Rite - Ironwing Protocol" hidden="true" collective="false" import="true" type="upgrade">
+        <selectionEntry id="e1f1-a305-036d-c990" name=" Steel Fist Rite - Ironwing Protocol" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
@@ -2679,7 +2636,81 @@ litanies).</characteristic>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90ad-e94e-801d-e8c6" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29eb-97d7-f982-dff3" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="640e-3f15-e75d-a1cd" name="Steel Fist Rite - Ironwing Protocol" hidden="false">
+              <description>Advantages:
+• Exterminators: Any INFANTRY units in this detachment can add 1 to Wound rolls with Pistol, Grenade or Rapid Fire weapons against enemy units within  12”. This has no effect on weapons with a fixed Wound value.
+• The Dust of Untold Worlds: VEHICLES in this detachment (except FLYERS or DREADNOUGHTS) may re-roll Advance moves. Non-TERMINATOR INFANTRY units in this detachment can take Proteus or Phobos Land Raiders as dedicated transports. Transports receive +1 to nvulnerable save, if they didn&apos;t have it, then they get 6+ invulnerable save.
+• The detachment may take Castellax Battle-automata as TROOPS; Vorax Battle-automata as FAST ATTACK and Domitar Battle-automata or Ironwing Excindio Class Battle-Automata as ELITE choices.
+• Goliaths of War: DREADNOUGHTS in this detachment may re-roll failed Wound rolls of 1 against VEHICLES.
+
+Drawbacks:
+• This rite may only be taken by a Spearhead or Battalion detachment.
+• Any INFAANTRY units in this detachment must be transported in a VEHICLE which does not have the FLY keyword.
+• At least half the units in the army must be VEHICLES which do not have the FLY keyword.
+• If all VEHICLES in this detachment without the FLY or DREADNOUGHT keywords are completely destroyed at the end of the battle, your opponent gains an additional victory point.
+• Only a single unit with FLY keyword can be taken.
+• Your army may not include a Fortification Network detachment.
+• Your army may not include any units without the Dark Angels keyword.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="454e-6d15-dfec-34b8" name=" Storm of War - Stormwing Protocol" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="69f8-36cb-4f41-8222" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="37d4-24b9-b237-2453" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b7e-ecc4-a072-8727" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e4aa-ddc4-1811-2198" name=" The Seeker&apos;s Arrow - Ravenwing Protocol" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7827-1a3f-842c-7033" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5dde-fe74-5e7b-8344" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3db4-a3f6-1b10-0be8" name=" The Unbroken Vow - Deathwing Protocol" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3692-0084-3e72-3eee" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc0e-7e42-c2fc-62ab" type="max"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>

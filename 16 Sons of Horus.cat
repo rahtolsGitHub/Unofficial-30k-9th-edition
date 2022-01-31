@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5173-4ef7-b125-f838" name="16 Sons of Horus" revision="5" battleScribeVersion="2.03" authorName="Lothar" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5173-4ef7-b125-f838" name="16 Sons of Horus" revision="6" battleScribeVersion="2.03" authorName="Lothar" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="54d1-7c00-2862-e45e" name="Justaerin" hidden="false"/>
     <categoryEntry id="30da-1742-49e7-ed79" name="Reavers" hidden="false"/>
@@ -1185,9 +1185,9 @@ are within 7” of a battlefield edge of your choice and more than 9” from ene
                 <profile id="5d45-9750-2eb0-72ec" name="The Warmaster’sTalon, Ranged" hidden="false" typeId="27fa-2a60-59a3-6273" typeName="Weapon(s)">
                   <characteristics>
                     <characteristic name="Range" typeId="fb7b-3fd3-e596-3848">24&quot;</characteristic>
-                    <characteristic name="Type" typeId="198a-7eca-0c54-6f0a">Assault 6</characteristic>
-                    <characteristic name="S" typeId="591d-883a-73fa-87d9">5</characteristic>
-                    <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">-2</characteristic>
+                    <characteristic name="Type" typeId="198a-7eca-0c54-6f0a">Assault 2</characteristic>
+                    <characteristic name="S" typeId="591d-883a-73fa-87d9">4</characteristic>
+                    <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">-1</characteristic>
                     <characteristic name="D" typeId="fde9-623c-a082-78b0">2</characteristic>
                     <characteristic name="Abilities" typeId="8f3c-b1ed-80b8-dbfe">-</characteristic>
                   </characteristics>
@@ -1196,11 +1196,10 @@ are within 7” of a battlefield edge of your choice and more than 9” from ene
                   <characteristics>
                     <characteristic name="Range" typeId="fb7b-3fd3-e596-3848">Melee</characteristic>
                     <characteristic name="Type" typeId="198a-7eca-0c54-6f0a">Melee</characteristic>
-                    <characteristic name="S" typeId="591d-883a-73fa-87d9">User</characteristic>
-                    <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">-3</characteristic>
-                    <characteristic name="D" typeId="fde9-623c-a082-78b0">3</characteristic>
-                    <characteristic name="Abilities" typeId="8f3c-b1ed-80b8-dbfe">If you roll an unmodified 6+ to wound with this weapon, it inflicts a mortal  wound in addition to its usual damage. You can re-roll failed wound rolls with this weapon. Any model wounded by this weapon suffers a -1 to hit rolls until the
-start of the next Fight phase.</characteristic>
+                    <characteristic name="S" typeId="591d-883a-73fa-87d9">x2</characteristic>
+                    <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">-4</characteristic>
+                    <characteristic name="D" typeId="fde9-623c-a082-78b0">2</characteristic>
+                    <characteristic name="Abilities" typeId="8f3c-b1ed-80b8-dbfe">You can re-roll failed wound rolls with this weapon. Any model wounded by thisweapon suffers a -1 to hit rolls until the start of the next Fight phase.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1220,8 +1219,8 @@ start of the next Fight phase.</characteristic>
                   <characteristics>
                     <characteristic name="Range" typeId="fb7b-3fd3-e596-3848">Melee</characteristic>
                     <characteristic name="Type" typeId="198a-7eca-0c54-6f0a">Melee</characteristic>
-                    <characteristic name="S" typeId="591d-883a-73fa-87d9">10</characteristic>
-                    <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">-4</characteristic>
+                    <characteristic name="S" typeId="591d-883a-73fa-87d9">+3</characteristic>
+                    <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">-3</characteristic>
                     <characteristic name="D" typeId="fde9-623c-a082-78b0">5</characteristic>
                     <characteristic name="Abilities" typeId="8f3c-b1ed-80b8-dbfe">When attacking with this weapon, you must subtract 1 from the hit roll.</characteristic>
                   </characteristics>
