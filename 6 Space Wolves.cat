@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6030-1e69-d3ca-6a48" name="6 Space Wolves" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6030-1e69-d3ca-6a48" name="6 Space Wolves" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Category:
 Varagyr in Standard, as Combiweapons -&gt; Volkite</comment>
   <categoryEntries>
@@ -107,7 +107,7 @@ Varagyr in Standard, as Combiweapons -&gt; Volkite</comment>
     <entryLink id="ae33-de89-2ad9-419b" name="Cyber Wolf" hidden="false" collective="false" import="true" targetId="3633-9801-0ba6-a3d7" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="41cc-8013-916c-76ee" name="Elite" hidden="false" targetId="c39a-99d8-e84f-b5f9" primary="false"/>
-        <categoryLink id="a1b6-ccae-0bec-a015" name="No Force Org" hidden="false" targetId="e662-8e86-894a-6009" primary="false"/>
+        <categoryLink id="a1b6-ccae-0bec-a015" name="No Force Org" hidden="false" targetId="e662-8e86-894a-6009" primary="true"/>
         <categoryLink id="6f8f-85c3-bfdc-2cf0" name="Beast" hidden="false" targetId="af63-afd9-aadb-8664" primary="false"/>
         <categoryLink id="fbbe-c153-d07f-f6b9" name="Fenrisian Wolf" hidden="false" targetId="3d1e-1aed-de62-7272" primary="false"/>
       </categoryLinks>
@@ -115,7 +115,7 @@ Varagyr in Standard, as Combiweapons -&gt; Volkite</comment>
     <entryLink id="cbc6-8be2-e6a2-3a2e" name="Fenrisian Wolf" hidden="false" collective="false" import="true" targetId="d3ab-b371-14c5-35c0" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="3b03-7baf-cb3f-250f" name="Elite" hidden="false" targetId="c39a-99d8-e84f-b5f9" primary="false"/>
-        <categoryLink id="e0f3-d77c-b389-2bae" name="No Force Org" hidden="false" targetId="e662-8e86-894a-6009" primary="false"/>
+        <categoryLink id="e0f3-d77c-b389-2bae" name="No Force Org" hidden="false" targetId="e662-8e86-894a-6009" primary="true"/>
         <categoryLink id="8f73-6e73-f07a-af1d" name="Beast" hidden="false" targetId="af63-afd9-aadb-8664" primary="false"/>
         <categoryLink id="2a23-46a0-3773-62b6" name="Fenrisian Wolf" hidden="false" targetId="3d1e-1aed-de62-7272" primary="false"/>
       </categoryLinks>
@@ -131,6 +131,19 @@ Varagyr in Standard, as Combiweapons -&gt; Volkite</comment>
         <categoryLink id="c331-58ee-cd21-0571" name="Monster" hidden="false" targetId="20be-1fc6-2109-1f7e" primary="false"/>
         <categoryLink id="3fe7-eda9-dd8e-a935" name="Leman Russ" hidden="false" targetId="699f-95b1-064d-f4ea" primary="false"/>
         <categoryLink id="e1fa-4d33-699d-8485" name="Warlord" hidden="false" targetId="26c1-e6bf-4904-500b" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="34a9-72d6-015d-9691" name="The Wolf-kin of Russ" hidden="true" collective="false" import="true" targetId="3158-621a-0e75-6c33" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="19c7-7ffa-1449-509b" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="0007-d845-4d8e-0db3" name="New CategoryLink" hidden="false" targetId="e662-8e86-894a-6009" primary="true"/>
+        <categoryLink id="cdb3-be51-1764-6399" name="Elite" hidden="false" targetId="c39a-99d8-e84f-b5f9" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -1267,13 +1280,6 @@ Flanking Manoeuvres: During deployment, you can set up this unit moving around t
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <entryLinks>
-        <entryLink id="d786-2713-225f-204d" name="The Wolf-kin of Russ" hidden="false" collective="false" import="true" targetId="3158-621a-0e75-6c33" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abe1-5fb3-0f2e-74ff" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="16.0"/>
         <cost name="pts" typeId="9484-733c-9847-f18b" value="320.0"/>

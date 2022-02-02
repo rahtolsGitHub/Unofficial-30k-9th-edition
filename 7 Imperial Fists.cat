@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="18dc-6092-a0ca-5252" name="7 Imperial Fists" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="18dc-6092-a0ca-5252" name="7 Imperial Fists" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="c10e-574b-801a-fe34" name="Templar Brethren" hidden="false"/>
     <categoryEntry id="09c4-14f0-1145-0c95" name="Huscarls" hidden="false"/>
@@ -1145,7 +1145,7 @@
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9eb7-c4be-30df-7d30" name="Sigismund" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="9eb7-c4be-30df-7d30" name="Sigismund" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="baeb-7368-13cf-61b4" value="0.0">
           <conditions>

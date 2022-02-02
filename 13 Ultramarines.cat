@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8fab-eff9-a93b-2528" name="13 Ultramarines" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="8fab-eff9-a93b-2528" name="13 Ultramarines" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="2b2d-1245-3986-08ea" name="Ultramarines" hidden="false"/>
     <categoryEntry id="ea76-4e92-ee3b-ac1a" name="Invictarus Suzerain" hidden="false"/>
@@ -81,11 +81,11 @@
     <entryLink id="23b4-625b-18e1-bc28" name="Fulmentarus Terminator Strike Squad" hidden="false" collective="false" import="true" targetId="1b09-0226-c578-7f0c" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="4427-4d67-665e-4643" name="Fulmentarus" hidden="false" targetId="3f31-6b6e-a302-62b2" primary="false"/>
-        <categoryLink id="0d9c-1707-62e0-874f" name="Elite" hidden="false" targetId="c39a-99d8-e84f-b5f9" primary="true"/>
         <categoryLink id="9053-5fb0-1da4-5581" name="Infantry" hidden="false" targetId="c9bb-6ccb-efae-6184" primary="false"/>
         <categoryLink id="9a18-01db-334b-d49e" name="Core" hidden="false" targetId="dc0f-a3bb-f2c4-93ad" primary="false"/>
         <categoryLink id="6ecb-8f6e-4556-873b" name="Terminator" hidden="false" targetId="a148-87de-90c9-d041" primary="false"/>
         <categoryLink id="32f0-a018-0aa4-eade" name="Astartes" hidden="false" targetId="8eb7-c779-b4ba-c4ec" primary="false"/>
+        <categoryLink id="5b89-3b00-0ecd-a805" name="New CategoryLink" hidden="false" targetId="34c6-9559-c24e-e6a9" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="4da5-d70f-ef00-d89f" name="Honoured Telemechrus" hidden="false" collective="false" import="true" targetId="55d7-ec5f-4032-f0ba" type="selectionEntry">

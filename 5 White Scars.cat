@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="1609-2b92-ff59-b3c9" name="5 White Scars" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="1609-2b92-ff59-b3c9" name="5 White Scars" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="df08-ec04-c0ec-94d3" name="Golden Keshig" hidden="false"/>
     <categoryEntry id="bc1b-3753-48e1-7ea2" name="Ebon Keshig" hidden="false"/>
@@ -61,7 +61,7 @@
     </entryLink>
     <entryLink id="7ae5-bb71-2681-c1c2" name="Ebon Keshig" hidden="false" collective="false" import="true" targetId="c388-dc54-7437-3dcd" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="c2b7-8608-62a9-cac2" name="Elite" hidden="false" targetId="c39a-99d8-e84f-b5f9" primary="false"/>
+        <categoryLink id="c2b7-8608-62a9-cac2" name="Elite" hidden="false" targetId="c39a-99d8-e84f-b5f9" primary="true"/>
         <categoryLink id="29a0-6aec-f41f-41bf" name="Infantry" hidden="false" targetId="c9bb-6ccb-efae-6184" primary="false"/>
         <categoryLink id="2b2f-7123-36c6-332d" name="Core" hidden="false" targetId="dc0f-a3bb-f2c4-93ad" primary="false"/>
         <categoryLink id="91a3-4e93-0b54-1fd1" name="Cataphractii" hidden="false" targetId="4bb3-69a9-bf9e-2f0a" primary="false"/>
@@ -304,7 +304,7 @@
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c388-dc54-7437-3dcd" name="Ebon Keshig" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="c388-dc54-7437-3dcd" name="Ebon Keshig" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="increment" field="b1e1-0497-949d-68af" value="9.0">
           <conditions>
@@ -487,7 +487,7 @@
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e019-f38b-53b0-a836" name="Falcon&apos;s Claws" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="e019-f38b-53b0-a836" name="The Falcon&apos;s Claws" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="increment" field="b1e1-0497-949d-68af" value="6.0">
           <conditions>

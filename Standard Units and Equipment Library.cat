@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="da54-2db0-7d98-7b89" name="Standard Units and Equipment Library" revision="17" battleScribeVersion="2.03" authorName="Lothar" authorContact="" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="da54-2db0-7d98-7b89" name="Standard Units and Equipment Library" revision="18" battleScribeVersion="2.03" authorName="Lothar" authorContact="" library="true" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>This catalogue contains basic units and equipment available to all Legions. It&apos;s imported as standard catalogue by the specific Legion catalogues.</comment>
   <publications>
     <publication id="ea1d-c177-1851-0466" name="Legiones Astartes: Army List 2.11"/>
@@ -431,28 +431,18 @@
     </entryLink>
     <entryLink id="9237-f019-3ea1-b513" name="Legion Servo-automata" hidden="true" collective="false" import="true" targetId="e113-a804-2f1d-70ff" type="selectionEntry">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f919-bb18-3121-2bd5" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cc47-35ae-c9d0-9ae8" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
         <modifier type="increment" field="44f3-b469-2be3-2bde" value="1.0">
           <repeats>
             <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f919-bb18-3121-2bd5" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc47-35ae-c9d0-9ae8" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
-        <modifier type="set" field="44f3-b469-2be3-2bde" value="0.0">
+        <modifier type="set" field="hidden" value="false">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f919-bb18-3121-2bd5" type="notEqualTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cc47-35ae-c9d0-9ae8" type="notEqualTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f919-bb18-3121-2bd5" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cc47-35ae-c9d0-9ae8" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -928,10 +918,10 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="fc55-4adf-4b88-eacc" name="New CategoryLink" hidden="false" targetId="4912-b312-83e0-ea3e" primary="true"/>
         <categoryLink id="f0b3-ceb6-9e3f-8a5c" name="Artillery" hidden="false" targetId="d883-207a-8861-6cb6" primary="false"/>
         <categoryLink id="8b31-f801-54e9-d350" name="Tarantulla Sentry Gun" hidden="false" targetId="c758-a37f-cf87-1f87" primary="false"/>
         <categoryLink id="342b-f20c-20e7-9a0e" name="Vehicle" hidden="false" targetId="7484-8228-82e5-5b9f" primary="false"/>
+        <categoryLink id="f3e0-c948-3893-240e" name="New CategoryLink" hidden="false" targetId="bf65-59f0-b8d2-3537" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="9af2-f96a-13ee-2180" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="9d74-a72e-5661-2ca6" type="selectionEntry">
@@ -13109,16 +13099,16 @@ made against that attack.</characteristic>
             <entryLink id="a6fc-1e3e-4b8b-fe2b" name="Pintle Weapons" hidden="false" collective="false" import="true" targetId="93fa-3340-175d-fbe8" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
-            <cost name="PL" typeId="b1e1-0497-949d-68af" value="4.0"/>
-            <cost name="pts" typeId="9484-733c-9847-f18b" value="75.0"/>
             <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="75.0"/>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="55.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
-        <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+        <cost name="PL" typeId="b1e1-0497-949d-68af" value="5.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b481-6f59-8121-5be4" name="Legion Drop Pod" hidden="false" collective="false" import="true" type="unit">
@@ -17175,6 +17165,7 @@ embarked models disembark, roll a D6. On a 6, it explodes and each unit within 2
           <costs>
             <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
             <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="e7a2-c86e-8f88-8947" name="Chaplain Consul" hidden="false" collective="false" import="true" type="upgrade">
@@ -17320,6 +17311,7 @@ embarked models disembark, roll a D6. On a 6, it explodes and each unit within 2
           <costs>
             <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
             <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b69d-2e75-30e4-469c" name="Delegatus Consul" hidden="false" collective="false" import="true" type="upgrade">
@@ -17339,6 +17331,8 @@ embarked models disembark, roll a D6. On a 6, it explodes and each unit within 2
           </infoLinks>
           <costs>
             <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="8680-ad1a-0408-ffc8" name="Forge Lord Consul" hidden="false" collective="false" import="true" type="upgrade">
@@ -17440,6 +17434,8 @@ embarked models disembark, roll a D6. On a 6, it explodes and each unit within 2
           </entryLinks>
           <costs>
             <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="c7d7-869c-92d7-80a6" name="Praevian Consul" hidden="false" collective="false" import="true" type="upgrade">
@@ -17602,6 +17598,8 @@ more than 9” away from any enemy models.</characteristic>
           </entryLinks>
           <costs>
             <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="06ca-8fb3-0e20-a000" name="Armistos Consul" hidden="false" collective="false" import="true" type="upgrade">
@@ -17652,6 +17650,8 @@ more than 9” away from any enemy models.</characteristic>
           </entryLinks>
           <costs>
             <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="fdb9-8f43-737a-3d76" name="Primus Nullificator Consul" hidden="false" collective="false" import="true" type="upgrade">
@@ -17789,6 +17789,8 @@ more than 9” away from any enemy models.</characteristic>
           </entryLinks>
           <costs>
             <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>

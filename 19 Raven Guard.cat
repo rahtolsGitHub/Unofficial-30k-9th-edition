@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b8cc-b412-f8a6-e9b7" name="19 Raven Guard" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b8cc-b412-f8a6-e9b7" name="19 Raven Guard" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Category Mor Deythan -&gt; Standard catalogue, as selection of vulkite charger hidden.
 Category Corvus -&gt; Standard catalogue, as selection of Archeotech true.</comment>
   <categoryEntries>
@@ -380,7 +380,7 @@ Category Corvus -&gt; Standard catalogue, as selection of Archeotech true.</comm
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c8f0-fb29-069b-5d33" name="Dark Furies Assault Squad" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="c8f0-fb29-069b-5d33" name="Dark Fury Assault Squad" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="increment" field="b1e1-0497-949d-68af" value="7.0">
           <conditions>

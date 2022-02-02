@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d5e3-8f52-4f48-52a1" name="20 Alpha Legion" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d5e3-8f52-4f48-52a1" name="20 Alpha Legion" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="f188-8c89-3c32-3a58" name="Alpha Legion" hidden="false"/>
     <categoryEntry id="12e0-9185-fe72-2fbf" name="Lernaean" hidden="false"/>
@@ -48,11 +48,12 @@
   <entryLinks>
     <entryLink id="2d0f-0016-3380-8bf1" name="Headhunter Kill Team" hidden="false" collective="false" import="true" targetId="54f2-6034-9266-3dd4" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="2675-dad2-25d4-20c4" name="New CategoryLink" hidden="false" targetId="c39a-99d8-e84f-b5f9" primary="true"/>
-        <categoryLink id="8972-f3d3-fe37-f4da" name="Headhunter" hidden="false" targetId="7341-ebb8-ec7a-3d3e" primary="false"/>
         <categoryLink id="0b00-3747-ab86-7ae6" name="Infantry" hidden="false" targetId="c9bb-6ccb-efae-6184" primary="false"/>
         <categoryLink id="eeef-f30e-15ce-098b" name="Seeker Squad" hidden="false" targetId="2ac7-2eca-a44a-959c" primary="false"/>
         <categoryLink id="58f9-c4a8-4f1d-4b19" name="Astartes" hidden="false" targetId="8eb7-c779-b4ba-c4ec" primary="false"/>
+        <categoryLink id="b76e-4d1b-0961-a703" name="Headhunter" hidden="false" targetId="7341-ebb8-ec7a-3d3e" primary="false"/>
+        <categoryLink id="3608-2d60-5d4a-7aa3" name="Elite" hidden="false" targetId="c39a-99d8-e84f-b5f9" primary="false"/>
+        <categoryLink id="8c8b-0a8a-a752-04c1" name="New CategoryLink" hidden="false" targetId="4912-b312-83e0-ea3e" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="3f9a-5dd8-44da-bdb2" name="Lernaean Terminator Squad" hidden="false" collective="false" import="true" targetId="3d6f-f0fc-c8bc-5523" type="selectionEntry">
