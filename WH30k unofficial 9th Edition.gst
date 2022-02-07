@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="218d-602b-768b-7f56" name="WH30k unofficial 9th Edition" revision="7" battleScribeVersion="2.03" authorName="Lothar" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="218d-602b-768b-7f56" name="WH30k unofficial 9th Edition" revision="9" battleScribeVersion="2.03" authorName="Lothar" authorContact="Please report any issues to the GitHub -&gt; Issues:" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <comment>BattleScribe data files for the unofficial Warhammer 30k 9th edition.</comment>
+  <readme>Known Issues:
+
+General:
+When choosing &gt;= 2 Detachments in the army you have to manually delete/add some Army Setup Entries; also the Legion has to be chosen in every detachment (no validation, if the army compoisition only allows one Legion for the whole army).
+
+Lord of War: No validation, if &lt;= 25% total points
+
+Rites of War:
+No validation in roster if FORTIFICATIONS/SUPER-HEAVY (AUXILLARY) are taken with certain Rites of War
+Orphans of Betrayal: Not validating if &gt;= HEAVY than TROOPS
+Outcast Sons: Not validating if &gt;= ELITE than TROOPS
+PotL, Fury of the Ancients, Skyhunter Phallanx: Able to choose another Legion with 2+ detachments (may only have one)
+Sacrificial Offering: Militia as &quot;Faction-Bedingung&quot; @ Patrol Detachment not yet implemented	
+Skyhunter Phallanx: All VEHICLES must have FLY; unit without the BIKER and FLY keywords must be transported in a VEHICLE not yet implemented
+
+Legion Specific Rites of War not yet implemented
+Legion Special Rules: not yet implemented
+Legion Specific Wargear: not yet implemented
+Shattered Legions: not yet implemented
+</readme>
   <costTypes>
     <costType id="9484-733c-9847-f18b" name="pts" defaultCostLimit="-1.0" hidden="false"/>
     <costType id="b1e1-0497-949d-68af" name="PL" defaultCostLimit="-1.0" hidden="false"/>
@@ -150,6 +170,7 @@
     <categoryEntry id="5629-f2a6-f236-cb5b" name="Experimental" hidden="false"/>
     <categoryEntry id="3848-9a39-f276-b808" name="Loyalist" hidden="false"/>
     <categoryEntry id="8e10-6a5e-d7db-c85d" name="Traitor" hidden="false"/>
+    <categoryEntry id="342a-1773-87e1-6c23" name="Storm of War" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="4f23-15fd-4ba5-d3b2" name="Patrol Detachment (-2 CP)" hidden="false">
@@ -645,7 +666,11 @@
         </modifier>
         <modifier type="set" field="01c7-193f-577b-863b" value="0.0">
           <conditionGroups>
-            <conditionGroup type="or"/>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="342a-1773-87e1-6c23" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>

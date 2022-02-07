@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6c8a-a156-45f2-b831" name="1 Dark Angels" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6c8a-a156-45f2-b831" name="1 Dark Angels" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="1190-7c0d-b54b-e320" name="Dreadwing" hidden="false"/>
     <categoryEntry id="cf22-0f0c-39d6-7a6c" name="Deathwing" hidden="false"/>
@@ -134,7 +134,7 @@
         <categoryLink id="b952-53c0-fa1e-abe0" name="New CategoryLink" hidden="false" targetId="1912-f8ea-2f8e-8a02" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="8df6-9946-b2af-4f7b" name="Rites of War" hidden="false" collective="false" import="true" targetId="8111-37ce-3023-5a94" type="selectionEntry">
+    <entryLink id="8df6-9946-b2af-4f7b" name="Rites of War  (1.000 pts/50 PL, Master of the Legion)" hidden="false" collective="false" import="true" targetId="8111-37ce-3023-5a94" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="a4e9-0197-5c00-53cb" name="New CategoryLink" hidden="false" targetId="6772-cf1b-71fc-53b4" primary="true"/>
       </categoryLinks>
@@ -530,7 +530,7 @@
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="32.0"/>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="30.0"/>
                 <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
                 <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
               </costs>
@@ -618,7 +618,7 @@
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="32.0"/>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="30.0"/>
                 <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
                 <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
               </costs>
@@ -2540,7 +2540,7 @@ litanies).</characteristic>
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" field="f6a9-7e15-7412-5535" value="1.0">
+        <modifier type="increment" field="f6a9-7e15-7412-5535" value="1.0">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
@@ -2549,8 +2549,8 @@ litanies).</characteristic>
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="9484-733c-9847-f18b" scope="force" value="999.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="atLeast"/>
-                    <condition field="b1e1-0497-949d-68af" scope="force" value="49.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="atLeast"/>
+                    <condition field="9484-733c-9847-f18b" scope="force" value="999.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="atLeast"/>
+                    <condition field="b1e1-0497-949d-68af" scope="force" value="49.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2669,7 +2669,8 @@ Drawbacks:
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="69f8-36cb-4f41-8222" type="instanceOf"/>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="37d4-24b9-b237-2453" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="77e3-e16a-09c2-6059" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4f23-15fd-4ba5-d3b2" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2678,6 +2679,9 @@ Drawbacks:
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b7e-ecc4-a072-8727" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink id="0010-817e-e690-6cb5" name="Storm of War" hidden="false" targetId="342a-1773-87e1-6c23" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
             <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>

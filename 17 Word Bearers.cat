@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2afc-5be1-bc21-e806" name="17 Word Bearers" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="2afc-5be1-bc21-e806" name="17 Word Bearers" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Category: Lorgar in main lib, as constraint on archeotech pistol</comment>
   <categoryEntries>
     <categoryEntry id="f92c-ae4c-6bab-d8cb" name="Daemon" hidden="false"/>
@@ -328,7 +328,7 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="25.0"/>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="20.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
       </costs>
@@ -441,7 +441,7 @@
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="30.0"/>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="25.0"/>
                 <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
                 <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
               </costs>
@@ -544,7 +544,7 @@
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="30.0"/>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="25.0"/>
                 <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
                 <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
               </costs>
@@ -632,7 +632,7 @@
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="30.0"/>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="25.0"/>
                 <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
                 <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
               </costs>
@@ -776,7 +776,7 @@
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="21.0"/>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="20.0"/>
                 <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
                 <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
               </costs>
@@ -851,7 +851,7 @@
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="21.0"/>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="20.0"/>
                 <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
                 <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
               </costs>
@@ -1425,7 +1425,7 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="10.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
       </costs>

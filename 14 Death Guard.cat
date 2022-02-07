@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4bfd-2408-6066-bbe4" name="14 Death Guard" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4bfd-2408-6066-bbe4" name="14 Death Guard" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Grave Warden in Standard catalogue -&gt; Combi-weapon selection volkite charger = false</comment>
   <categoryEntries>
     <categoryEntry id="802b-537b-2338-12c8" name="Deathshroud" hidden="false"/>
@@ -371,7 +371,7 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="16.0"/>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="10.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
       </costs>
@@ -1156,7 +1156,7 @@ power in each enemy Psychic phase. It knows the Smite power and one power from t
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="28.0"/>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="18.0"/>
                 <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
                 <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
               </costs>
@@ -1214,7 +1214,7 @@ power in each enemy Psychic phase. It knows the Smite power and one power from t
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="28.0"/>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="18.0"/>
                 <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
                 <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
               </costs>
@@ -1273,7 +1273,7 @@ power in each enemy Psychic phase. It knows the Smite power and one power from t
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="28.0"/>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="18.0"/>
                 <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
                 <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
               </costs>
@@ -1286,6 +1286,8 @@ power in each enemy Psychic phase. It knows the Smite power and one power from t
       </entryLinks>
       <costs>
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="6.0"/>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+        <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="53f2-a48b-db70-daed" name="Power scythe" hidden="false" collective="false" import="true" type="upgrade">
@@ -1293,6 +1295,11 @@ power in each enemy Psychic phase. It knows the Smite power and one power from t
         <infoLink id="3c04-13a4-5515-7487" name="Power scythe, Cleave" hidden="false" targetId="b4f9-5ed3-102a-c7dd" type="profile"/>
         <infoLink id="d3bf-1943-d8a4-0cfc" name="Power scythe, Scythe" hidden="false" targetId="6665-11bc-0dfb-6edf" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+        <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+        <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

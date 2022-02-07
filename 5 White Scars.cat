@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="1609-2b92-ff59-b3c9" name="5 White Scars" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="1609-2b92-ff59-b3c9" name="5 White Scars" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="df08-ec04-c0ec-94d3" name="Golden Keshig" hidden="false"/>
     <categoryEntry id="bc1b-3753-48e1-7ea2" name="Ebon Keshig" hidden="false"/>
@@ -220,7 +220,7 @@
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="40.0"/>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="34.0"/>
                 <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
                 <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
               </costs>
@@ -290,7 +290,7 @@
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="40.0"/>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="34.0"/>
                 <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
                 <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
               </costs>
@@ -437,6 +437,9 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="daf0-c42e-f804-0ffe" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="894f-710f-64ee-82f1" type="min"/>
               </constraints>
+              <costs>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="10.0"/>
+              </costs>
             </entryLink>
           </entryLinks>
           <costs>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6b91-b451-9459-3db3" name="4 Iron Warriors" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6b91-b451-9459-3db3" name="4 Iron Warriors" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Dominator in Standard list -&gt; combi weapons -&gt; volkite</comment>
   <categoryEntries>
     <categoryEntry id="9ad6-abd9-01a2-7445" name="Tyrant Siege Terminator" hidden="false"/>
@@ -571,7 +571,7 @@
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="20.0"/>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="19.0"/>
                 <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
                 <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
               </costs>
@@ -676,7 +676,7 @@
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="20.0"/>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="19.0"/>
                 <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
                 <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
               </costs>

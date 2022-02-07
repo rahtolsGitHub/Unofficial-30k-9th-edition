@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b1d7-6b44-3c3d-5e55" name="18 Salamanders" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b1d7-6b44-3c3d-5e55" name="18 Salamanders" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="69a7-db22-8fbb-6f7a" name="Pyroclasts" hidden="false"/>
     <categoryEntry id="0491-f4c6-7f6f-f2a3" name="Firedrakes" hidden="false"/>
@@ -177,7 +177,7 @@
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="20.0"/>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="19.0"/>
                 <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
                 <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
               </costs>
@@ -235,7 +235,7 @@
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="20.0"/>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="19.0"/>
                 <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
                 <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
               </costs>
@@ -309,7 +309,7 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="10.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
       </costs>
@@ -417,7 +417,7 @@
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="42.0"/>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="38.0"/>
                 <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
                 <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
               </costs>
@@ -475,7 +475,7 @@
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="42.0"/>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="38.0"/>
                 <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
                 <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
               </costs>
@@ -511,7 +511,7 @@
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="42.0"/>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="38.0"/>
                 <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
                 <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
               </costs>

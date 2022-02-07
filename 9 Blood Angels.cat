@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4ea7-b77b-fea1-d31f" name="9 Blood Angels" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4ea7-b77b-fea1-d31f" name="9 Blood Angels" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="c6d3-76be-1e8c-52d7" name="Dawnbreaker Cohort" hidden="false"/>
     <categoryEntry id="09d9-dc6e-a65c-da76" name="Crimson Paladins" hidden="false"/>
@@ -304,7 +304,7 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="6.0"/>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="5.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
       </costs>
@@ -664,7 +664,7 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="5.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
       </costs>
@@ -730,34 +730,14 @@
             <entryLink id="0f06-d3c4-719d-b4ec" name="Meltagun" hidden="false" collective="false" import="true" targetId="e8dc-600a-67f1-edf6" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="ae7f-8fc4-cc12-20e5" name="Weapon Option II" hidden="false" collective="false" import="true" defaultSelectionEntryId="f103-e15e-8cbd-7b06">
+        <selectionEntryGroup id="ae7f-8fc4-cc12-20e5" name="Weapon Option II" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec91-ffd1-eafe-b29f" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e879-bcb7-0748-e3fd" type="min"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="f103-e15e-8cbd-7b06" name="Talon of Perdition" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="09f9-a9e6-c2d6-870d" name="Talon of Perdition" hidden="false" typeId="27fa-2a60-59a3-6273" typeName="Weapon(s)">
-                  <characteristics>
-                    <characteristic name="Range" typeId="fb7b-3fd3-e596-3848">Melee</characteristic>
-                    <characteristic name="Type" typeId="198a-7eca-0c54-6f0a">Melee</characteristic>
-                    <characteristic name="S" typeId="591d-883a-73fa-87d9">User</characteristic>
-                    <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">-3</characteristic>
-                    <characteristic name="D" typeId="fde9-623c-a082-78b0">4</characteristic>
-                    <characteristic name="Abilities" typeId="8f3c-b1ed-80b8-dbfe">Each unmodified wound roll of 6+ with this weapon inflicts an additional Wound on the same enemy unit.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="35.0"/>
-                <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
-                <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
           <entryLinks>
             <entryLink id="23bb-adfc-de6a-2074" name="Dreadnought close combat weapon" hidden="false" collective="false" import="true" targetId="4b5e-6606-e865-6b98" type="selectionEntry"/>
+            <entryLink id="ab7a-b5b5-ba0e-19e0" name="Talon of Perdition" hidden="false" collective="false" import="true" targetId="967a-30cd-f860-3f7f" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="9ca4-a683-a245-14b2" name="Incaendius Booster Pack" hidden="false" collective="false" import="true" defaultSelectionEntryId="01f8-87f5-69b7-a3ad">
@@ -864,27 +844,6 @@
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="138f-89ff-eadf-16eb" type="max"/>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18ae-e44e-e886-a22c" type="min"/>
                   </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="18b2-547b-5ff8-3976" name="Angel&apos;s Tears grenade launcher" hidden="false" collective="false" import="true" type="upgrade">
-                      <profiles>
-                        <profile id="2bdf-10fa-bb88-2fbd" name="Angel&apos;s Tears grenade launcher" hidden="false" typeId="27fa-2a60-59a3-6273" typeName="Weapon(s)">
-                          <characteristics>
-                            <characteristic name="Range" typeId="fb7b-3fd3-e596-3848">24&quot;</characteristic>
-                            <characteristic name="Type" typeId="198a-7eca-0c54-6f0a">Assault D6</characteristic>
-                            <characteristic name="S" typeId="591d-883a-73fa-87d9">1</characteristic>
-                            <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">-1</characteristic>
-                            <characteristic name="D" typeId="fde9-623c-a082-78b0">1</characteristic>
-                            <characteristic name="Abilities" typeId="8f3c-b1ed-80b8-dbfe">Attacks from this weapon always wound on a 2+, unless the target is a Vehicle.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
-                        <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
-                        <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
                   <entryLinks>
                     <entryLink id="4f28-3262-872e-797c" name="Illastus Pattern Assault Cannon" hidden="false" collective="false" import="true" targetId="cec3-cdd9-0175-be50" type="selectionEntry">
                       <infoLinks>
@@ -899,6 +858,7 @@
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b78-6f63-194a-0ba4" type="min"/>
                       </constraints>
                     </entryLink>
+                    <entryLink id="c13d-2760-406d-6999" name="Angel&apos;s Tears grenade launcher" hidden="false" collective="false" import="true" targetId="7ae5-d445-9b5b-7b00" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -917,7 +877,7 @@
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="22.0"/>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="20.0"/>
                 <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
                 <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
               </costs>
@@ -1001,7 +961,7 @@
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="22.0"/>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="20.0"/>
                 <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
                 <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
               </costs>
@@ -1528,6 +1488,29 @@
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="17.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="967a-30cd-f860-3f7f" name="Talon of Perdition" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0d95-6b0b-40f2-2307" name="Talon of Perdition" hidden="false" targetId="9402-f920-5aef-04ab" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="35.0"/>
+        <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+        <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7ae5-d445-9b5b-7b00" name="Angel&apos;s Tears grenade launcher" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d16-71a3-c233-e8c8" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="81c0-885d-87b0-488b" name="Angel&apos;s Tears grenade launcher" hidden="false" targetId="3dfe-9369-b0c2-ad6f" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="5.0"/>
+        <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+        <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="bb3d-1b0c-299d-e40e" name="Legion Specific Rites of War" hidden="false" collective="false" import="true">
@@ -1582,6 +1565,28 @@
       </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
+  <sharedProfiles>
+    <profile id="9402-f920-5aef-04ab" name="Talon of Perdition" hidden="false" typeId="27fa-2a60-59a3-6273" typeName="Weapon(s)">
+      <characteristics>
+        <characteristic name="Range" typeId="fb7b-3fd3-e596-3848">Melee</characteristic>
+        <characteristic name="Type" typeId="198a-7eca-0c54-6f0a">Melee</characteristic>
+        <characteristic name="S" typeId="591d-883a-73fa-87d9">User</characteristic>
+        <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">-3</characteristic>
+        <characteristic name="D" typeId="fde9-623c-a082-78b0">4</characteristic>
+        <characteristic name="Abilities" typeId="8f3c-b1ed-80b8-dbfe">Each unmodified wound roll of 6+ with this weapon inflicts an additional Wound on the same enemy unit.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3dfe-9369-b0c2-ad6f" name="Angel&apos;s Tears grenade launcher" hidden="false" typeId="27fa-2a60-59a3-6273" typeName="Weapon(s)">
+      <characteristics>
+        <characteristic name="Range" typeId="fb7b-3fd3-e596-3848">24&quot;</characteristic>
+        <characteristic name="Type" typeId="198a-7eca-0c54-6f0a">Assault D6</characteristic>
+        <characteristic name="S" typeId="591d-883a-73fa-87d9">1</characteristic>
+        <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">-1</characteristic>
+        <characteristic name="D" typeId="fde9-623c-a082-78b0">1</characteristic>
+        <characteristic name="Abilities" typeId="8f3c-b1ed-80b8-dbfe">Attacks from this weapon always wound on a 2+, unless the target is a Vehicle.</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
   <catalogueLinks>
     <catalogueLink id="809a-6c60-6f5c-957c" name="Standard Units and Equipment Library" targetId="da54-2db0-7d98-7b89" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>

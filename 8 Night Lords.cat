@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3379-388d-0cd3-2ea8" name="8 Night Lords" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3379-388d-0cd3-2ea8" name="8 Night Lords" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Category MAWDRYM in Standard Units cat -&gt; Archaeotech Combi-weapons</comment>
   <categoryEntries>
     <categoryEntry id="d115-2e69-bf7f-c8e7" name="Terror Squad" hidden="false"/>
@@ -415,6 +415,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03e4-8464-a58e-78b7" type="max"/>
                       </constraints>
+                      <costs>
+                        <cost name="pts" typeId="9484-733c-9847-f18b" value="10.0"/>
+                      </costs>
                     </entryLink>
                     <entryLink id="60bb-a7b7-5271-2817" name="Chainblade" hidden="false" collective="false" import="true" targetId="f5d7-8847-c679-aaa4" type="selectionEntry">
                       <constraints>
@@ -491,6 +494,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7865-e8fd-be33-63a9" type="max"/>
                       </constraints>
+                      <costs>
+                        <cost name="pts" typeId="9484-733c-9847-f18b" value="10.0"/>
+                      </costs>
                     </entryLink>
                     <entryLink id="838a-107e-e31c-3aee" name="Chainblade" hidden="false" collective="false" import="true" targetId="f5d7-8847-c679-aaa4" type="selectionEntry">
                       <constraints>

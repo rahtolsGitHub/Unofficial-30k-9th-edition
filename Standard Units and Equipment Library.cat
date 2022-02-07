@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="da54-2db0-7d98-7b89" name="Standard Units and Equipment Library" revision="18" battleScribeVersion="2.03" authorName="Lothar" authorContact="" library="true" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <comment>This catalogue contains basic units and equipment available to all Legions. It&apos;s imported as standard catalogue by the specific Legion catalogues.</comment>
+<catalogue id="da54-2db0-7d98-7b89" name="Standard Units and Equipment Library" revision="23" battleScribeVersion="2.03" authorName="Lothar" authorContact="Please report any issues to the GitHub:" library="true" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <comment>This catalogue contains basic units and equipment available to all Legions. It&apos;s imported as standard library by the specific Legion catalogues.</comment>
   <publications>
     <publication id="ea1d-c177-1851-0466" name="Legiones Astartes: Army List 2.11"/>
   </publications>
@@ -37,7 +37,11 @@
   </profileTypes>
   <categoryEntries>
     <categoryEntry id="8eb7-c779-b4ba-c4ec" name="Astartes" hidden="false"/>
-    <categoryEntry id="c46a-7ccd-8c8b-bac2" name="Praetor" hidden="false"/>
+    <categoryEntry id="c46a-7ccd-8c8b-bac2" name="Praetor" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3fd-2f3d-0b34-78fa" type="max"/>
+      </constraints>
+    </categoryEntry>
     <categoryEntry id="ee19-27ba-2661-90fe" name="Jump Pack" hidden="false"/>
     <categoryEntry id="a148-87de-90c9-d041" name="Terminator" hidden="false">
       <infoLinks>
@@ -55,7 +59,11 @@
     </categoryEntry>
     <categoryEntry id="1945-c681-9fe3-943b" name="Biker" hidden="false"/>
     <categoryEntry id="fedd-d24e-b7ff-a9b0" name="Command Squad" hidden="false"/>
-    <categoryEntry id="aa71-277e-1506-6e9c" name="Centurion" hidden="false"/>
+    <categoryEntry id="aa71-277e-1506-6e9c" name="Centurion" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="72e8-3cc6-0eb9-97ac" type="max"/>
+      </constraints>
+    </categoryEntry>
     <categoryEntry id="d6e2-65fc-5769-3375" name="Consul" hidden="false"/>
     <categoryEntry id="f785-2815-7502-4768" name="Champion" hidden="false"/>
     <categoryEntry id="8c6d-9c90-f0f4-1017" name="Chaplain" hidden="false"/>
@@ -1722,6 +1730,33 @@
         <categoryLink id="573e-badf-e9c5-4f3d" name="Vehicle" hidden="false" targetId="7484-8228-82e5-5b9f" primary="false"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="0d46-49c9-7b23-07ed" name="Legion Centurion" hidden="true" collective="false" import="true" targetId="1462-3ccb-4159-013e" type="selectionEntry">
+      <comment>DA Rite of War:  Storm of War</comment>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c8a-a156-45f2-b831" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="342a-1773-87e1-6c23" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="increment" field="0232-d3a8-c0ad-96f7" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b444-6578-60dc-98cc" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="set" field="name" value="Master of the Storm"/>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0232-d3a8-c0ad-96f7" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="937b-4694-cfc3-c2ad" name="New CategoryLink" hidden="false" targetId="e662-8e86-894a-6009" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <rules>
     <rule id="35fe-08f2-c80e-ea8b" name="Bolter Discipline" hidden="false">
@@ -1975,6 +2010,11 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76ee-0a79-e5a4-a252" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="5cf4-5396-fe6b-57ee" name="Scion" hidden="false" collective="false" import="true" targetId="f58f-5cdf-eaab-c7b5" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec4e-16d4-17c1-70b8" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="9484-733c-9847-f18b" value="74.0"/>
@@ -2088,6 +2128,9 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
       </costs>
     </selectionEntry>
     <selectionEntry id="a691-5d55-2328-d17d" name="Lightning claw" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="153f-ba23-f667-58de" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="bbbd-485d-1882-d7ab" name="Lightning claw" hidden="false" targetId="39f7-1fb2-9742-99b0" type="profile"/>
       </infoLinks>
@@ -2204,7 +2247,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
         <infoLink id="def4-27cc-1e83-355a" name="Combi-weapon" hidden="false" targetId="9cba-2659-9bd6-7af7" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="10.0"/>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="5.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
       </costs>
@@ -2216,7 +2259,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
         <infoLink id="de88-dae7-5c7b-7220" name="Combi-weapon" hidden="false" targetId="9cba-2659-9bd6-7af7" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="10.0"/>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="5.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
       </costs>
@@ -2228,7 +2271,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
         <infoLink id="222b-65ad-ed44-b495" name="Combi-weapon" hidden="false" targetId="9cba-2659-9bd6-7af7" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="10.0"/>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="5.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
       </costs>
@@ -2241,7 +2284,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
         <infoLink id="8de2-2da1-648a-b41e" name="Combi-weapon" hidden="false" targetId="9cba-2659-9bd6-7af7" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="10.0"/>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="5.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
       </costs>
@@ -2251,7 +2294,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
         <infoLink id="61ba-1f9a-2bcf-fe36" name="Combi-bolter" hidden="false" targetId="9df5-6bd8-72e9-bd4d" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="3.0"/>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="2.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
       </costs>
@@ -2264,7 +2307,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
         <infoLink id="23ec-0ab2-8dcf-324f" name="Combi-weapon" hidden="false" targetId="9cba-2659-9bd6-7af7" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="10.0"/>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="5.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
       </costs>
@@ -2429,9 +2472,6 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
                   <infoLinks>
                     <infoLink id="3958-65f4-bdaf-8fb6" name="Cataphractii Armour, Praetor" hidden="false" targetId="f2b3-f03f-2659-6052" type="profile"/>
                   </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="9484-733c-9847-f18b" value="2.0"/>
-                  </costs>
                 </entryLink>
                 <entryLink id="d75d-0301-93df-5567" name="Terminator Armour" page="" hidden="false" collective="false" import="true" targetId="6997-3384-1ea5-c0b6" type="selectionEntry"/>
                 <entryLink id="78e1-471b-83b4-227b" name="Tartaros Armour" hidden="false" collective="false" import="true" targetId="f5be-6b5a-e517-6185" type="selectionEntry"/>
@@ -2476,7 +2516,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
       </entryLinks>
       <costs>
         <cost name="pts" typeId="9484-733c-9847-f18b" value="95.0"/>
-        <cost name="PL" typeId="b1e1-0497-949d-68af" value="1.0"/>
+        <cost name="PL" typeId="b1e1-0497-949d-68af" value="6.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -2740,7 +2780,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="9484-733c-9847-f18b" value="23.0"/>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="20.0"/>
             <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
             <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
           </costs>
@@ -2845,16 +2885,19 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
                 <entryLink id="db18-0ccb-1275-fbe1" name="Jump Pack" hidden="false" collective="false" import="true" targetId="3803-e8cd-9c3a-0492" type="selectionEntry">
                   <costs>
                     <cost name="PL" typeId="b1e1-0497-949d-68af" value="1.0"/>
+                    <cost name="pts" typeId="9484-733c-9847-f18b" value="2.0"/>
                   </costs>
                 </entryLink>
                 <entryLink id="d294-b77b-a3b8-2470" name="Space Marine Bike" hidden="false" collective="false" import="true" targetId="6568-c9ff-0d6f-ef94" type="selectionEntry">
                   <costs>
                     <cost name="PL" typeId="b1e1-0497-949d-68af" value="1.0"/>
+                    <cost name="pts" typeId="9484-733c-9847-f18b" value="12.0"/>
                   </costs>
                 </entryLink>
                 <entryLink id="eab7-f999-284f-a77d" name="Legion Scimitar Jetbike" hidden="false" collective="false" import="true" targetId="cf06-3223-5fb7-6fa2" type="selectionEntry">
                   <costs>
                     <cost name="PL" typeId="b1e1-0497-949d-68af" value="2.0"/>
+                    <cost name="pts" typeId="9484-733c-9847-f18b" value="14.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -2973,7 +3016,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="9484-733c-9847-f18b" value="38.0"/>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="26.0"/>
             <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
             <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
           </costs>
@@ -3015,7 +3058,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="9484-733c-9847-f18b" value="38.0"/>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="26.0"/>
             <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
             <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
           </costs>
@@ -3162,11 +3205,16 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
             <condition field="selections" scope="1462-3ccb-4159-013e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="deca-1671-fa85-066d" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="name" value="Marshal of the Storm">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e662-8e86-894a-6009" type="instanceOf"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <modifierGroups>
         <modifierGroup>
           <conditions>
-            <condition field="selections" scope="1462-3ccb-4159-013e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f35b-ba2e-1bd2-de8f" type="equalTo"/>
+            <condition field="selections" scope="1462-3ccb-4159-013e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f35b-ba2e-1bd2-de8f" type="equalTo"/>
           </conditions>
           <modifiers>
             <modifier type="remove" field="category" value="aa71-277e-1506-6e9c"/>
@@ -3206,7 +3254,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
             <condition field="selections" scope="1462-3ccb-4159-013e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8680-ad1a-0408-ffc8" type="equalTo"/>
           </conditions>
           <modifiers>
-            <modifier type="add" field="category" value="1f7b-be8c-9f54-2cbe"/>
+            <modifier type="add" field="category" value="8eb7-c779-b4ba-c4ec"/>
             <modifier type="add" field="category" value="f919-bb18-3121-2bd5"/>
           </modifiers>
         </modifierGroup>
@@ -3246,7 +3294,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
             <modifier type="add" field="category" value="13df-8672-4581-e6b1"/>
             <modifier type="add" field="category" value="b3c2-ab90-726b-1b9b"/>
             <modifier type="add" field="category" value="1f01-95c6-039f-4211"/>
-            <modifier type="add" field="category" value="1f7b-be8c-9f54-2cbe"/>
+            <modifier type="add" field="category" value="8eb7-c779-b4ba-c4ec"/>
           </modifiers>
         </modifierGroup>
         <modifierGroup>
@@ -3270,7 +3318,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
         </modifierGroup>
         <modifierGroup>
           <conditions>
-            <condition field="selections" scope="1462-3ccb-4159-013e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dbc7-6754-77a7-f720" type="equalTo"/>
+            <condition field="selections" scope="1462-3ccb-4159-013e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbc7-6754-77a7-f720" type="equalTo"/>
           </conditions>
           <modifiers>
             <modifier type="remove" field="category" value="c9bb-6ccb-efae-6184"/>
@@ -3289,7 +3337,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
         </modifierGroup>
         <modifierGroup>
           <conditions>
-            <condition field="selections" scope="1462-3ccb-4159-013e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="32cf-0527-0730-e973" type="equalTo"/>
+            <condition field="selections" scope="1462-3ccb-4159-013e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="32cf-0527-0730-e973" type="equalTo"/>
           </conditions>
           <modifiers>
             <modifier type="add" field="category" value="ee19-27ba-2661-90fe"/>
@@ -3309,7 +3357,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
           <modifierGroups>
             <modifierGroup>
               <conditions>
-                <condition field="selections" scope="1462-3ccb-4159-013e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1f5a-a36a-ccfc-518e" type="equalTo"/>
+                <condition field="selections" scope="1462-3ccb-4159-013e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1f5a-a36a-ccfc-518e" type="atLeast"/>
               </conditions>
               <modifiers>
                 <modifier type="set" field="e065-bda1-02de-6f2e" value="2+"/>
@@ -3318,18 +3366,29 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
             </modifierGroup>
             <modifierGroup>
               <conditions>
-                <condition field="selections" scope="1462-3ccb-4159-013e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dbc7-6754-77a7-f720" type="equalTo"/>
+                <condition field="selections" scope="1462-3ccb-4159-013e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="32cf-0527-0730-e973" type="equalTo"/>
               </conditions>
               <modifiers>
-                <modifier type="set" field="37d7-d298-a04a-4e6c" value="14&quot;"/>
+                <modifier type="set" field="37d7-d298-a04a-4e6c" value="12&quot;"/>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="1462-3ccb-4159-013e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d8c7-78b0-c966-ef53" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="37d7-d298-a04a-4e6c" value="15&quot;"/>
+                <modifier type="set" field="33be-eb18-f17d-e4cc" value="2+"/>
                 <modifier type="set" field="b550-6ea2-7a76-d49f" value="5"/>
                 <modifier type="set" field="3461-fc7e-2d85-5568" value="5"/>
               </modifiers>
             </modifierGroup>
             <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="1462-3ccb-4159-013e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbc7-6754-77a7-f720" type="equalTo"/>
+              </conditions>
               <modifiers>
-                <modifier type="set" field="37d7-d298-a04a-4e6c" value="16&quot;"/>
-                <modifier type="set" field="33be-eb18-f17d-e4cc" value="2+"/>
+                <modifier type="set" field="37d7-d298-a04a-4e6c" value="14&quot;"/>
                 <modifier type="set" field="b550-6ea2-7a76-d49f" value="5"/>
                 <modifier type="set" field="3461-fc7e-2d85-5568" value="5"/>
               </modifiers>
@@ -3353,6 +3412,11 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
             <modifier type="set" field="c0c4-b45f-a50f-953c" value="1.0">
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c00-1596-aa38-271e" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e662-8e86-894a-6009" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3561,6 +3625,16 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
+                <modifier type="set" field="88ce-fd80-5f81-080b" value="2.0">
+                  <conditions>
+                    <condition field="selections" scope="1462-3ccb-4159-013e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c89-a667-64f9-e959" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="7c8a-ac80-2a97-50d0" value="2.0">
+                  <conditions>
+                    <condition field="selections" scope="1462-3ccb-4159-013e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c89-a667-64f9-e959" type="atLeast"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c8a-ac80-2a97-50d0" type="max"/>
@@ -3722,7 +3796,15 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="7b59-a79e-59ac-e77e" name="Warlord" hidden="false" collective="false" import="true" targetId="d324-14c9-6767-bbe7" type="selectionEntry"/>
+        <entryLink id="7b59-a79e-59ac-e77e" name="Warlord" hidden="false" collective="false" import="true" targetId="d324-14c9-6767-bbe7" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e662-8e86-894a-6009" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="4.0"/>
@@ -3838,7 +3920,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
                     <infoLink id="4221-5fca-0790-f54d" name="Cataphractii Armour" hidden="false" targetId="ad1b-e439-caae-9c70" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="9484-733c-9847-f18b" value="5.0"/>
+                    <cost name="pts" typeId="9484-733c-9847-f18b" value="2.0"/>
                   </costs>
                 </entryLink>
                 <entryLink id="7227-d846-3e39-45ba" name="Terminator Armour" page="" hidden="false" collective="false" import="true" targetId="6997-3384-1ea5-c0b6" type="selectionEntry">
@@ -4010,9 +4092,9 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
         <infoLink id="e2e8-1aad-2c73-7638" name="Nuncio vox" hidden="false" targetId="93dd-5a69-f375-ed67" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="15.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="79c4-56f1-dd80-81a2" name="Psychic Powers" hidden="false" collective="false" import="true" type="upgrade">
@@ -4100,9 +4182,9 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
         <infoLink id="1c3c-443d-9319-da70" name="Cognis-signum" hidden="false" targetId="028e-9411-1a18-635a" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="15.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0393-d39a-ce7a-b457" name="Vorax Battle-automata Maniple" hidden="false" collective="false" import="true" type="unit">
@@ -4127,30 +4209,6 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb49-c46d-8f95-5a04" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af17-ad6e-a1b9-7a7c" type="min"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="bdfd-307b-9257-8a0c" name="Bio-corrosive rounds" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3032-d7ed-eebc-78f2" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="0671-ddb8-6179-473f" name="Rotor cannon/bio-corrosive rounds" hidden="false" typeId="27fa-2a60-59a3-6273" typeName="Weapon(s)">
-                  <characteristics>
-                    <characteristic name="Range" typeId="fb7b-3fd3-e596-3848">16&quot;</characteristic>
-                    <characteristic name="Type" typeId="198a-7eca-0c54-6f0a">Rapid Fire 3</characteristic>
-                    <characteristic name="S" typeId="591d-883a-73fa-87d9">3</characteristic>
-                    <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">0</characteristic>
-                    <characteristic name="D" typeId="fde9-623c-a082-78b0">1</characteristic>
-                    <characteristic name="Abilities" typeId="8f3c-b1ed-80b8-dbfe">This weapon always wounds on a 4+, unless the target model is a VEHICLE.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="4.0"/>
-                <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
-                <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="654c-7c86-b6f6-7202" name="Weapon Options I" hidden="false" collective="false" import="true" defaultSelectionEntryId="4a35-8a25-fe3d-1778">
               <constraints>
@@ -4210,6 +4268,11 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d31-31fa-98bd-a0d9" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="990e-f4b9-cc26-c485" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="3767-e8df-358a-0235" name="Bio-corrosive rounds" hidden="false" collective="false" import="true" targetId="f253-8df6-6f7d-ca66" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e60b-e597-bf69-aafa" type="max"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -4477,9 +4540,9 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
         <infoLink id="d81c-3404-62f4-1d5c" name="Augury scanner" hidden="false" targetId="d0c7-0253-2c74-1add" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="15.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="eaea-05e4-abd5-297e" name="Master-crafted volkite culverin" hidden="false" collective="false" import="true" type="upgrade">
@@ -4669,7 +4732,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3796-c666-491a-951c" type="max"/>
               </constraints>
               <costs>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="132.0"/>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="150.0"/>
                 <cost name="PL" typeId="b1e1-0497-949d-68af" value="13.0"/>
               </costs>
             </entryLink>
@@ -4679,7 +4742,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
               </constraints>
               <costs>
                 <cost name="PL" typeId="b1e1-0497-949d-68af" value="16.0"/>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="185.0"/>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="210.0"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -5795,7 +5858,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
         <infoLink id="2643-8efc-605b-dd76" name="Lascutter" hidden="false" targetId="49d6-cab1-1a95-2da4" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="5.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
       </costs>
@@ -5816,7 +5879,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
         <infoLink id="d96a-c39f-249c-75e5" name="Rotor cannon" hidden="false" targetId="f0d8-8916-914c-bf6b" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="3.0"/>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="10.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
       </costs>
@@ -8053,6 +8116,15 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
                 <modifier type="decrement" field="9484-733c-9847-f18b" value="10.0"/>
               </modifiers>
             </entryLink>
+            <entryLink id="0c7e-eb2e-6760-728f" name="Plasma repeater" hidden="false" collective="false" import="true" targetId="6546-fc43-7d42-d215" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" field="9484-733c-9847-f18b" value="13.0">
+                  <repeats>
+                    <repeat field="selections" scope="2984-a178-dac1-c130" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -8990,7 +9062,8 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
             </selectionEntry>
             <selectionEntry id="20a4-b6aa-6c30-33a3" name="Legion Outrider Sergeant" hidden="false" collective="false" import="true" type="model">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88f4-0f4a-aea3-b0af" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88f4-0f4a-aea3-b0af" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a59c-acd2-8bfe-5679" type="max"/>
               </constraints>
               <selectionEntryGroups>
                 <selectionEntryGroup id="10b4-40ee-e7b1-cf56" name="Ranged Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="d54f-5b6f-be71-2da6">
@@ -9147,23 +9220,42 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="45ee-ac8b-c92e-06a4" name="Space Marine Bike" hidden="false" collective="false" import="true" targetId="6568-c9ff-0d6f-ef94" type="selectionEntry">
-          <modifiers>
-            <modifier type="increment" field="9484-733c-9847-f18b" value="3.0">
-              <repeats>
-                <repeat field="selections" scope="1af0-1a9a-d4c0-8158" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="decrement" field="9484-733c-9847-f18b" value="3.0"/>
-          </modifiers>
+        <selectionEntryGroup id="eb95-03dc-7307-a0f4" name="Bike Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="af10-90c2-0b24-6749">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="023f-d0b6-0dd4-0d68" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e227-583a-5476-46a8" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc24-64b6-3eb1-afb6" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1086-328d-7509-380f" type="min"/>
           </constraints>
-        </entryLink>
-      </entryLinks>
+          <entryLinks>
+            <entryLink id="af10-90c2-0b24-6749" name="Twin boltgun" hidden="false" collective="false" import="true" targetId="1e4a-620f-aa58-042b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1188-c3d6-3a35-0380" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="82f6-1ebc-f169-2a46" name="Twin flamer" hidden="false" collective="false" import="true" targetId="de69-79eb-ca49-12e5" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7020-893e-4d37-060b" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="3722-de19-2948-a077" name="Twin meltaguns" hidden="false" collective="false" import="true" targetId="7364-02ba-37e7-8fe6" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2398-38ff-b053-a7df" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="8a44-150b-2c0b-e9dd" name="Twin plasma repeater" hidden="true" collective="false" import="true" targetId="71a2-54c6-d8d2-f2ef" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c8a-a156-45f2-b831" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="135f-e7b4-df99-ac84" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="6.0"/>
         <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
@@ -9718,7 +9810,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
           </entryLinks>
           <costs>
             <cost name="PL" typeId="b1e1-0497-949d-68af" value="6.0"/>
-            <cost name="pts" typeId="9484-733c-9847-f18b" value="58.0"/>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="50.0"/>
             <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -9881,7 +9973,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
         <infoLink id="6557-9b0c-b189-d865" name="Twin rotor cannon" hidden="false" targetId="dfb5-c750-b466-0ce4" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="10.0"/>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="20.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
       </costs>
@@ -9931,7 +10023,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
       </entryLinks>
       <costs>
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="5.0"/>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="83.0"/>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="60.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -10003,7 +10095,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
       </entryLinks>
       <costs>
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="6.0"/>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="130.0"/>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="155.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -10262,7 +10354,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
           </selectionEntryGroups>
           <costs>
             <cost name="PL" typeId="b1e1-0497-949d-68af" value="8.0"/>
-            <cost name="pts" typeId="9484-733c-9847-f18b" value="120.0"/>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="110.0"/>
             <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -11430,7 +11522,7 @@ made against that attack.</characteristic>
           </entryLinks>
           <costs>
             <cost name="PL" typeId="b1e1-0497-949d-68af" value="7.0"/>
-            <cost name="pts" typeId="9484-733c-9847-f18b" value="125.0"/>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="105.0"/>
             <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -11549,7 +11641,7 @@ made against that attack.</characteristic>
           </entryLinks>
           <costs>
             <cost name="PL" typeId="b1e1-0497-949d-68af" value="21.0"/>
-            <cost name="pts" typeId="9484-733c-9847-f18b" value="320.0"/>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="225.0"/>
             <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -12325,25 +12417,10 @@ made against that attack.</characteristic>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e3f-5dab-c269-6b71" type="max"/>
               </constraints>
-              <selectionEntries>
-                <selectionEntry id="f86e-ffc1-be37-5474" name="Atomantic pavise" hidden="false" collective="false" import="true" type="upgrade">
-                  <profiles>
-                    <profile id="ff36-6619-e982-9b28" name="Atomantic pavise" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
-                      <characteristics>
-                        <characteristic name="Effect" typeId="3117-79f3-eb21-c725">All friendly &lt;Legion&gt; units that are wholly within 6” of this model gain a 5+ invulnerable save. This invulnerable save does not stack with or improve existing invulnerable saves.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="pts" typeId="9484-733c-9847-f18b" value="35.0"/>
-                    <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
-                    <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
               <entryLinks>
                 <entryLink id="8d87-3842-a610-512d" name="Aiolos missile launcher" hidden="false" collective="false" import="true" targetId="1446-c0e6-254d-989e" type="selectionEntry"/>
                 <entryLink id="de69-3a8f-5493-9c15" name="Boreas Air Defence Missiles" hidden="false" collective="false" import="true" targetId="d5b2-5ef0-0bef-f901" type="selectionEntry"/>
+                <entryLink id="7cf8-ea38-e8be-a76d" name="Atomantic pavise" hidden="false" collective="false" import="true" targetId="9651-dded-28eb-5b67" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -12493,7 +12570,7 @@ made against that attack.</characteristic>
       </selectionEntries>
       <costs>
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="12.0"/>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="185.0"/>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="120.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -12730,7 +12807,7 @@ made against that attack.</characteristic>
                 <entryLink id="a694-25ea-2f7c-6584" name="Melta grenade" hidden="false" collective="false" import="true" targetId="10bc-7a48-6e2d-a4f5" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="28.0"/>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="32.0"/>
                 <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
                 <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
               </costs>
@@ -12773,7 +12850,7 @@ made against that attack.</characteristic>
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="28.0"/>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="32.0"/>
                 <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
                 <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
               </costs>
@@ -12951,7 +13028,7 @@ made against that attack.</characteristic>
           </entryLinks>
           <costs>
             <cost name="PL" typeId="b1e1-0497-949d-68af" value="10.0"/>
-            <cost name="pts" typeId="9484-733c-9847-f18b" value="300.0"/>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="250.0"/>
             <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -13221,8 +13298,6 @@ made against that attack.</characteristic>
       </profiles>
       <infoLinks>
         <infoLink id="dced-eee3-d099-515c" name="Battle servitor control" hidden="false" targetId="70b7-d5cd-60d0-0395" type="profile"/>
-        <infoLink id="aa2e-a6f8-7b27-7a16" name="Ground-tracking auguries" hidden="false" targetId="e792-d751-30ae-cbb9" type="profile"/>
-        <infoLink id="f323-4178-76da-02f2" name="Ramjet diffraction grid" hidden="false" targetId="4bb5-874a-f3db-0f73" type="profile"/>
         <infoLink id="6809-f655-39d1-b520" name="Flyer" hidden="false" targetId="a905-adb5-2c38-1124" type="infoGroup"/>
       </infoLinks>
       <selectionEntries>
@@ -13232,7 +13307,7 @@ made against that attack.</characteristic>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c249-1c0f-300b-7fd6" type="min"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup id="cf5e-3d49-c92b-41db" name="Hardpoint Weapon Systems (3)" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="cf5e-3d49-c92b-41db" name="Hardpoint Weapon Systems (3)" hidden="false" collective="false" import="true" defaultSelectionEntryId="e364-cb8c-e5fc-1e8d">
               <constraints>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94fd-e940-6003-22c2" type="max"/>
               </constraints>
@@ -13319,6 +13394,8 @@ made against that attack.</characteristic>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b732-c5e1-0f16-a58d" type="max"/>
               </constraints>
             </entryLink>
+            <entryLink id="d799-b37b-73c5-83e8" name="Ramjet diffraction grid" hidden="false" collective="false" import="true" targetId="6916-3fd4-0e30-754c" type="selectionEntry"/>
+            <entryLink id="a3de-b7b8-abc1-cd90" name="Ground-tracking auguries" hidden="false" collective="false" import="true" targetId="9058-34c5-abb0-3bc1" type="selectionEntry"/>
           </entryLinks>
           <costs>
             <cost name="PL" typeId="b1e1-0497-949d-68af" value="14.0"/>
@@ -13538,28 +13615,12 @@ made against that attack.</characteristic>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f68f-1919-c70b-d379" type="max"/>
               </constraints>
             </entryLink>
+            <entryLink id="e671-3d3b-6374-2dee" name="Ground-tracking auguries" hidden="false" collective="false" import="true" targetId="9058-34c5-abb0-3bc1" type="selectionEntry"/>
           </entryLinks>
           <costs>
             <cost name="PL" typeId="b1e1-0497-949d-68af" value="9.0"/>
             <cost name="pts" typeId="9484-733c-9847-f18b" value="110.0"/>
             <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="3eea-301a-5dea-1d6b" name="Ground-tracking auguries" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1084-a6f8-ddf8-0d20" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="3f4f-c51d-f812-b0cf" name="Ground-tracking auguries" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
-              <characteristics>
-                <characteristic name="Effect" typeId="3117-79f3-eb21-c725">A model with ground-tracking auguries can re-roll hit rolls of a ‘1’ when targeting a unit that does not have the FLY keyword.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="9484-733c-9847-f18b" value="10.0"/>
-            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
-            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -13699,7 +13760,7 @@ made against that attack.</characteristic>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="9484-733c-9847-f18b" value="280.0"/>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="220.0"/>
             <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
             <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
           </costs>
@@ -15673,7 +15734,7 @@ embarked models disembark, roll a D6. On a 6, it explodes and each unit within 2
         <infoLink id="1793-c962-105c-1756" name="Battle-automata power blades" hidden="false" targetId="65df-aba7-1e47-c1e5" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="35.0"/>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="15.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
       </costs>
@@ -16007,7 +16068,7 @@ embarked models disembark, roll a D6. On a 6, it explodes and each unit within 2
         <infoLink id="024f-3189-31bb-11de" name="Inferno pistol" hidden="false" targetId="3d41-2851-a460-6327" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="10.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
       </costs>
@@ -16753,6 +16814,287 @@ embarked models disembark, roll a D6. On a 6, it explodes and each unit within 2
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="f253-8df6-6f7d-ca66" name="Bio-corrosive rounds" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b994-2b9d-97ef-2251" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="f107-f00d-ca8e-3a68" name="Rotor cannon/bio-corrosive rounds" hidden="false" targetId="bdac-50cb-6c31-1a13" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="12.0"/>
+        <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+        <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9651-dded-28eb-5b67" name="Atomantic pavise" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="acfb-2933-50c9-4099" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="92d4-defa-5ac7-78a4" name="Atomantic pavise" hidden="false" targetId="0b3e-203f-91c3-5338" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="20.0"/>
+        <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+        <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6916-3fd4-0e30-754c" name="Ramjet diffraction grid" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8013-5c83-3ef6-2bac" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="624f-42ea-9e94-c3b4" name="Ramjet diffraction grid" hidden="false" targetId="4bb5-874a-f3db-0f73" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="5.0"/>
+        <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+        <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9058-34c5-abb0-3bc1" name="Ground-tracking auguries" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8255-9f9d-20d3-4bd0" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="603c-383c-b727-9890" name="Ground-tracking auguries" hidden="false" targetId="e792-d751-30ae-cbb9" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="10.0"/>
+        <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+        <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5970-3e7d-3309-144e" name="Calibanite warblade" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="e57e-0cf9-e466-bb6e" name="Calibanite warblade" hidden="false" typeId="27fa-2a60-59a3-6273" typeName="Weapon(s)">
+          <characteristics>
+            <characteristic name="Range" typeId="fb7b-3fd3-e596-3848">Melee</characteristic>
+            <characteristic name="Type" typeId="198a-7eca-0c54-6f0a">Melee</characteristic>
+            <characteristic name="S" typeId="591d-883a-73fa-87d9">+2</characteristic>
+            <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">-3</characteristic>
+            <characteristic name="D" typeId="fde9-623c-a082-78b0">1</characteristic>
+            <characteristic name="Abilities" typeId="8f3c-b1ed-80b8-dbfe">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="5.0"/>
+        <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+        <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f58f-5cdf-eaab-c7b5" name="Scion" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c8a-a156-45f2-b831" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="72dd-a086-9dde-2d5e" type="max"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="dc31-94eb-b858-6a90" name="Scion" hidden="false" collective="false" import="true">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="3c7f-1b00-8e95-6daf" name="Scion of the Hekatonystika" hidden="false" collective="false" import="true" defaultSelectionEntryId="bc13-ccc0-4445-14fd">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86f9-9c46-6f7b-0cc5" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="bc13-ccc0-4445-14fd" name="Augurs of Weakness" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f76-83d4-edd4-fd85" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="ef28-1d56-56e3-11f2" name="Augurs of Weakness" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
+                      <characteristics>
+                        <characteristic name="Effect" typeId="3117-79f3-eb21-c725">This unit add +1 to weapons Strength against enemy VEHICLE units.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+                    <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+                    <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="14c2-aa36-565e-6db8" name="Icons of Resolve" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b833-875e-5332-d816" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="b1f0-ecea-dd8a-374d" name="Icons of Resolve" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
+                      <characteristics>
+                        <characteristic name="Effect" typeId="3117-79f3-eb21-c725">This unit may make 1 additional attack in the Fight phase if he made a charge move or Heroic intervention in the Charge phase.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+                    <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+                    <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="5b66-e1be-c816-2ea1" name="Guardians of Sanctity" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6728-2c02-5f20-9877" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="34e1-2fc9-2a9f-87ba" name="Guardians of Sanctity" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
+                      <characteristics>
+                        <characteristic name="Effect" typeId="3117-79f3-eb21-c725">This unit add +1 to the Deny the Witch tests.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+                    <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+                    <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="a9a8-5f0a-f8f9-611e" name="Slayers of Kings" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d27d-aabf-894f-30d5" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="ee56-e152-1afd-5b7d" name="Slayers of Kings" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
+                      <characteristics>
+                        <characteristic name="Effect" typeId="3117-79f3-eb21-c725"> This unit re-roll 1 to hit while fight against enemy CHARACTER.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+                    <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+                    <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="75b4-bbf9-fbdc-140d" name="Hunters of Beasts" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f98d-8883-3cf7-fc72" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="505e-705a-5515-15c0" name="Hunters of Beasts" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
+                      <characteristics>
+                        <characteristic name="Effect" typeId="3117-79f3-eb21-c725">This unit re-roll 1 to wound while fight against enemy MONSTER or TITANIC units.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+                    <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+                    <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="30f7-bdcc-46d5-af53" name="Reapers of Hosts" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a559-a6ed-fca2-94ba" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="66a0-df08-dc56-0041" name="Reapers of Hosts" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
+                      <characteristics>
+                        <characteristic name="Effect" typeId="3117-79f3-eb21-c725">Model in this unit gains +1 additional attack in any Fight sub-phase which they begin within Engagement range with more than three enemy models.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+                    <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+                    <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="5443-ddb4-fecc-36ac" name="Breakers of Witches" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96a9-a2bc-295a-7f58" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="3de5-091c-5088-f5d1" name="Breakers of Witches" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
+                      <characteristics>
+                        <characteristic name="Effect" typeId="3117-79f3-eb21-c725">This unit re-roll 1 to hit and wound rolls against psykers and daemons.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+                    <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+                    <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="1b2e-16bc-8032-7639" name="Scion of the Hexagrammaton" hidden="false" collective="false" import="true"/>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="PL" typeId="b1e1-0497-949d-68af" value="1.0"/>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+        <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6546-fc43-7d42-d215" name="Plasma repeater" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c8a-a156-45f2-b831" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink id="8ee0-c782-a29a-bfc1" name="Plasma repeater, Standard" hidden="false" targetId="39a9-ccc3-9b7b-9fd4" type="profile"/>
+        <infoLink id="b3b6-81fd-b934-f681" name="Plasma repeater, Supercharge" hidden="false" targetId="e343-a8f9-c9f8-9c9d" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+        <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+        <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7364-02ba-37e7-8fe6" name="Twin meltaguns" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="d980-ca8a-28f3-c336" name="Twin meltagun" hidden="false" targetId="2561-8951-0e74-da59" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="20.0"/>
+        <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+        <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="de69-79eb-ca49-12e5" name="Twin flamer" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="8132-c87c-f700-70ef" name="Twin flamer" hidden="false" targetId="26f1-62e7-ef76-330e" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="10.0"/>
+        <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+        <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3076-5798-c853-83db" name="Twin plasma guns" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="039a-d6be-d748-edfa" name="Twin plasma gun, Standard" hidden="false" targetId="0350-7ffc-11d9-076d" type="profile"/>
+        <infoLink id="43d2-990e-36af-b611" name="Twin plasma gun, Supercharge" hidden="false" targetId="d4f3-5af1-cf40-5bac" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="20.0"/>
+        <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+        <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="71a2-54c6-d8d2-f2ef" name="Twin plasma repeater" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="83b9-8907-0176-dd7a" name="Twin plasma repeater, Standard" hidden="false" targetId="f629-9865-e61c-182f" type="profile"/>
+        <infoLink id="2301-5e85-9e6f-5068" name="Twin plasma repeater, Supercharge" hidden="false" targetId="7f89-2eae-255e-3069" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="26.0"/>
+        <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+        <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="fb8b-85c1-a870-0c42" name="Warlord Traits" hidden="false" collective="false" import="true" defaultSelectionEntryId="59e5-74da-f51c-e214">
@@ -16924,7 +17266,7 @@ embarked models disembark, roll a D6. On a 6, it explodes and each unit within 2
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="set" field="9d56-7f6f-22a5-9ce7" value="1.0">
+            <modifier type="set" field="c44b-69b3-55be-945a" value="1.0">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
@@ -16936,7 +17278,7 @@ embarked models disembark, roll a D6. On a 6, it explodes and each unit within 2
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d56-7f6f-22a5-9ce7" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c44b-69b3-55be-945a" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="036b-c0c3-22cf-75cb" name="Paragon blade" hidden="false" collective="false" import="true" targetId="91d2-031b-e0cf-2bb5" type="selectionEntry">
@@ -17032,6 +17374,15 @@ embarked models disembark, roll a D6. On a 6, it explodes and each unit within 2
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="20bb-8a86-07eb-43c1" name="Calibanite warblade" hidden="true" collective="false" import="true" targetId="5970-3e7d-3309-144e" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c8a-a156-45f2-b831" type="instanceOf"/>
+              </conditions>
             </modifier>
           </modifiers>
         </entryLink>
@@ -18137,6 +18488,7 @@ more than 9” away from any enemy models.</characteristic>
         <entryLink id="61be-6384-5a4b-6d19" name="Volkite charger" hidden="false" collective="false" import="true" targetId="3545-06ce-4bdc-c7d0" type="selectionEntry"/>
         <entryLink id="a1f5-8597-d3e7-bd96" name="Missile launcher" hidden="false" collective="false" import="true" targetId="45d4-8431-b1ac-e060" type="selectionEntry"/>
         <entryLink id="3d54-837f-e5d5-efaf" name="Lightning claw" hidden="false" collective="false" import="true" targetId="a691-5d55-2328-d17d" type="selectionEntry"/>
+        <entryLink id="a099-c121-1058-5a7f" name="Plasma repeater" hidden="false" collective="false" import="true" targetId="6546-fc43-7d42-d215" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="24ac-c122-fb86-5034" name="Dreadnought Secondary Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="0abf-07ab-4723-0cd1">
@@ -19153,6 +19505,138 @@ All INFANTRY in this detachment must be capable of being transported by a v eHic
         <entryLink id="ed16-805e-eacc-0fb0" name="Prescience" hidden="false" collective="false" import="true" targetId="847b-1edc-0566-4a4d" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
+    <selectionEntryGroup id="d131-a911-1536-edb6" name="Legion Specific Wargear" hidden="false" collective="false" import="true"/>
+    <selectionEntryGroup id="5620-1356-f330-1039" name="Scion" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="65cd-6991-39b3-ab53" name="Scion of the Hekatonystika" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17ec-ff4c-a13d-bf4f" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="0b73-9f8c-f75d-6fbd" name="Augurs of Weakness" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2347-95cb-e2cd-fd84" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="2eb6-a61a-bbd6-4ed9" name="Augurs of Weakness" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="3117-79f3-eb21-c725">This unit add +1 to weapons Strength against enemy VEHICLE units.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+                <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+                <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a979-4b22-fde8-0c60" name="Icons of Resolve" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd6a-fa2e-f01c-e498" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="9cd7-e8bd-7b01-7094" name="Icons of Resolve" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="3117-79f3-eb21-c725">This unit may make 1 additional attack in the Fight phase if he made a charge move or Heroic intervention in the Charge phase.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+                <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+                <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8c46-2ced-e27f-c9ac" name="Guardians of Sanctity" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f1a-b0ab-b66a-1f44" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="12f8-7f85-3c8f-38ae" name="Guardians of Sanctity" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="3117-79f3-eb21-c725">This unit add +1 to the Deny the Witch tests.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+                <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+                <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="bb97-7dd3-974b-713f" name="Slayers of Kings" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a65-aec9-3c73-3ec4" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="6573-4363-f60d-0429" name="Slayers of Kings" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="3117-79f3-eb21-c725"> This unit re-roll 1 to hit while fight against enemy CHARACTER.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+                <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+                <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9548-beb9-a8d2-d67e" name="Hunters of Beasts" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d43b-6327-c866-e8d4" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="a1cc-bf44-8683-b6be" name="Hunters of Beasts" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="3117-79f3-eb21-c725">This unit re-roll 1 to wound while fight against enemy MONSTER or TITANIC units.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+                <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+                <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e379-cfbf-fd7b-5d71" name="Reapers of Hosts" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40c0-94e7-6faa-32eb" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="4c3b-d4f8-10ca-d93b" name="Reapers of Hosts" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="3117-79f3-eb21-c725">Model in this unit gains +1 additional attack in any Fight sub-phase which they begin within Engagement range with more than three enemy models.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+                <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+                <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c585-c8fd-0c13-44cd" name="Breakers of Witches" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0996-adbe-bed3-5ece" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="ffec-46de-92ca-bbc2" name="Breakers of Witches" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="3117-79f3-eb21-c725">This unit re-roll 1 to hit and wound rolls against psykers and daemons.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+                <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+                <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="7b97-c45b-f2a4-e14e" name="Scion of the Hexagrammaton" hidden="false" collective="false" import="true"/>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="f9b0-850d-ea92-830a" name="Bolter Discipline" hidden="false">
@@ -19729,8 +20213,8 @@ Shattered Legion Detachments may only take Legion-specific Rites of War that cor
     <profile id="50fc-0e53-a17a-a08c" name="Legion Centurion" hidden="false" typeId="67c9-ee36-a193-36de" typeName="Unit">
       <characteristics>
         <characteristic name="M" typeId="37d7-d298-a04a-4e6c">6&quot;</characteristic>
-        <characteristic name="WS" typeId="e065-bda1-02de-6f2e">3+</characteristic>
-        <characteristic name="BS" typeId="8003-bae2-5072-d024">3+</characteristic>
+        <characteristic name="WS" typeId="e065-bda1-02de-6f2e">2+</characteristic>
+        <characteristic name="BS" typeId="8003-bae2-5072-d024">2+</characteristic>
         <characteristic name="S" typeId="430a-b60b-2a15-6186">4</characteristic>
         <characteristic name="T" typeId="b550-6ea2-7a76-d49f">4</characteristic>
         <characteristic name="W" typeId="3461-fc7e-2d85-5568">4</characteristic>
@@ -22016,6 +22500,107 @@ as normal.</characteristic>
       <characteristics>
         <characteristic name="CP" typeId="7175-d70f-ddef-26a3">1</characteristic>
         <characteristic name="Effect" typeId="9730-e613-daf9-9aa7">You can use this Stratagem just before a friendly model with RAD GRENADES keyword from your army attacks a enemy unit with a missile launcher, grenade launcher or a grenade in the Shooting phase. Your opponent must subtract 1 from the Toughness characteristic of any INFANTRY or BIKER units until the end of the turn.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="bdac-50cb-6c31-1a13" name="Rotor cannon/bio-corrosive rounds" hidden="false" typeId="27fa-2a60-59a3-6273" typeName="Weapon(s)">
+      <characteristics>
+        <characteristic name="Range" typeId="fb7b-3fd3-e596-3848">12&quot;</characteristic>
+        <characteristic name="Type" typeId="198a-7eca-0c54-6f0a">Heavy 4</characteristic>
+        <characteristic name="S" typeId="591d-883a-73fa-87d9">6</characteristic>
+        <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">-1</characteristic>
+        <characteristic name="D" typeId="fde9-623c-a082-78b0">1</characteristic>
+        <characteristic name="Abilities" typeId="8f3c-b1ed-80b8-dbfe">This weapon always wounds on a 4+, unless the target model is a VEHICLE.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0b3e-203f-91c3-5338" name="Atomantic pavise" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
+      <characteristics>
+        <characteristic name="Effect" typeId="3117-79f3-eb21-c725">All friendly &lt;Legion&gt; units that are wholly within 6” of this model gain a 5+ invulnerable save. This invulnerable save does not stack with or improve existing invulnerable saves.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="39a9-ccc3-9b7b-9fd4" name="Plasma repeater, Standard" hidden="false" typeId="27fa-2a60-59a3-6273" typeName="Weapon(s)">
+      <characteristics>
+        <characteristic name="Range" typeId="fb7b-3fd3-e596-3848">18&quot;</characteristic>
+        <characteristic name="Type" typeId="198a-7eca-0c54-6f0a">Rapid Fire 2</characteristic>
+        <characteristic name="S" typeId="591d-883a-73fa-87d9">6</characteristic>
+        <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">-2</characteristic>
+        <characteristic name="D" typeId="fde9-623c-a082-78b0">1</characteristic>
+        <characteristic name="Abilities" typeId="8f3c-b1ed-80b8-dbfe">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e343-a8f9-c9f8-9c9d" name="Plasma repeater, Supercharge" hidden="false" typeId="27fa-2a60-59a3-6273" typeName="Weapon(s)">
+      <characteristics>
+        <characteristic name="Range" typeId="fb7b-3fd3-e596-3848">18&quot;</characteristic>
+        <characteristic name="Type" typeId="198a-7eca-0c54-6f0a">Rapid Fire 2</characteristic>
+        <characteristic name="S" typeId="591d-883a-73fa-87d9">7</characteristic>
+        <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">-2</characteristic>
+        <characteristic name="D" typeId="fde9-623c-a082-78b0">2</characteristic>
+        <characteristic name="Abilities" typeId="8f3c-b1ed-80b8-dbfe">On a hit roll of 1, the bearer is slain after all this weapons shots have been resolved.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2561-8951-0e74-da59" name="Twin meltagun" hidden="false" typeId="27fa-2a60-59a3-6273" typeName="Weapon(s)">
+      <characteristics>
+        <characteristic name="Range" typeId="fb7b-3fd3-e596-3848">12&quot;</characteristic>
+        <characteristic name="Type" typeId="198a-7eca-0c54-6f0a">Assault 2</characteristic>
+        <characteristic name="S" typeId="591d-883a-73fa-87d9">8</characteristic>
+        <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">-4</characteristic>
+        <characteristic name="D" typeId="fde9-623c-a082-78b0">D6</characteristic>
+        <characteristic name="Abilities" typeId="8f3c-b1ed-80b8-dbfe">When ana attack made with this weapon hits a target thas is within half range, that attack has a Damage chracteristic of D6+2.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="99fa-05a3-7113-5023" name="Twin plasma gun" hidden="false" typeId="8e66-667e-e09b-c25b" typeName="Stratagem">
+      <characteristics>
+        <characteristic name="CP" typeId="7175-d70f-ddef-26a3"/>
+        <characteristic name="Effect" typeId="9730-e613-daf9-9aa7"/>
+      </characteristics>
+    </profile>
+    <profile id="f629-9865-e61c-182f" name="Twin plasma repeater, Standard" hidden="false" typeId="27fa-2a60-59a3-6273" typeName="Weapon(s)">
+      <characteristics>
+        <characteristic name="Range" typeId="fb7b-3fd3-e596-3848">18&quot;</characteristic>
+        <characteristic name="Type" typeId="198a-7eca-0c54-6f0a">Rapid Fire 4</characteristic>
+        <characteristic name="S" typeId="591d-883a-73fa-87d9">6</characteristic>
+        <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">-2</characteristic>
+        <characteristic name="D" typeId="fde9-623c-a082-78b0">1</characteristic>
+        <characteristic name="Abilities" typeId="8f3c-b1ed-80b8-dbfe">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d4f3-5af1-cf40-5bac" name="Twin plasma gun, Supercharge" hidden="false" typeId="27fa-2a60-59a3-6273" typeName="Weapon(s)">
+      <characteristics>
+        <characteristic name="Range" typeId="fb7b-3fd3-e596-3848">24&quot;</characteristic>
+        <characteristic name="Type" typeId="198a-7eca-0c54-6f0a">Rapid Fire 2</characteristic>
+        <characteristic name="S" typeId="591d-883a-73fa-87d9">8</characteristic>
+        <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">-3</characteristic>
+        <characteristic name="D" typeId="fde9-623c-a082-78b0">2</characteristic>
+        <characteristic name="Abilities" typeId="8f3c-b1ed-80b8-dbfe">Each time an unmodified hit roll of 1 is made for an attack with this weapon profile, the bearer suffers 1 mortal wound after shooting with this weapon.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0350-7ffc-11d9-076d" name="Twin plasma gun, Standard" hidden="false" typeId="27fa-2a60-59a3-6273" typeName="Weapon(s)">
+      <characteristics>
+        <characteristic name="Range" typeId="fb7b-3fd3-e596-3848">24&quot;</characteristic>
+        <characteristic name="Type" typeId="198a-7eca-0c54-6f0a">Rapid Fire 2</characteristic>
+        <characteristic name="S" typeId="591d-883a-73fa-87d9">7</characteristic>
+        <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">-3</characteristic>
+        <characteristic name="D" typeId="fde9-623c-a082-78b0">1</characteristic>
+        <characteristic name="Abilities" typeId="8f3c-b1ed-80b8-dbfe">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="26f1-62e7-ef76-330e" name="Twin flamer" hidden="false" typeId="27fa-2a60-59a3-6273" typeName="Weapon(s)">
+      <characteristics>
+        <characteristic name="Range" typeId="fb7b-3fd3-e596-3848">12&quot;</characteristic>
+        <characteristic name="Type" typeId="198a-7eca-0c54-6f0a">Assault 2D6</characteristic>
+        <characteristic name="S" typeId="591d-883a-73fa-87d9">4</characteristic>
+        <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">0</characteristic>
+        <characteristic name="D" typeId="fde9-623c-a082-78b0">1</characteristic>
+        <characteristic name="Abilities" typeId="8f3c-b1ed-80b8-dbfe">This weapon automatically hits its target.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7f89-2eae-255e-3069" name="Twin plasma repeater, Supercharge" hidden="false" typeId="27fa-2a60-59a3-6273" typeName="Weapon(s)">
+      <characteristics>
+        <characteristic name="Range" typeId="fb7b-3fd3-e596-3848">18&quot;</characteristic>
+        <characteristic name="Type" typeId="198a-7eca-0c54-6f0a">Rapid Fire 4</characteristic>
+        <characteristic name="S" typeId="591d-883a-73fa-87d9">7</characteristic>
+        <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">-2</characteristic>
+        <characteristic name="D" typeId="fde9-623c-a082-78b0">2</characteristic>
+        <characteristic name="Abilities" typeId="8f3c-b1ed-80b8-dbfe">On a hit roll of 1, the bearer is slain after all this weapons shots have been resolved.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6030-1e69-d3ca-6a48" name="6 Space Wolves" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6030-1e69-d3ca-6a48" name="6 Space Wolves" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Category:
 Varagyr in Standard, as Combiweapons -&gt; Volkite</comment>
   <categoryEntries>
@@ -206,7 +206,7 @@ Varagyr in Standard, as Combiweapons -&gt; Volkite</comment>
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="20.0"/>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="19.0"/>
                 <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
                 <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
               </costs>
@@ -262,7 +262,7 @@ Varagyr in Standard, as Combiweapons -&gt; Volkite</comment>
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="20.0"/>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="19.0"/>
                 <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
                 <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
               </costs>
