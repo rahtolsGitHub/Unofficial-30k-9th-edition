@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d5e3-8f52-4f48-52a1" name="20 Alpha Legion" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d5e3-8f52-4f48-52a1" name="20 Alpha Legion" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="f188-8c89-3c32-3a58" name="Alpha Legion" hidden="false"/>
     <categoryEntry id="12e0-9185-fe72-2fbf" name="Lernaean" hidden="false"/>
@@ -7,44 +7,6 @@
     <categoryEntry id="cc1e-78df-8d79-b129" name="Alpharius" hidden="false"/>
     <categoryEntry id="feea-6ac9-8225-37eb" name="Autilon Skorr" hidden="false"/>
   </categoryEntries>
-  <selectionEntries>
-    <selectionEntry id="dc46-719e-8bf7-0101" name="Rites of War" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="increment" field="be19-1f6e-13db-d988" value="1.0">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5142-9e49-4ae3-54f8" type="atLeast"/>
-              </conditions>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="9484-733c-9847-f18b" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" type="atLeast"/>
-                    <condition field="b1e1-0497-949d-68af" scope="roster" value="50.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be19-1f6e-13db-d988" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="45bd-3926-7abc-a7ca" name="New CategoryLink" hidden="false" targetId="6772-cf1b-71fc-53b4" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="c237-28d8-738b-b05f" name="Legion Specific Rites of War" hidden="false" collective="false" import="true" targetId="f9f1-a8cd-26be-b133" type="selectionEntryGroup"/>
-        <entryLink id="cb12-1a7c-c60a-2612" name="General Rites of War" hidden="false" collective="false" import="true" targetId="e31f-ddb7-bc77-60ea" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
-        <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
-        <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
-      </costs>
-    </selectionEntry>
-  </selectionEntries>
   <entryLinks>
     <entryLink id="2d0f-0016-3380-8bf1" name="Headhunter Kill Team" hidden="false" collective="false" import="true" targetId="54f2-6034-9266-3dd4" type="selectionEntry">
       <categoryLinks>
@@ -1098,55 +1060,6 @@ wound Alpharius. When resolving an attack made against this model, an unmodified
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
-  <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="f9f1-a8cd-26be-b133" name="Legion Specific Rites of War" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="199f-8491-9cff-9ff8" type="max"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="1366-09c2-2818-00ea" name="Headhunter Leviathal" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7827-1a3f-842c-7033" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9e4-4ba6-579c-4dd0" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
-            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
-            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="d58d-43a0-e530-471f" name="The Coils of the Hydra" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="69f8-36cb-4f41-8222" type="instanceOf"/>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="77e3-e16a-09c2-6059" type="instanceOf"/>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4f23-15fd-4ba5-d3b2" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6331-8baf-66b7-70d1" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
-            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
-            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-  </sharedSelectionEntryGroups>
   <catalogueLinks>
     <catalogueLink id="4ba0-511e-e4e5-320c" name="Standard Units and Equipment Library" targetId="da54-2db0-7d98-7b89" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>

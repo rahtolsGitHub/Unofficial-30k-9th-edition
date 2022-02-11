@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b1d7-6b44-3c3d-5e55" name="18 Salamanders" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b1d7-6b44-3c3d-5e55" name="18 Salamanders" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="69a7-db22-8fbb-6f7a" name="Pyroclasts" hidden="false"/>
     <categoryEntry id="0491-f4c6-7f6f-f2a3" name="Firedrakes" hidden="false"/>
@@ -7,44 +7,6 @@
     <categoryEntry id="fbff-fe50-a4b7-fb66" name="Xiaphas Jurr" hidden="false"/>
     <categoryEntry id="b41e-cc4d-c8ae-2124" name="Vulkan" hidden="false"/>
   </categoryEntries>
-  <selectionEntries>
-    <selectionEntry id="82e4-e387-5eeb-03b5" name="Rites of War" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="increment" field="a220-0990-3cbc-2c3a" value="1.0">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5142-9e49-4ae3-54f8" type="atLeast"/>
-              </conditions>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="9484-733c-9847-f18b" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" type="atLeast"/>
-                    <condition field="b1e1-0497-949d-68af" scope="roster" value="50.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a220-0990-3cbc-2c3a" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="431e-3bf6-37a4-7848" name="New CategoryLink" hidden="false" targetId="6772-cf1b-71fc-53b4" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="4e42-fdad-2d24-d515" name="Legion Specific Rites of War" hidden="false" collective="false" import="true" targetId="1e8d-3d8f-4698-6cf1" type="selectionEntryGroup"/>
-        <entryLink id="c9dc-28b2-c285-6975" name="General Rites of War" hidden="false" collective="false" import="true" targetId="e31f-ddb7-bc77-60ea" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
-        <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
-        <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
-      </costs>
-    </selectionEntry>
-  </selectionEntries>
   <entryLinks>
     <entryLink id="eecd-28bf-7dae-9369" name="Pyroclast Squad" hidden="false" collective="false" import="true" targetId="9e12-bb7f-47b4-c51e" type="selectionEntry">
       <categoryLinks>
@@ -316,7 +278,7 @@
     </selectionEntry>
     <selectionEntry id="6b8e-1d53-5f22-c0be" name="Firedrake Terminator Squad" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="increment" field="b1e1-0497-949d-68af" value="13.0">
+        <modifier type="increment" field="b1e1-0497-949d-68af" value="14.0">
           <conditions>
             <condition field="selections" scope="6b8e-1d53-5f22-c0be" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
           </conditions>
@@ -520,7 +482,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="PL" typeId="b1e1-0497-949d-68af" value="16.0"/>
+        <cost name="PL" typeId="b1e1-0497-949d-68af" value="15.0"/>
         <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
       </costs>
@@ -1163,65 +1125,10 @@ characteristic and may re-roll attempts to Deny psychic powers.</characteristic>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
-  <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="1e8d-3d8f-4698-6cf1" name="Legion Specific Rites of War" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="350a-c63d-b5c8-77cd" type="max"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="0fce-eff1-7773-91ef" name="The Awakening Fire" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="69f8-36cb-4f41-8222" type="instanceOf"/>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="77e3-e16a-09c2-6059" type="instanceOf"/>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4f23-15fd-4ba5-d3b2" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0edb-3143-1147-98e4" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
-            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
-            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="609b-511d-063a-4de1" name="The Covenant of Fire" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="69f8-36cb-4f41-8222" type="instanceOf"/>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="77e3-e16a-09c2-6059" type="instanceOf"/>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4f23-15fd-4ba5-d3b2" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e20-a1e2-62ce-c406" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
-            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
-            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-  </sharedSelectionEntryGroups>
   <sharedProfiles>
     <profile id="2729-c44c-4a3e-0e36" name="Dragonscale stormshield" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
       <characteristics>
-        <characteristic name="Effect" typeId="3117-79f3-eb21-c725">The bearer has a 4+ invulnerable save. In addition, add 1 to armour saving throws made for the bearer. Each time an attack is allocated to a model in this unit, subtract 1 from the Damage characteristic of that attack (to a minimum of 1).</characteristic>
+        <characteristic name="Effect" typeId="3117-79f3-eb21-c725">The bearer has a 4+ invulnerable save. In addition, add 1 to armour saving throws made for the bearer. Each tima a melee attack is made against this model, subtract 1 from thatr attack&apos;s hit roll.</characteristic>
       </characteristics>
     </profile>
     <profile id="0d6f-0382-f132-45fb" name="Burning Halo" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">

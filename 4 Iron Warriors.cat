@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6b91-b451-9459-3db3" name="4 Iron Warriors" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6b91-b451-9459-3db3" name="4 Iron Warriors" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Dominator in Standard list -&gt; combi weapons -&gt; volkite</comment>
   <categoryEntries>
     <categoryEntry id="9ad6-abd9-01a2-7445" name="Tyrant Siege Terminator" hidden="false"/>
@@ -10,44 +10,6 @@
     <categoryEntry id="195e-3a55-6728-3098" name="Perturabo" hidden="false"/>
     <categoryEntry id="3401-6d8d-1ca7-11ad" name="Nârik Dreygur" hidden="false"/>
   </categoryEntries>
-  <selectionEntries>
-    <selectionEntry id="6982-b344-e7e9-4b92" name="Rites of War" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="increment" field="d3bd-2aa5-3aba-c817" value="1.0">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5142-9e49-4ae3-54f8" type="atLeast"/>
-              </conditions>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="9484-733c-9847-f18b" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" type="atLeast"/>
-                    <condition field="b1e1-0497-949d-68af" scope="roster" value="50.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3bd-2aa5-3aba-c817" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="391f-034a-dce5-b5b9" name="New CategoryLink" hidden="false" targetId="6772-cf1b-71fc-53b4" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="2cf1-8def-94c6-cab3" name="Legion Specific Rites of War" hidden="false" collective="false" import="true" targetId="9afb-7d0e-bb21-9f17" type="selectionEntryGroup"/>
-        <entryLink id="819d-5b91-8254-cd4f" name="General Rites of War" hidden="false" collective="false" import="true" targetId="e31f-ddb7-bc77-60ea" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
-        <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
-        <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
-      </costs>
-    </selectionEntry>
-  </selectionEntries>
   <entryLinks>
     <entryLink id="612a-13dd-b2e0-d517" name="Tyrant Siege Terminators" hidden="false" collective="false" import="true" targetId="6cc1-41a7-3964-5516" type="selectionEntry">
       <categoryLinks>
@@ -705,17 +667,14 @@
             <characteristic name="Effect" typeId="3117-79f3-eb21-c725">Add 1 to the Saving Throws for models equipped with karceri battle shields if the attack has a Damage characteristic of 1.</characteristic>
           </characteristics>
         </profile>
-        <profile id="546a-4756-c393-98f1" name="Shield of the Iron Tyrant" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
-          <characteristics>
-            <characteristic name="Effect" typeId="3117-79f3-eb21-c725">Roll a D6 each time an Iron WarrIors MASTER OF THE LEGION loses a wound whilst they are within 3” of this unit; on a 2+ a model from this unit can intercept that hit - the  Iron  WarrIors MASTER OF THE LEGION does not lose a wound, but this unit suffers a mortal wound.</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="a7c4-d15c-a193-d928" name="Cybernetica Cortex" hidden="false" targetId="3ddc-555d-5fe1-f3c9" type="profile"/>
         <infoLink id="e2b3-1648-75f5-7ef2" name="Atomantic Shielding" hidden="false" targetId="70cc-fbfa-9148-c59b" type="profile"/>
         <infoLink id="35d7-417c-f18f-ca60" name="Reactor Blast" hidden="false" targetId="b99f-c206-1857-288a" type="profile"/>
         <infoLink id="2117-d7df-3824-3acd" name="Brutal charge" hidden="false" targetId="a90d-1141-a88f-a241" type="profile"/>
+        <infoLink id="ff1f-b8a9-23f3-6002" name="Battle automata" hidden="false" targetId="1cc5-b519-634f-68ae" type="profile"/>
+        <infoLink id="c609-35df-9d21-2b45" name="Shield of the Iron Tyrant" hidden="false" targetId="93c7-deb2-a074-a2e4" type="profile"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry id="c9e4-bf93-a28d-0df7" name="Iron Circle" hidden="false" collective="true" import="true" type="model">
@@ -1581,60 +1540,13 @@
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
-  <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="9afb-7d0e-bb21-9f17" name="Legion Specific Rites of War" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="837e-a654-d827-6487" type="max"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="d161-1edc-14d3-de5e" name="The Hammer of Olympia" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="69f8-36cb-4f41-8222" type="instanceOf"/>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="77e3-e16a-09c2-6059" type="instanceOf"/>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4f23-15fd-4ba5-d3b2" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0e7-cb95-c851-cdc8" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
-            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
-            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="be93-c25a-c131-3d69" name="The Iron Fire" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="69f8-36cb-4f41-8222" type="instanceOf"/>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4f23-15fd-4ba5-d3b2" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7afa-e6e4-3cfc-af96" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
-            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
-            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-  </sharedSelectionEntryGroups>
+  <sharedProfiles>
+    <profile id="93c7-deb2-a074-a2e4" name="Shield of the Iron Tyrant" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
+      <characteristics>
+        <characteristic name="Effect" typeId="3117-79f3-eb21-c725">While a friendly Iron WarrIors MASTER OF THE LEGION unit that has a Wounds Characteristic of 9 or less is within 3” of this unit, enemy models cannot target that Iron WarrIors MASTER OF THE LEGION unit with ranged attacks.</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
   <catalogueLinks>
     <catalogueLink id="aa9c-765a-9ccc-2ab5" name="Standard Units and Equipment Library" targetId="da54-2db0-7d98-7b89" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="718d-4c5c-8cb9-2bc1" name="15 Thousand Sons" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="718d-4c5c-8cb9-2bc1" name="15 Thousand Sons" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="a83f-9bf4-0e23-2d1f" name="Castellax-Achea" hidden="false"/>
     <categoryEntry id="27ac-6143-d865-4659" name="Thousand Sons" hidden="false"/>
@@ -22,42 +22,6 @@
       <categoryLinks>
         <categoryLink id="be13-1e36-f24b-233d" name="Thousand Sons" hidden="false" targetId="27ac-6143-d865-4659" primary="false"/>
       </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
-        <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
-        <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="d3f0-37fb-73fd-9c92" name="Rites of War" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="increment" field="8da8-22b2-0232-3dcf" value="1.0">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5142-9e49-4ae3-54f8" type="atLeast"/>
-              </conditions>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="9484-733c-9847-f18b" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" type="atLeast"/>
-                    <condition field="b1e1-0497-949d-68af" scope="roster" value="50.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8da8-22b2-0232-3dcf" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="aaed-794c-bb07-822f" name="New CategoryLink" hidden="false" targetId="6772-cf1b-71fc-53b4" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="37c3-f193-5de3-ee3f" name="Legion Specific Rites of War" hidden="false" collective="false" import="true" targetId="06b3-2d4a-5b33-2436" type="selectionEntryGroup"/>
-        <entryLink id="747f-87ef-9646-dfe5" name="General Rites of War" hidden="false" collective="false" import="true" targetId="e31f-ddb7-bc77-60ea" type="selectionEntryGroup"/>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
@@ -187,6 +151,7 @@
       <infoLinks>
         <infoLink id="e986-7344-9c1c-8ee6" name="Refractor field" hidden="false" targetId="5367-173b-e2b4-3093" type="profile"/>
         <infoLink id="75ca-4a78-7da5-630f" name="Reactor Blast" hidden="false" targetId="b99f-c206-1857-288a" type="profile"/>
+        <infoLink id="ef74-5fe8-ab01-382f" name="Battle automata" hidden="false" targetId="1cc5-b519-634f-68ae" type="profile"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry id="94c5-12f9-45e9-5bc5" name="Castellax-Achea" hidden="false" collective="false" import="true" type="model">
@@ -2294,53 +2259,6 @@ Disciplines.</characteristic>
               </characteristics>
             </profile>
           </profiles>
-          <costs>
-            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
-            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
-            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="06b3-2d4a-5b33-2436" name="Legion Specific Rites of War" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab2a-053e-1c0d-2870" type="max"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="0764-1d78-fbf9-efc3" name="The Guard of the Crimson King" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3692-0084-3e72-3eee" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c42c-fae6-daa2-0c01" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
-            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
-            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="d87d-c089-00ef-387b" name="The Axis of Dissolution" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="69f8-36cb-4f41-8222" type="instanceOf"/>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="77e3-e16a-09c2-6059" type="instanceOf"/>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4f23-15fd-4ba5-d3b2" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37b3-3c52-d76b-b9e3" type="max"/>
-          </constraints>
           <costs>
             <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
             <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2afc-5be1-bc21-e806" name="17 Word Bearers" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="2afc-5be1-bc21-e806" name="17 Word Bearers" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Category: Lorgar in main lib, as constraint on archeotech pistol</comment>
   <categoryEntries>
     <categoryEntry id="f92c-ae4c-6bab-d8cb" name="Daemon" hidden="false"/>
@@ -15,44 +15,6 @@
     <categoryEntry id="23e0-534e-e6b9-7d8d" name="Blade Slaves" hidden="false"/>
     <categoryEntry id="92e4-cc2d-0d31-8218" name="Argel Tal" hidden="false"/>
   </categoryEntries>
-  <selectionEntries>
-    <selectionEntry id="d030-66a5-da10-99ed" name="Rites of War" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="increment" field="bf6d-12da-e3ec-b455" value="1.0">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5142-9e49-4ae3-54f8" type="atLeast"/>
-              </conditions>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="9484-733c-9847-f18b" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" type="atLeast"/>
-                    <condition field="b1e1-0497-949d-68af" scope="roster" value="50.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf6d-12da-e3ec-b455" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="0e9d-6b13-a974-a802" name="New CategoryLink" hidden="false" targetId="6772-cf1b-71fc-53b4" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="a668-f3cb-aadc-9966" name="General Rites of War" hidden="false" collective="false" import="true" targetId="e31f-ddb7-bc77-60ea" type="selectionEntryGroup"/>
-        <entryLink id="9769-eb98-c77c-64c3" name="General Rites of War" hidden="false" collective="false" import="true" targetId="e31f-ddb7-bc77-60ea" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
-        <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
-        <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
-      </costs>
-    </selectionEntry>
-  </selectionEntries>
   <entryLinks>
     <entryLink id="5b5c-0cf2-2923-9091" name="Mhara Gal Tainted Dreadnought" hidden="true" collective="false" import="true" targetId="7f4a-6f91-f858-af69" type="selectionEntry">
       <modifiers>
@@ -1887,49 +1849,6 @@ cannot target that Zardu Layak unit with ranged attacks.</characteristic>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
-  <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="496f-4f9a-0bfa-ca0e" name="Legion Specific Rites of War" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c9a-509c-136c-b1fc" type="max"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="3f4f-a575-ede4-6955" name="Last of the Serrated Suns" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3692-0084-3e72-3eee" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eca2-d67b-f5b0-ebc9" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
-            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
-            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="892c-2c46-b09a-e98e" name="The Dark Brethren" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="69f8-36cb-4f41-8222" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="119a-881a-b80b-4e3c" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
-            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
-            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-  </sharedSelectionEntryGroups>
   <sharedProfiles>
     <profile id="7ce3-0463-9850-eead" name="Daemonic" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
       <characteristics>

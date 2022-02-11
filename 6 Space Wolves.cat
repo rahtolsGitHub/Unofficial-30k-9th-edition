@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6030-1e69-d3ca-6a48" name="6 Space Wolves" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6030-1e69-d3ca-6a48" name="6 Space Wolves" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Category:
 Varagyr in Standard, as Combiweapons -&gt; Volkite</comment>
   <categoryEntries>
@@ -11,44 +11,6 @@ Varagyr in Standard, as Combiweapons -&gt; Volkite</comment>
     <categoryEntry id="ac08-21f3-0153-c192" name="The Wolf-kin of Russ" hidden="false"/>
     <categoryEntry id="699f-95b1-064d-f4ea" name="Leman Russ" hidden="false"/>
   </categoryEntries>
-  <selectionEntries>
-    <selectionEntry id="d277-6e4d-d413-4c4d" name="Rites of War" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="increment" field="5dbf-afe4-a026-d696" value="1.0">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5142-9e49-4ae3-54f8" type="atLeast"/>
-              </conditions>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="9484-733c-9847-f18b" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" type="atLeast"/>
-                    <condition field="b1e1-0497-949d-68af" scope="roster" value="50.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5dbf-afe4-a026-d696" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="338a-31c4-419e-8b6b" name="New CategoryLink" hidden="false" targetId="6772-cf1b-71fc-53b4" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="a475-0777-b3bd-0ccb" name="Legion Specific Rites of War" hidden="false" collective="false" import="true" targetId="eb85-8cc0-fc81-bd7a" type="selectionEntryGroup"/>
-        <entryLink id="afef-80a4-0017-8d4b" name="General Rites of War" hidden="false" collective="false" import="true" targetId="e31f-ddb7-bc77-60ea" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
-        <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
-        <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
-      </costs>
-    </selectionEntry>
-  </selectionEntries>
   <entryLinks>
     <entryLink id="a9dc-f761-b567-7c3d" name="Deathsworn Pack" hidden="false" collective="false" import="true" targetId="8f81-ac29-c974-ee36" type="selectionEntry">
       <categoryLinks>
@@ -544,7 +506,7 @@ Varagyr in Standard, as Combiweapons -&gt; Volkite</comment>
                 </infoLink>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="18.0"/>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="17.0"/>
                 <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
                 <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
               </costs>
@@ -580,7 +542,7 @@ Varagyr in Standard, as Combiweapons -&gt; Volkite</comment>
                 <entryLink id="e2f1-3514-b280-6892" name="Melta grenades" hidden="false" collective="false" import="true" targetId="10bc-7a48-6e2d-a4f5" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="18.0"/>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="17.0"/>
                 <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
                 <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
               </costs>
@@ -634,7 +596,7 @@ Varagyr in Standard, as Combiweapons -&gt; Volkite</comment>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="18.0"/>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="17.0"/>
                 <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
                 <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
               </costs>
@@ -1310,59 +1272,6 @@ Flanking Manoeuvres: During deployment, you can set up this unit moving around t
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
-  <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="eb85-8cc0-fc81-bd7a" name="Legion Specific Rites of War" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a30a-5bbe-beeb-e471" type="max"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="914d-d60f-d528-e673" name="The Pale Hunters" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="69f8-36cb-4f41-8222" type="instanceOf"/>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4f23-15fd-4ba5-d3b2" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73f8-0f71-36f6-668b" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
-            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
-            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="847e-c3d4-d083-5b4b" name="The Bloodied Claws" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="69f8-36cb-4f41-8222" type="instanceOf"/>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4f23-15fd-4ba5-d3b2" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1dba-378e-b163-656f" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
-            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
-            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-  </sharedSelectionEntryGroups>
   <sharedProfiles>
     <profile id="6571-47c2-bb05-2d18" name="Yimiria Stasis Bombs" hidden="false" typeId="8e66-667e-e09b-c25b" typeName="Stratagem">
       <characteristics>

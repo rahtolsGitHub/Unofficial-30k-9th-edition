@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4ea7-b77b-fea1-d31f" name="9 Blood Angels" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4ea7-b77b-fea1-d31f" name="9 Blood Angels" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="c6d3-76be-1e8c-52d7" name="Dawnbreaker Cohort" hidden="false"/>
     <categoryEntry id="09d9-dc6e-a65c-da76" name="Crimson Paladins" hidden="false"/>
@@ -9,44 +9,6 @@
     <categoryEntry id="f633-d59c-fd14-cbe6" name="Raldoron" hidden="false"/>
     <categoryEntry id="be44-67ae-7ea9-e88c" name="Sanguinus" hidden="false"/>
   </categoryEntries>
-  <selectionEntries>
-    <selectionEntry id="596b-3b65-a9ac-fb2b" name="Rites of War" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="increment" field="87ba-86b8-8791-1ba1" value="1.0">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5142-9e49-4ae3-54f8" type="atLeast"/>
-              </conditions>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="9484-733c-9847-f18b" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" type="atLeast"/>
-                    <condition field="b1e1-0497-949d-68af" scope="roster" value="50.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87ba-86b8-8791-1ba1" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="c306-4aaf-b917-3962" name="New CategoryLink" hidden="false" targetId="6772-cf1b-71fc-53b4" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="5e94-6bea-a219-95f0" name="Legion Specific Rites of War" hidden="false" collective="false" import="true" targetId="bb3d-1b0c-299d-e40e" type="selectionEntryGroup"/>
-        <entryLink id="50dd-2124-92e7-71d8" name="General Rites of War" hidden="false" collective="false" import="true" targetId="e31f-ddb7-bc77-60ea" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
-        <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
-        <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
-      </costs>
-    </selectionEntry>
-  </selectionEntries>
   <entryLinks>
     <entryLink id="616d-863e-0885-3ed8" name="Dawnbreaker Cohort" hidden="false" collective="false" import="true" targetId="4118-6ee3-1dc7-b3be" type="selectionEntry">
       <categoryLinks>
@@ -462,7 +424,7 @@
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="32.0"/>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="30.0"/>
                 <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
                 <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
               </costs>
@@ -546,7 +508,7 @@
                 <entryLink id="51a6-bfc7-4fd6-a80b" name="Blade of Perdition" hidden="false" collective="false" import="true" targetId="5937-18da-b849-0109" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="32.0"/>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="30.0"/>
                 <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
                 <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
               </costs>
@@ -633,7 +595,7 @@
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="32.0"/>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="30.0"/>
                 <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
                 <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
               </costs>
@@ -1512,59 +1474,6 @@
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
-  <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="bb3d-1b0c-299d-e40e" name="Legion Specific Rites of War" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eddf-593d-275e-e451" type="max"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="ce34-3a40-7b15-0b53" name="The Day of Sorrows" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="69f8-36cb-4f41-8222" type="instanceOf"/>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4f23-15fd-4ba5-d3b2" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3385-d5f8-2341-fa8d" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
-            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
-            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="cab2-4985-ef78-0386" name="The Day of Revelation" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="69f8-36cb-4f41-8222" type="instanceOf"/>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4f23-15fd-4ba5-d3b2" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a710-6b57-4506-50cc" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
-            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
-            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-  </sharedSelectionEntryGroups>
   <sharedProfiles>
     <profile id="9402-f920-5aef-04ab" name="Talon of Perdition" hidden="false" typeId="27fa-2a60-59a3-6273" typeName="Weapon(s)">
       <characteristics>
