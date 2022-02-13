@@ -8,6 +8,7 @@
     <categoryEntry id="262a-c27d-5615-5e5d" name="Telemechrus" hidden="false"/>
     <categoryEntry id="77c0-b5fa-f12b-c229" name="Remus Ventanus" hidden="false"/>
     <categoryEntry id="dcd4-beea-5ac3-34b2" name="Roboute Guilliman" hidden="false"/>
+    <categoryEntry id="1654-20c4-84d5-ae5a" name="Ultramarines Nemesis Destroyer Squad" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="ace4-56b0-be00-a220" name="Invictarus Suzerain Squad" hidden="false" collective="false" import="true" targetId="67ae-935f-8da6-061b" type="selectionEntry">
@@ -85,6 +86,17 @@
         <categoryLink id="e922-23b8-8721-0e34" name="Master of the Legion" hidden="false" targetId="5142-9e49-4ae3-54f8" primary="false"/>
         <categoryLink id="08fd-5120-f201-7a92" name="Primarch" hidden="false" targetId="549b-ebaa-4b3d-3eb9" primary="false"/>
         <categoryLink id="b076-014f-2e0f-2239" name="Warlord" hidden="false" targetId="26c1-e6bf-4904-500b" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e6b6-c208-f6d1-9399" name="Nemesis Destroyer Squad" hidden="false" collective="false" import="true" targetId="1b11-c93b-f445-7ae1" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="c2e7-8b86-3a7d-180e" name="New CategoryLink" hidden="false" targetId="c39a-99d8-e84f-b5f9" primary="true"/>
+        <categoryLink id="7676-e978-2f94-867a" name="Destroyer" hidden="false" targetId="d3aa-7976-a889-502d" primary="false"/>
+        <categoryLink id="369f-33bb-9e1c-50a6" name="Infantry" hidden="false" targetId="c9bb-6ccb-efae-6184" primary="false"/>
+        <categoryLink id="4be7-8314-245a-f9c2" name="Rad grenades" hidden="false" targetId="acce-11dd-094c-78b6" primary="false"/>
+        <categoryLink id="2fa0-3253-ee51-02ee" name="Melta grenades" hidden="false" targetId="a144-8fa9-9c04-8e93" primary="false"/>
+        <categoryLink id="0c10-0755-9eb4-6ef9" name="Astartes" hidden="false" targetId="8eb7-c779-b4ba-c4ec" primary="false"/>
+        <categoryLink id="0e38-12d0-17a9-b791" name="Ulttramarines Nemesis Destroyer Squad" hidden="false" targetId="1654-20c4-84d5-ae5a" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -966,7 +978,285 @@
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="1b11-c93b-f445-7ae1" name="Nemesis Destroyer Squad" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="be29-2a14-1c5a-2daf" name="Hardened armour" hidden="false" targetId="117f-5cb9-d70c-df04" type="profile"/>
+        <infoLink id="fb1a-62ff-88fb-718a" name="Melta grenades" hidden="false" targetId="57fa-a998-ecae-8abf" type="profile"/>
+        <infoLink id="d7e6-4cbb-94e9-6ede" name="Rad grenades" hidden="false" targetId="df5e-5dc1-9edc-371c" type="profile"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="bdb4-1601-30f0-4b61" name="Nemesis Destroyer Squad" hidden="false" collective="false" import="true" defaultSelectionEntryId="0c12-3d00-628b-29f8">
+          <selectionEntries>
+            <selectionEntry id="1f87-ae8b-f062-1d36" name="Nemesis Destroyer/Special Weapon" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="increment" field="bcc9-895a-7410-1a72" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="1b11-c93b-f445-7ae1" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bcc9-895a-7410-1a72" type="max"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="0b7d-be50-c26b-4710" name="Weapon Option" hidden="false" collective="false" import="true" defaultSelectionEntryId="82fb-2d28-8a47-51cb">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0225-51bb-9e86-d52b" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2584-9767-b3ac-ef6f" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="82fb-2d28-8a47-51cb" name="Heavy bolter" hidden="false" collective="false" import="true" targetId="d1f2-cf6b-5969-b8b4" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9a8-69c4-7227-2c4b" type="max"/>
+                      </constraints>
+                      <entryLinks>
+                        <entryLink id="bdc0-afac-6ed4-9eee" name="Suspensor web" hidden="false" collective="false" import="true" targetId="39b5-b523-c5dd-5971" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c2b-26af-787d-6c5a" type="min"/>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1388-5671-7ac5-256f" type="max"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                    </entryLink>
+                    <entryLink id="41e9-95f1-7e6a-823f" name="Meltagun" hidden="false" collective="false" import="true" targetId="e8dc-600a-67f1-edf6" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e09-a902-e2ed-14ac" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="cf2c-889d-563f-44b2" name="Toxiferan flammer" hidden="false" collective="false" import="true" targetId="ec35-0ee6-4815-0bc2" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e858-7d13-f0a3-bf3f" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="79d7-e1a5-909f-7d2a" name="Missile launcher" hidden="false" collective="false" import="true" targetId="45d4-8431-b1ac-e060" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03c0-c407-1f29-4e35" type="max"/>
+                      </constraints>
+                      <entryLinks>
+                        <entryLink id="5aa9-ba87-dedf-7a19" name="Suspensor web" hidden="false" collective="false" import="true" targetId="39b5-b523-c5dd-5971" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5100-7aa9-054b-13e7" type="min"/>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="644b-d238-bb9d-9409" type="max"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                    </entryLink>
+                    <entryLink id="9738-0b1b-33f0-b61e" name="Plasma gun" hidden="false" collective="false" import="true" targetId="1838-b155-3f69-fa8d" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80d5-b5bb-06de-38aa" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="8a96-3ecc-4071-529b" name="Flamer" hidden="false" collective="false" import="true" targetId="6a38-aa1a-f3fc-3aac" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3225-b035-ce0c-8b12" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="575b-7016-3183-0e28" name="Volkite charger" hidden="false" collective="false" import="true" targetId="3545-06ce-4bdc-c7d0" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="178f-4101-47c5-5c54" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="f6a9-bb98-1642-ab6d" name="Lascutter" hidden="false" collective="false" import="true" targetId="f336-e424-95d6-ce86" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="718f-c00d-6906-c6a9" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="f5c0-4609-3f7d-1876" name="Graviton gun" hidden="false" collective="false" import="true" targetId="601d-652b-04cc-26de" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c86-8ee6-b63b-9bdd" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="f15e-8268-468e-f52b" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="13a2-c526-9ffe-7d82" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51af-6874-2ecd-8bda" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f305-ac09-7ce7-3a1d" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="f523-ac7a-f07a-cafd" name="Chainsword" hidden="false" collective="false" import="true" targetId="8d3f-e362-aa74-2756" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b505-96e4-e460-ab10" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a141-651f-8e31-eb79" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="02f0-10c8-83b4-2bbf" name="Bolt pistol" hidden="false" collective="false" import="true" targetId="0d02-cc1b-2fda-b9c5" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5002-d601-f4ce-f621" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c567-2560-a339-f602" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="19.0"/>
+                <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+                <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ef3e-1a52-3378-7fa1" name="Nemesis Destroyer Leader" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5611-9225-402f-fa88" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abd3-7c5d-5bcf-789a" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="f887-24fb-6474-ecc9" name="Nemesis Destroyer Sergeant" hidden="false" typeId="67c9-ee36-a193-36de" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="37d7-d298-a04a-4e6c">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e065-bda1-02de-6f2e">3+</characteristic>
+                    <characteristic name="BS" typeId="8003-bae2-5072-d024">3+</characteristic>
+                    <characteristic name="S" typeId="430a-b60b-2a15-6186">4</characteristic>
+                    <characteristic name="T" typeId="b550-6ea2-7a76-d49f">4</characteristic>
+                    <characteristic name="W" typeId="3461-fc7e-2d85-5568">2</characteristic>
+                    <characteristic name="A" typeId="0fd1-a74f-329d-e60e">3</characteristic>
+                    <characteristic name="Ld" typeId="d8ad-d2df-5b05-f70c">8</characteristic>
+                    <characteristic name="Save" typeId="33be-eb18-f17d-e4cc">2+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="5795-4951-2d77-e4ae" name="Weapon Option" hidden="false" collective="false" import="true" defaultSelectionEntryId="1d45-a121-fa32-ee15">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb7b-9150-87aa-1ed7" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5043-f160-308e-398e" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="1d45-a121-fa32-ee15" name="Chainsword" hidden="false" collective="false" import="true" targetId="8d3f-e362-aa74-2756" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8791-de59-b2b9-febb" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="28ba-0d96-dfa8-5b48" name="Melee Weapons" hidden="false" collective="false" import="true" targetId="5374-7c56-0218-8159" type="selectionEntryGroup">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db7c-23d6-516b-51b1" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="b572-2200-fbb3-d80a" name="Melta grenades" hidden="false" collective="false" import="true" targetId="10bc-7a48-6e2d-a4f5" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9b7-d6d3-f0e0-1008" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="fc2e-ee1b-b9e4-fe3b" name="Phosphex bomb(s)" hidden="false" collective="false" import="true" targetId="41e4-b0a2-31de-3e39" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5125-9296-79b5-79cd" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="e3b7-1b5d-9288-e13a" name="Bolt pistol" hidden="false" collective="false" import="true" targetId="0d02-cc1b-2fda-b9c5" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6aa-7c92-23ce-e7e0" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e3b-af31-477c-1d66" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="aeb7-4202-7ebb-967f" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="13a2-c526-9ffe-7d82" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afd4-8ddb-cf27-5595" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dec2-1602-d0fc-aafd" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="5dd0-35d1-6b14-ca34" name="Nemesis bolter" hidden="false" collective="false" import="true" targetId="680e-13ba-83e7-0ce8" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47a0-7561-4d0e-ec5c" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fa9-2726-4eab-a6b3" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="19.0"/>
+                <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+                <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0c12-3d00-628b-29f8" name="Nemesis Destroyer" hidden="false" collective="true" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="4712-184d-8a98-e6e5" value="3.0">
+                  <conditions>
+                    <condition field="selections" scope="1b11-c93b-f445-7ae1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1f87-ae8b-f062-1d36" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c8e-0647-8be9-49bc" type="max"/>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4712-184d-8a98-e6e5" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="fb36-a63c-fbb7-56ba" name="Nemesis Destroyer" hidden="false" typeId="67c9-ee36-a193-36de" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="37d7-d298-a04a-4e6c">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e065-bda1-02de-6f2e">3+</characteristic>
+                    <characteristic name="BS" typeId="8003-bae2-5072-d024">3+</characteristic>
+                    <characteristic name="S" typeId="430a-b60b-2a15-6186">4</characteristic>
+                    <characteristic name="T" typeId="b550-6ea2-7a76-d49f">4</characteristic>
+                    <characteristic name="W" typeId="3461-fc7e-2d85-5568">2</characteristic>
+                    <characteristic name="A" typeId="0fd1-a74f-329d-e60e">2</characteristic>
+                    <characteristic name="Ld" typeId="d8ad-d2df-5b05-f70c">8</characteristic>
+                    <characteristic name="Save" typeId="33be-eb18-f17d-e4cc">2+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink id="63eb-34bb-a94a-1a95" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="1376-80fa-b2b9-0f0b" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1dbd-9520-23c8-6876" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="78e5-dddd-2faa-d448" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="0929-e900-bbb9-9a8d" name="Chainsword" hidden="false" collective="false" import="true" targetId="45f8-93b3-7038-f254" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11ef-469f-b51a-82df" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8626-7420-896b-384c" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="52d9-ab04-b8fb-097d" name="Bolt pistol" hidden="false" collective="false" import="true" targetId="4976-37da-bc47-4e2c" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdf8-9e4d-31e9-609e" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca09-ed25-acd4-adfd" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="ecfc-1699-2742-e7cd" name="Nemesis bolter" hidden="false" collective="false" import="true" targetId="680e-13ba-83e7-0ce8" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ae5-7718-d19a-04ee" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9766-48b6-b65f-5dd4" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="19.0"/>
+                <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+                <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="PL" typeId="b1e1-0497-949d-68af" value="10.0"/>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+        <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="680e-13ba-83e7-0ce8" name="Nemesis bolter" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="819f-c8c1-f863-50c5" name="Nemesis ammunition" hidden="false" targetId="d2c9-a0b4-59f1-752f" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
+  <sharedProfiles>
+    <profile id="d2c9-a0b4-59f1-752f" name="Nemesis ammunition" hidden="false" typeId="27fa-2a60-59a3-6273" typeName="Weapon(s)">
+      <characteristics>
+        <characteristic name="Range" typeId="fb7b-3fd3-e596-3848">18&quot;</characteristic>
+        <characteristic name="Type" typeId="198a-7eca-0c54-6f0a">Assault 2</characteristic>
+        <characteristic name="S" typeId="591d-883a-73fa-87d9">4</characteristic>
+        <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">-1</characteristic>
+        <characteristic name="D" typeId="fde9-623c-a082-78b0">1</characteristic>
+        <characteristic name="Abilities" typeId="8f3c-b1ed-80b8-dbfe">If you roll an unmodified 6+ to wound with this weapon that hit is resolved at AP -4.</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
   <catalogueLinks>
     <catalogueLink id="dfea-f32a-d744-83fc" name="Standard Units and Equipment Library" targetId="da54-2db0-7d98-7b89" type="catalogue" importRootEntries="true">
       <comment>Data file for the fanmade 30k game. 

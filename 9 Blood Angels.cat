@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4ea7-b77b-fea1-d31f" name="9 Blood Angels" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4ea7-b77b-fea1-d31f" name="9 Blood Angels" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="c6d3-76be-1e8c-52d7" name="Dawnbreaker Cohort" hidden="false"/>
     <categoryEntry id="09d9-dc6e-a65c-da76" name="Crimson Paladins" hidden="false"/>
@@ -40,7 +40,7 @@
         <categoryLink id="a861-b030-bb7f-776a" name="Contemptor" hidden="false" targetId="50d9-4e0d-93d3-1b19" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="629e-1036-e1da-686f" name="Angel&apos;s Tears" hidden="false" collective="false" import="true" targetId="a09f-7ab2-ad10-e243" type="selectionEntry">
+    <entryLink id="629e-1036-e1da-686f" name="The Angel&apos;s Tears" hidden="false" collective="false" import="true" targetId="a09f-7ab2-ad10-e243" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="859b-ae01-8b04-a2f6" name="New CategoryLink" hidden="false" targetId="4912-b312-83e0-ea3e" primary="true"/>
         <categoryLink id="271c-52d8-c11b-3479" name="Infantry" hidden="false" targetId="c9bb-6ccb-efae-6184" primary="false"/>
@@ -49,8 +49,8 @@
         <categoryLink id="fd40-3859-567b-f754" name="Jump Pack" hidden="false" targetId="ee19-27ba-2661-90fe" primary="false"/>
         <categoryLink id="0b4d-6f30-00b4-3a27" name="Fly" hidden="false" targetId="150d-38e7-8c25-f30c" primary="false"/>
         <categoryLink id="f551-8a3c-36de-568f" name="Void Hardened" hidden="false" targetId="ff02-cf36-1c2d-ab9b" primary="false"/>
-        <categoryLink id="5d33-de2d-c3fe-4e1b" name="Destroyer" hidden="false" targetId="aad2-5933-1c7d-1721" primary="false"/>
         <categoryLink id="d731-2a61-f08d-f1ba" name="Angel&apos;s Tears" hidden="false" targetId="90a6-b49a-c123-116d" primary="false"/>
+        <categoryLink id="1000-57c3-ee5c-e304" name="Destroyer" hidden="false" targetId="d3aa-7976-a889-502d" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="24c0-1a88-432a-6b4c" name="Judiciar Aster Crohne" hidden="false" collective="false" import="true" targetId="4b41-7a23-ca41-ad6d" type="selectionEntry">

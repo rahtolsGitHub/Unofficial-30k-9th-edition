@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="525b-fa7d-5930-4b16" name="12 World Eaters" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="525b-fa7d-5930-4b16" name="12 World Eaters" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Cat Red Butchers -&gt; Standard _&gt; Volkite charger
 Endryd -&gt; Archaeotech
 Knight Errant -&gt; Blackshields</comment>
@@ -25,11 +25,11 @@ Knight Errant -&gt; Blackshields</comment>
       <categoryLinks>
         <categoryLink id="3eb5-9777-707e-5e64" name="New CategoryLink" hidden="false" targetId="c39a-99d8-e84f-b5f9" primary="true"/>
         <categoryLink id="4989-9fc7-c526-a0fa" name="Infantry" hidden="false" targetId="c9bb-6ccb-efae-6184" primary="false"/>
-        <categoryLink id="9a49-ca48-5865-caf5" name="Destroyer" hidden="false" targetId="aad2-5933-1c7d-1721" primary="false"/>
         <categoryLink id="f282-c000-0c74-12b3" name="Astartes" hidden="false" targetId="8eb7-c779-b4ba-c4ec" primary="false"/>
         <categoryLink id="7349-e649-6208-a4d3" name="Red Hand" hidden="false" targetId="d8b4-fe55-2683-09a7" primary="false"/>
         <categoryLink id="b619-52c7-4a3a-eeac" name="Rad grenades" hidden="false" targetId="acce-11dd-094c-78b6" primary="false"/>
         <categoryLink id="586b-f450-36a4-97ef" name="Melta grenades" hidden="false" targetId="a144-8fa9-9c04-8e93" primary="false"/>
+        <categoryLink id="9f01-93f9-8003-d0a3" name="Destroyer" hidden="false" targetId="d3aa-7976-a889-502d" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="a19c-9201-fc62-0c3f" name="Rampager Squad" hidden="false" collective="false" import="true" targetId="1e97-b851-7e1e-8955" type="selectionEntry">

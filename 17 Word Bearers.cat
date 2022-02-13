@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2afc-5be1-bc21-e806" name="17 Word Bearers" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="2afc-5be1-bc21-e806" name="17 Word Bearers" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Category: Lorgar in main lib, as constraint on archeotech pistol</comment>
   <categoryEntries>
     <categoryEntry id="f92c-ae4c-6bab-d8cb" name="Daemon" hidden="false"/>
@@ -153,13 +153,13 @@
         <categoryLink id="e145-9e33-1cca-d9a2" name="New CategoryLink" hidden="false" targetId="eb42-9caf-a22d-c897" primary="true"/>
         <categoryLink id="de77-a9a2-b246-a30e" name="Astartes" hidden="false" targetId="8eb7-c779-b4ba-c4ec" primary="false"/>
         <categoryLink id="7dbe-4c39-ce49-3a82" name="Core" hidden="false" targetId="dc0f-a3bb-f2c4-93ad" primary="false"/>
-        <categoryLink id="e17a-e59b-74b8-40a8" name="Destroyer" hidden="false" targetId="aad2-5933-1c7d-1721" primary="false"/>
         <categoryLink id="b534-0486-cb2f-691c" name="Elite" hidden="false" targetId="c39a-99d8-e84f-b5f9" primary="false"/>
         <categoryLink id="d372-25f8-0f11-b9a2" name="Fly" hidden="false" targetId="150d-38e7-8c25-f30c" primary="false"/>
         <categoryLink id="19c2-5e4f-0611-3369" name="Infantry" hidden="false" targetId="c9bb-6ccb-efae-6184" primary="false"/>
         <categoryLink id="f311-5ba3-c5b4-ac94" name="Jump Pack" hidden="false" targetId="ee19-27ba-2661-90fe" primary="false"/>
         <categoryLink id="9c83-03af-da05-93e9" name="Void Hardened" hidden="false" targetId="ff02-cf36-1c2d-ab9b" primary="false"/>
         <categoryLink id="5ed5-f36b-d8dc-b412" name="The Ashen Circle" hidden="false" targetId="554d-9445-3776-3b12" primary="false"/>
+        <categoryLink id="cff7-6fcd-2123-20c5" name="Destroyer" hidden="false" targetId="d3aa-7976-a889-502d" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="6f2e-45b1-54ae-e291" name="Argel Tal - possessed form" hidden="false" collective="false" import="true" targetId="9055-0639-ccf8-e8bb" type="selectionEntry">

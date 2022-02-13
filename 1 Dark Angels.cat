@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6c8a-a156-45f2-b831" name="1 Dark Angels" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6c8a-a156-45f2-b831" name="1 Dark Angels" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Marshal of the Storm -&gt; Standard</comment>
   <categoryEntries>
     <categoryEntry id="1190-7c0d-b54b-e320" name="Dreadwing" hidden="false"/>
@@ -20,11 +20,11 @@
         <categoryLink id="b71d-9a66-d6ec-dc8d" name="New CategoryLink" hidden="false" targetId="c39a-99d8-e84f-b5f9" primary="true"/>
         <categoryLink id="febd-10b5-2299-a191" name="Infantry" hidden="false" targetId="c9bb-6ccb-efae-6184" primary="false"/>
         <categoryLink id="0b03-5e1e-3564-233f" name="Core" hidden="false" targetId="dc0f-a3bb-f2c4-93ad" primary="false"/>
-        <categoryLink id="846d-36ac-046b-b8c5" name="Destroyer" hidden="false" targetId="aad2-5933-1c7d-1721" primary="false"/>
         <categoryLink id="89ba-2dea-8e7b-7c97" name="Astartes" hidden="false" targetId="8eb7-c779-b4ba-c4ec" primary="false"/>
         <categoryLink id="4d0a-9c09-4a06-93d8" name="Interemptors" hidden="false" targetId="33ec-8e0b-ee32-73fd" primary="false"/>
         <categoryLink id="cef1-1e5f-396e-9feb" name="Melta grenades" hidden="false" targetId="a144-8fa9-9c04-8e93" primary="false"/>
         <categoryLink id="f753-33fe-65f9-d82e" name="Dreadwing" hidden="false" targetId="1190-7c0d-b54b-e320" primary="false"/>
+        <categoryLink id="22ce-bab3-2335-7cb4" name="Destroyer" hidden="false" targetId="d3aa-7976-a889-502d" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="cb07-8dbf-98eb-204c" name="Inner Circle Knights Cenobium" hidden="false" collective="false" import="true" targetId="9e6a-ecfa-bba4-1011" type="selectionEntry">

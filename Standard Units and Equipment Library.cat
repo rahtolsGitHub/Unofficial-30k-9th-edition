@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="da54-2db0-7d98-7b89" name="Standard Units and Equipment Library" revision="24" battleScribeVersion="2.03" authorName="Lothar" authorContact="Please report any issues to the GitHub:" library="true" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="da54-2db0-7d98-7b89" name="Standard Units and Equipment Library" revision="25" battleScribeVersion="2.03" authorName="Lothar" authorContact="Please report any issues to the GitHub:" library="true" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>This catalogue contains basic units and equipment available to all Legions. It&apos;s imported as standard library by the specific Legion catalogues.</comment>
   <publications>
     <publication id="ea1d-c177-1851-0466" name="Legiones Astartes: Army List 2.14"/>
@@ -129,9 +129,6 @@
     <categoryEntry id="51cb-1798-8c6f-4d34" name="Crew" hidden="false"/>
     <categoryEntry id="d883-207a-8861-6cb6" name="Artillery" hidden="false"/>
     <categoryEntry id="dd9d-f807-05e2-c0cc" name="Rapier Carrier" hidden="false"/>
-    <categoryEntry id="aad2-5933-1c7d-1721" name="Destroyer" hidden="false">
-      <comment>Needed for Rad- and Melta grenades Stratagem -&gt; 0 CP</comment>
-    </categoryEntry>
     <categoryEntry id="b444-6578-60dc-98cc" name="Tactical Squad" hidden="false"/>
     <categoryEntry id="5dfe-9faa-9cc7-8710" name="Assault Squad" hidden="false"/>
     <categoryEntry id="ff02-cf36-1c2d-ab9b" name="Void Hardened" hidden="false"/>
@@ -2394,7 +2391,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
         <infoLink id="7e3c-e854-a1a6-c9c6" name="Boarding shield" hidden="false" targetId="82b4-4ac4-22d3-c233" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="3.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
       </costs>
@@ -2404,7 +2401,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
         <infoLink id="cfc9-44ca-c152-078b" name="Combat shield" hidden="false" targetId="4e82-2ee2-9191-9efe" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="1.0"/>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="4.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
       </costs>
@@ -2502,7 +2499,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="481e-a733-d1e2-97c7" name="Melta grenade" hidden="false" collective="false" import="true" targetId="10bc-7a48-6e2d-a4f5" type="selectionEntry">
+            <entryLink id="481e-a733-d1e2-97c7" name="Melta grenades" hidden="false" collective="false" import="true" targetId="10bc-7a48-6e2d-a4f5" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ee1-7e3e-843c-956a" type="max"/>
               </constraints>
@@ -3168,7 +3165,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
         <infoLink id="0e9a-6515-397c-8ade" name="Lightning claw" hidden="false" targetId="39f7-1fb2-9742-99b0" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="10.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
       </costs>
@@ -3482,11 +3479,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
       <selectionEntryGroups>
         <selectionEntryGroup id="5abf-43e5-ef1f-a8d8" name="Wargear" hidden="false" collective="false" import="true">
           <entryLinks>
-            <entryLink id="302b-5204-7f66-f5f2" name="Melta grenades" hidden="false" collective="false" import="true" targetId="10bc-7a48-6e2d-a4f5" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="5.0"/>
-              </costs>
-            </entryLink>
+            <entryLink id="302b-5204-7f66-f5f2" name="Melta grenades" hidden="false" collective="false" import="true" targetId="10bc-7a48-6e2d-a4f5" type="selectionEntry"/>
             <entryLink id="4ba6-4685-5103-a819" name="Protective Wargear" hidden="false" collective="false" import="true" targetId="f5df-2c1c-e1bb-0421" type="selectionEntryGroup"/>
             <entryLink id="6c76-9629-26d2-0b0d" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="13a2-c526-9ffe-7d82" type="selectionEntry">
               <constraints>
@@ -5657,7 +5650,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="63ca-30cc-06e2-0415" name="Melta grenade" hidden="false" collective="false" import="true" targetId="10bc-7a48-6e2d-a4f5" type="selectionEntry">
+        <entryLink id="63ca-30cc-06e2-0415" name="Melta grenades" hidden="false" collective="false" import="true" targetId="10bc-7a48-6e2d-a4f5" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6ce-e9e4-09b2-dbca" type="max"/>
           </constraints>
@@ -7870,7 +7863,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="879a-8872-870f-6c04" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="f8aa-6c80-0343-1265" name="Melta grenade" hidden="false" collective="false" import="true" targetId="10bc-7a48-6e2d-a4f5" type="selectionEntry">
+                <entryLink id="f8aa-6c80-0343-1265" name="Melta grenades" hidden="false" collective="false" import="true" targetId="10bc-7a48-6e2d-a4f5" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45fb-2a46-8179-a798" type="max"/>
                   </constraints>
@@ -8390,7 +8383,6 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c764-b22a-a103-f2d8" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d78-f9fa-ec43-5a4d" type="min"/>
               </constraints>
             </entryLink>
             <entryLink id="f65a-25dc-228c-d116" name="Shroud bombs" hidden="false" collective="false" import="true" targetId="39a3-453a-dc22-ec4f" type="selectionEntry">
@@ -8406,7 +8398,6 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
         <entryLink id="0988-8f90-60f9-9ef9" name="Recon armour" hidden="false" collective="false" import="true" targetId="558c-400c-cd55-1eb9" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5772-3136-f45f-ba8d" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a38-d6f5-83bd-c94d" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="816b-bc75-0ce6-2d68" name="Nuncio-vox" hidden="false" collective="false" import="true" targetId="b25d-7cbd-569f-9877" type="selectionEntry">
@@ -9018,7 +9009,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
-                <entryLink id="d5fc-b24b-3b2f-d1ca" name="Melta grenade" hidden="false" collective="false" import="true" targetId="10bc-7a48-6e2d-a4f5" type="selectionEntry">
+                <entryLink id="d5fc-b24b-3b2f-d1ca" name="Melta grenades" hidden="false" collective="false" import="true" targetId="10bc-7a48-6e2d-a4f5" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb85-5a9e-a2ac-c559" type="max"/>
                   </constraints>
@@ -17243,6 +17234,11 @@ embarked models disembark, roll a D6. On a 6, it explodes and each unit within 2
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="c7c7-bac6-2103-cbea" name="Heavy chainblade" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="48e5-e05a-04eb-5cde" name="Heavy chainblade" hidden="false" targetId="2919-45b5-e104-913b" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="fb8b-85c1-a870-0c42" name="Warlord Traits" hidden="false" collective="false" import="true" defaultSelectionEntryId="59e5-74da-f51c-e214">
@@ -19209,8 +19205,15 @@ more than 9” away from any enemy models.</characteristic>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="d131-a911-1536-edb6" name="Legion Specific Wargear" hidden="false" collective="false" import="true"/>
-    <selectionEntryGroup id="ffd8-d5c8-1c74-98c2" name="Scion" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="ffd8-d5c8-1c74-98c2" name="Scion" hidden="true" collective="false" import="true">
       <comment>Dark Angels: Additional unit wargear selection</comment>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c8a-a156-45f2-b831" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <selectionEntryGroups>
         <selectionEntryGroup id="204d-7093-2c31-7181" name="Scion of the Hekatonystika" hidden="false" collective="false" import="true">
           <constraints>
@@ -22187,7 +22190,7 @@ Your opponent must also subtract 1 from hit rolls for attacks against this model
       <modifiers>
         <modifier type="set" field="7175-d70f-ddef-26a3" value="0">
           <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aad2-5933-1c7d-1721" type="instanceOf"/>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d3aa-7976-a889-502d" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -22211,7 +22214,7 @@ as normal.</characteristic>
       <modifiers>
         <modifier type="set" field="7175-d70f-ddef-26a3" value="0">
           <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aad2-5933-1c7d-1721" type="instanceOf"/>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d3aa-7976-a889-502d" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -22334,6 +22337,16 @@ as normal.</characteristic>
     <profile id="10b6-4c29-9fbe-5c76" name="Marshal of the Storm" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
       <characteristics>
         <characteristic name="Effect" typeId="3117-79f3-eb21-c725">Orders may only be issued to Dark Angels INFANTRY CORE within 6” of this unit that have the SCION OF THE STORMWING upgrade. To issue an order, pick a target unit and choose which order you wish to issue from the table below. A unit may only be affected by one order per turn.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2919-45b5-e104-913b" name="Heavy chainblade" hidden="false" typeId="27fa-2a60-59a3-6273" typeName="Weapon(s)">
+      <characteristics>
+        <characteristic name="Range" typeId="fb7b-3fd3-e596-3848">Melee</characteristic>
+        <characteristic name="Type" typeId="198a-7eca-0c54-6f0a">Melee</characteristic>
+        <characteristic name="S" typeId="591d-883a-73fa-87d9">+2</characteristic>
+        <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">-1</characteristic>
+        <characteristic name="D" typeId="fde9-623c-a082-78b0">1</characteristic>
+        <characteristic name="Abilities" typeId="8f3c-b1ed-80b8-dbfe">-</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

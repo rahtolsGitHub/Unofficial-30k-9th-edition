@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6030-1e69-d3ca-6a48" name="6 Space Wolves" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6030-1e69-d3ca-6a48" name="6 Space Wolves" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Category:
 Varagyr in Standard, as Combiweapons -&gt; Volkite</comment>
   <categoryEntries>
@@ -17,8 +17,8 @@ Varagyr in Standard, as Combiweapons -&gt; Volkite</comment>
         <categoryLink id="c260-2b62-e8f2-0b12" name="New CategoryLink" hidden="false" targetId="c39a-99d8-e84f-b5f9" primary="true"/>
         <categoryLink id="bea3-2897-322f-343d" name="Infantry" hidden="false" targetId="c9bb-6ccb-efae-6184" primary="false"/>
         <categoryLink id="d55b-bd87-c089-083c" name="Astartes" hidden="false" targetId="8eb7-c779-b4ba-c4ec" primary="false"/>
-        <categoryLink id="c012-1661-7e40-f677" name="Destroyer" hidden="false" targetId="aad2-5933-1c7d-1721" primary="false"/>
         <categoryLink id="4c6c-3811-c78e-3069" name="Deathsworn" hidden="false" targetId="7111-ef65-b57d-417c" primary="false"/>
+        <categoryLink id="4031-854c-69c4-4b8f" name="Destroyer" hidden="false" targetId="d3aa-7976-a889-502d" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="334d-a9fa-dc99-3b6c" name="Varagyr Wolf Guard Terminator Squad" hidden="false" collective="false" import="true" targetId="ed43-2539-43d0-4d7a" type="selectionEntry">
@@ -505,6 +505,46 @@ Varagyr in Standard, as Combiweapons -&gt; Volkite</comment>
                   </modifiers>
                 </infoLink>
               </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="16ba-32d6-8776-584b" name="Weapon Option I" hidden="false" collective="false" import="true" defaultSelectionEntryId="ff24-98e2-38bc-b2d8">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db76-73d6-1fdc-20cb" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2159-3dc5-b747-ba2e" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="ff24-98e2-38bc-b2d8" name="Chainsword" hidden="false" collective="false" import="true" targetId="8d3f-e362-aa74-2756" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2bf-1a65-2792-9af1" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="0e32-04db-eae0-42ae" name="Heavy chainblade" hidden="false" collective="false" import="true" targetId="c7c7-bac6-2103-cbea" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebb0-bfed-2b57-0a02" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="ed74-a542-0fd1-db48" name="Power Weapons" hidden="false" collective="false" import="true" targetId="db4a-91ec-d4f0-d810" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="961a-9479-1fdf-fda6" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="13a2-c526-9ffe-7d82" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fac-009b-a2c9-faaf" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73f5-b702-cb00-6c01" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="8d94-55cd-328f-eca5" name="Boltgun" hidden="false" collective="false" import="true" targetId="b8d5-3fe7-69fb-ae50" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e172-83cc-c866-3b4c" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="32fa-b5a3-c00f-7277" name="Bolt pistol" hidden="false" collective="false" import="true" targetId="0d02-cc1b-2fda-b9c5" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cde3-ebf9-9ee8-3123" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="daa5-d14a-b8f1-f75c" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
               <costs>
                 <cost name="pts" typeId="9484-733c-9847-f18b" value="17.0"/>
                 <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
@@ -524,17 +564,83 @@ Varagyr in Standard, as Combiweapons -&gt; Volkite</comment>
                 </infoLink>
               </infoLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup id="d8a4-6fa4-12c5-d5fa" name="Weapon Option I" hidden="false" collective="false" import="true" defaultSelectionEntryId="e58f-cc9c-2cb1-007d">
+                <selectionEntryGroup id="d8a4-6fa4-12c5-d5fa" name="Weapon Option I" hidden="false" collective="false" import="true">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6892-4f15-fd1e-ce7a" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a57-a4b1-d919-d30d" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6892-4f15-fd1e-ce7a" type="max"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8a57-a4b1-d919-d30d" type="min"/>
                   </constraints>
                   <entryLinks>
                     <entryLink id="2da0-5a35-e6bb-2282" name="Frost axe" hidden="false" collective="false" import="true" targetId="9285-de02-bad0-85fb" type="selectionEntry"/>
                     <entryLink id="fbaa-6763-44ea-9a44" name="Frost blade" hidden="false" collective="false" import="true" targetId="2fb7-14d1-1d72-fbd7" type="selectionEntry"/>
                     <entryLink id="4b35-7ef1-2666-bd0a" name="Frost claw" hidden="false" collective="false" import="true" targetId="4426-52c5-da69-8fb5" type="selectionEntry"/>
-                    <entryLink id="e58f-cc9c-2cb1-007d" name="Chainsword" hidden="false" collective="false" import="true" targetId="8d3f-e362-aa74-2756" type="selectionEntry"/>
+                    <entryLink id="e58f-cc9c-2cb1-007d" name="Chainsword" hidden="false" collective="false" import="true" targetId="8d3f-e362-aa74-2756" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="654e-b7d2-3477-d40d" value="0.0">
+                          <conditions>
+                            <condition field="selections" scope="3749-feaf-3be6-a571" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e58f-cc9c-2cb1-007d" type="notEqualTo"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74f3-ffd5-4413-a73c" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="654e-b7d2-3477-d40d" type="min"/>
+                      </constraints>
+                    </entryLink>
                     <entryLink id="0016-ee90-5df4-c38b" name="Great frost blade " hidden="false" collective="false" import="true" targetId="42fb-9520-b1e9-bfa5" type="selectionEntry"/>
+                    <entryLink id="4262-49ed-96cc-e92f" name="Bolt pistol" hidden="false" collective="false" import="true" targetId="0d02-cc1b-2fda-b9c5" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="7eaf-1c55-3821-92cb" value="0.0">
+                          <conditions>
+                            <condition field="selections" scope="3749-feaf-3be6-a571" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4262-49ed-96cc-e92f" type="notEqualTo"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d03-ba29-5921-5980" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7eaf-1c55-3821-92cb" type="min"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="451c-1c63-3652-a4b4" name="Melee Weapons" hidden="false" collective="false" import="true" targetId="5374-7c56-0218-8159" type="selectionEntryGroup">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d59-e1a5-1a6c-af7c" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="c242-06ca-d9c0-5a54" name="Ranged Weapons" hidden="false" collective="false" import="true" targetId="7416-d09b-9681-6b20" type="selectionEntryGroup">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f98-5781-82b2-62af" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="dc49-4e6b-3cae-bfa4" name="Weapon Option II" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3dd2-b5c6-45d3-47b2" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4875-4a2e-1a51-4077" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="fa22-1f82-ead0-dee1" name="Boltgun" hidden="false" collective="false" import="true" targetId="b8d5-3fe7-69fb-ae50" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="bd3b-6558-80ef-16c1" value="0.0">
+                          <conditions>
+                            <condition field="selections" scope="3749-feaf-3be6-a571" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa22-1f82-ead0-dee1" type="notEqualTo"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d1a-fb61-7b85-a01d" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd3b-6558-80ef-16c1" type="min"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="7ef8-3282-f99e-1245" name="Ranged Weapons" hidden="false" collective="false" import="true" targetId="7416-d09b-9681-6b20" type="selectionEntryGroup">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5962-ea61-64eb-20b3" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="ea1b-3c9e-1480-e9cd" name="Melee Weapons" hidden="false" collective="false" import="true" targetId="5374-7c56-0218-8159" type="selectionEntryGroup">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73bb-30c7-3213-907f" type="max"/>
+                      </constraints>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -589,9 +695,21 @@ Varagyr in Standard, as Combiweapons -&gt; Volkite</comment>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9f2-c5c6-6864-25e4" type="min"/>
                       </constraints>
                     </entryLink>
-                    <entryLink id="7bbc-4264-cbad-bf4e" name="Plasma pistol" hidden="false" collective="false" import="true" targetId="ecbf-0a25-ef0e-5868" type="selectionEntry"/>
-                    <entryLink id="c2f7-93c1-40a5-d371" name="Hand flamer" hidden="false" collective="false" import="true" targetId="f7ef-20b9-3f63-cf3f" type="selectionEntry"/>
-                    <entryLink id="ed87-3d27-c455-1e13" name="Combi-weapons" hidden="false" collective="false" import="true" targetId="70ce-ec47-ed25-4ddd" type="selectionEntryGroup"/>
+                    <entryLink id="7bbc-4264-cbad-bf4e" name="Plasma pistol" hidden="false" collective="false" import="true" targetId="ecbf-0a25-ef0e-5868" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed26-966f-cb50-3a3b" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="c2f7-93c1-40a5-d371" name="Hand flamer" hidden="false" collective="false" import="true" targetId="f7ef-20b9-3f63-cf3f" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b372-4fe2-0309-14b4" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="ed87-3d27-c455-1e13" name="Combi-weapons" hidden="false" collective="false" import="true" targetId="70ce-ec47-ed25-4ddd" type="selectionEntryGroup">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="368d-6a28-abdc-28eb" type="max"/>
+                      </constraints>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -613,6 +731,18 @@ Varagyr in Standard, as Combiweapons -&gt; Volkite</comment>
         <entryLink id="1259-7804-e5de-0f24" name="Vexilla" hidden="false" collective="false" import="true" targetId="445b-04ec-99e9-0a53" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="acd0-9fb7-c031-27ac" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="b677-1a91-f88c-301f" name="Combat shield" hidden="false" collective="true" import="true" targetId="5d0a-b46c-d875-4040" type="selectionEntry">
+          <modifiers>
+            <modifier type="increment" field="5cf1-eee5-f9c5-7f5c" value="5.0">
+              <conditions>
+                <condition field="selections" scope="b81c-80e1-9b24-4756" value="15.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5cf1-eee5-f9c5-7f5c" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -736,7 +866,7 @@ Varagyr in Standard, as Combiweapons -&gt; Volkite</comment>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="PL" typeId="b1e1-0497-949d-68af" value="5.0"/>
+        <cost name="PL" typeId="b1e1-0497-949d-68af" value="4.0"/>
         <cost name="pts" typeId="9484-733c-9847-f18b" value="78.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
       </costs>
@@ -1051,7 +1181,7 @@ Flanking Manoeuvres: During deployment, you can set up this unit moving around t
             <entryLink id="f641-d32d-9d25-617e" name="Iron-hard  teeth &amp; claws" hidden="false" collective="false" import="true" targetId="8bec-8003-abc6-3308" type="selectionEntry"/>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="40.0"/>
             <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
             <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
           </costs>
@@ -1065,7 +1195,7 @@ Flanking Manoeuvres: During deployment, you can set up this unit moving around t
             <entryLink id="29f0-2cb9-5673-62ca" name="Iron-hard  teeth &amp; claws" hidden="false" collective="false" import="true" targetId="8bec-8003-abc6-3308" type="selectionEntry"/>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="40.0"/>
             <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
             <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
           </costs>
@@ -1073,8 +1203,8 @@ Flanking Manoeuvres: During deployment, you can set up this unit moving around t
       </selectionEntries>
       <costs>
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="4.0"/>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="50.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="19c7-7ffa-1449-509b" name="Leman Russ" hidden="false" collective="false" import="true" type="unit">
