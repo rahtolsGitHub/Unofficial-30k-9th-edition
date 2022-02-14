@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="da54-2db0-7d98-7b89" name="Standard Units and Equipment Library" revision="25" battleScribeVersion="2.03" authorName="Lothar" authorContact="Please report any issues to the GitHub:" library="true" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="da54-2db0-7d98-7b89" name="Standard Units and Equipment Library" revision="26" battleScribeVersion="2.03" authorName="Lothar" authorContact="Please report any issues to the GitHub:" library="true" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>This catalogue contains basic units and equipment available to all Legions. It&apos;s imported as standard library by the specific Legion catalogues.</comment>
   <publications>
     <publication id="ea1d-c177-1851-0466" name="Legiones Astartes: Army List 2.14"/>
@@ -250,6 +250,7 @@
     <categoryEntry id="cb93-2cc6-d551-9c35" name="Ferrus Manus" hidden="false"/>
     <categoryEntry id="750a-1e46-0ac3-3c81" name="Red Butchers" hidden="false"/>
     <categoryEntry id="d83b-fdc9-7cfd-df74" name="Scion of the Stormwing" hidden="false"/>
+    <categoryEntry id="b788-c860-5f32-7231" name="Scion of the Ravenwing" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="e47a-1a76-7652-69f7" name="Legion Praetor" hidden="false" collective="false" import="true" targetId="a21e-ecd1-95e8-545e" type="selectionEntry">
@@ -433,6 +434,7 @@
         <categoryLink id="be3c-d1a9-9dc6-b209" name="Astartes" hidden="false" targetId="8eb7-c779-b4ba-c4ec" primary="false"/>
         <categoryLink id="19fd-1e8a-1e77-0a74" name="Techmarine" hidden="false" targetId="cc47-35ae-c9d0-9ae8" primary="false"/>
         <categoryLink id="3105-0853-d0a6-8548" name="Infantry" hidden="false" targetId="c9bb-6ccb-efae-6184" primary="false"/>
+        <categoryLink id="5547-a69e-dae0-b6b4" name="Character" hidden="false" targetId="0749-dd2b-52eb-0bb0" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="9237-f019-3ea1-b513" name="Legion Servo-automata" hidden="true" collective="false" import="true" targetId="e113-a804-2f1d-70ff" type="selectionEntry">
@@ -1013,6 +1015,7 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3107-e7ab-bd88-19ea" type="atLeast"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="name" value="0.0"/>
       </modifiers>
       <categoryLinks>
         <categoryLink id="bb4e-e018-c55c-4000" name="New CategoryLink" hidden="false" targetId="34c6-9559-c24e-e6a9" primary="true"/>
@@ -1490,6 +1493,7 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="3653-8aba-886c-2670" name="Legion Sicaran" hidden="true" collective="false" import="true" targetId="4e35-2d6c-3624-95e5" type="selectionEntry">
+      <comment>Elite Selection for RoW Armoured Breakthrough</comment>
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -4959,6 +4963,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
       </costs>
     </selectionEntry>
     <selectionEntry id="ca9b-1be1-c6fd-5910" name="Legion Sicaran" hidden="false" collective="false" import="true" type="model">
+      <comment>Selection for Consul upgrade: Master of Armour</comment>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3311-0ab6-a03c-24e2" type="max"/>
       </constraints>
@@ -4992,8 +4997,8 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="b1e1-0497-949d-68af" value="14.0"/>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="155.0"/>
+        <cost name="PL" typeId="b1e1-0497-949d-68af" value="10.0"/>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="165.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -5700,6 +5705,11 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
       </costs>
     </selectionEntry>
     <selectionEntry id="9023-a329-fbc0-90a8" name="Legion Techmarine Covenant" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="d6c3-61d3-666c-25c9" name="Awaking the Machine Spirits" hidden="false" targetId="fac1-f9c9-9560-29c9" type="profile"/>
+        <infoLink id="7472-aa0c-5d6b-a4d4" name="Covenant" hidden="false" targetId="52e2-f38e-8407-1c85" type="profile"/>
+        <infoLink id="cdd3-1003-cd9d-4b60" name="Battlesmith" hidden="false" targetId="3b01-d184-b334-c2cd" type="profile"/>
+      </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="f5a5-098f-994e-8c60" name="Legion Techmarine Covenant" hidden="false" collective="false" import="true">
           <constraints>
@@ -5739,7 +5749,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91ea-27b4-bd02-dd5e" type="max"/>
                       </constraints>
                     </entryLink>
-                    <entryLink id="291e-40ce-20ee-11b1" name="Melta grenade" hidden="false" collective="false" import="true" targetId="10bc-7a48-6e2d-a4f5" type="selectionEntry">
+                    <entryLink id="291e-40ce-20ee-11b1" name="Melta grenades" hidden="false" collective="false" import="true" targetId="10bc-7a48-6e2d-a4f5" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9804-cf7f-24fd-e670" type="max"/>
                       </constraints>
@@ -5767,6 +5777,11 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
                       </modifiers>
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85fe-e8fb-fc50-36b2" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="1ed1-a494-8581-8a26" name="Cyber-familiar" hidden="false" collective="false" import="true" targetId="ff64-0a8e-5fcf-1f74" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d085-c1d2-ee95-5952" type="max"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
@@ -11835,16 +11850,20 @@ made against that attack.</characteristic>
       <entryLinks>
         <entryLink id="fb97-044c-0c81-d526" name="Heavy bolter" hidden="false" collective="false" import="true" targetId="d1f2-cf6b-5969-b8b4" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c6c-02cf-a22e-a7ce" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4c6c-02cf-a22e-a7ce" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6e8-f640-21a8-f4ca" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="8956-1aed-57fb-d6c8" name="Vehicle Upgrades" hidden="false" collective="false" import="true" targetId="8939-a965-fcb3-c71e" type="selectionEntryGroup"/>
-        <entryLink id="e97a-48a3-aa7e-24d3" name="Pintle Weapons" hidden="false" collective="false" import="true" targetId="93fa-3340-175d-fbe8" type="selectionEntryGroup"/>
-        <entryLink id="c744-6ebc-e8c2-5edc" name="Sponson Weapons" hidden="false" collective="false" import="true" targetId="889d-1ad3-7ae2-a8fa" type="selectionEntryGroup"/>
+        <entryLink id="e97a-48a3-aa7e-24d3" name="Pintle Weapons" hidden="false" collective="false" import="true" targetId="93fa-3340-175d-fbe8" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ecb3-9085-d6f0-cc4f" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="e21a-e2bb-afed-4a1b" name="Sponson Weapons" hidden="false" collective="false" import="true" targetId="889d-1ad3-7ae2-a8fa" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="b1e1-0497-949d-68af" value="15.0"/>
+        <cost name="PL" typeId="b1e1-0497-949d-68af" value="10.0"/>
         <cost name="pts" typeId="9484-733c-9847-f18b" value="170.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
       </costs>
@@ -11903,17 +11922,17 @@ made against that attack.</characteristic>
               <entryLinks>
                 <entryLink id="2ec8-36a3-d5b3-7396" name="Vehicle Upgrades" hidden="false" collective="false" import="true" targetId="8939-a965-fcb3-c71e" type="selectionEntryGroup"/>
                 <entryLink id="4991-d052-0955-161c" name="Pintle Weapons" hidden="false" collective="false" import="true" targetId="93fa-3340-175d-fbe8" type="selectionEntryGroup"/>
-                <entryLink id="fb98-39ca-5908-5ed3" name="Sponson Weapons" hidden="true" collective="false" import="true" targetId="889d-1ad3-7ae2-a8fa" type="selectionEntryGroup"/>
+                <entryLink id="fb98-39ca-5908-5ed3" name="Sponson Weapons" hidden="false" collective="false" import="true" targetId="889d-1ad3-7ae2-a8fa" type="selectionEntryGroup"/>
                 <entryLink id="a331-7155-303f-f2e7" name="Heavy bolter" hidden="false" collective="false" import="true" targetId="d1f2-cf6b-5969-b8b4" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d31c-a7e5-00b5-e451" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d31c-a7e5-00b5-e451" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a84-f9e7-c023-ee30" type="min"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="PL" typeId="b1e1-0497-949d-68af" value="14.0"/>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="155.0"/>
+                <cost name="PL" typeId="b1e1-0497-949d-68af" value="10.0"/>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="160.0"/>
                 <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -11962,17 +11981,17 @@ made against that attack.</characteristic>
               <entryLinks>
                 <entryLink id="d9d2-5003-bf4d-2ed7" name="Vehicle Upgrades" hidden="false" collective="false" import="true" targetId="8939-a965-fcb3-c71e" type="selectionEntryGroup"/>
                 <entryLink id="40cc-fd9b-795a-1ef9" name="Pintle Weapons" hidden="false" collective="false" import="true" targetId="93fa-3340-175d-fbe8" type="selectionEntryGroup"/>
-                <entryLink id="4929-e02a-3c27-4d02" name="Sponson Weapons" hidden="true" collective="false" import="true" targetId="889d-1ad3-7ae2-a8fa" type="selectionEntryGroup"/>
+                <entryLink id="4929-e02a-3c27-4d02" name="Sponson Weapons" hidden="false" collective="false" import="true" targetId="889d-1ad3-7ae2-a8fa" type="selectionEntryGroup"/>
                 <entryLink id="c72e-f822-e83e-d508" name="Heavy bolter" hidden="false" collective="false" import="true" targetId="d1f2-cf6b-5969-b8b4" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed28-9bd6-7d33-4124" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ed28-9bd6-7d33-4124" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3af7-46b6-be70-ef26" type="min"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="PL" typeId="b1e1-0497-949d-68af" value="16.0"/>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="170.0"/>
+                <cost name="PL" typeId="b1e1-0497-949d-68af" value="10.0"/>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="175.0"/>
                 <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -11992,17 +12011,17 @@ made against that attack.</characteristic>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="22b1-331e-59a0-1b5f" type="min"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="277c-16fc-4722-8393" name="Sponson Weapons" hidden="true" collective="false" import="true" targetId="889d-1ad3-7ae2-a8fa" type="selectionEntryGroup"/>
+                <entryLink id="277c-16fc-4722-8393" name="Sponson Weapons" hidden="false" collective="false" import="true" targetId="889d-1ad3-7ae2-a8fa" type="selectionEntryGroup"/>
                 <entryLink id="3a71-506e-db30-d81d" name="Heavy bolter" hidden="false" collective="false" import="true" targetId="d1f2-cf6b-5969-b8b4" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf44-b13c-8640-3e75" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bf44-b13c-8640-3e75" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1c2-a7d5-c4fb-e017" type="min"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="PL" typeId="b1e1-0497-949d-68af" value="14.0"/>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="155.0"/>
+                <cost name="PL" typeId="b1e1-0497-949d-68af" value="10.0"/>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="165.0"/>
                 <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -12120,17 +12139,17 @@ made against that attack.</characteristic>
               <entryLinks>
                 <entryLink id="16cf-e2e7-5d79-f706" name="Vehicle Upgrades" hidden="false" collective="false" import="true" targetId="8939-a965-fcb3-c71e" type="selectionEntryGroup"/>
                 <entryLink id="ca50-2aaf-23e0-d377" name="Pintle Weapons" hidden="false" collective="false" import="true" targetId="93fa-3340-175d-fbe8" type="selectionEntryGroup"/>
-                <entryLink id="d284-7d00-6e48-a7f1" name="Sponson Weapons" hidden="true" collective="false" import="true" targetId="889d-1ad3-7ae2-a8fa" type="selectionEntryGroup"/>
+                <entryLink id="d284-7d00-6e48-a7f1" name="Sponson Weapons" hidden="false" collective="false" import="true" targetId="889d-1ad3-7ae2-a8fa" type="selectionEntryGroup"/>
                 <entryLink id="7d01-1282-fa2e-72f7" name="Heavy bolter" hidden="false" collective="false" import="true" targetId="d1f2-cf6b-5969-b8b4" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3611-79ee-4427-cfb2" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3611-79ee-4427-cfb2" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afc8-771a-19a9-2a46" type="min"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="PL" typeId="b1e1-0497-949d-68af" value="14.0"/>
-                <cost name="pts" typeId="9484-733c-9847-f18b" value="185.0"/>
+                <cost name="PL" typeId="b1e1-0497-949d-68af" value="10.0"/>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="155.0"/>
                 <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -16239,7 +16258,7 @@ embarked models disembark, roll a D6. On a 6, it explodes and each unit within 2
     </selectionEntry>
     <selectionEntry id="e1a2-fd68-a46a-4f01" name="Cytheron pattern Aegis" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="ac98-573a-db1f-10b1" name="Cytheron pattern Aegis" hidden="false" targetId="275f-4540-fbc7-00e3" type="profile"/>
+        <infoLink id="ac98-573a-db1f-10b1" name="Cytheron pattern Aegis" hidden="false" targetId="4b2d-773a-b3f3-d384" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="9484-733c-9847-f18b" value="5.0"/>
@@ -17238,6 +17257,22 @@ embarked models disembark, roll a D6. On a 6, it explodes and each unit within 2
       <infoLinks>
         <infoLink id="48e5-e05a-04eb-5cde" name="Heavy chainblade" hidden="false" targetId="2919-45b5-e104-913b" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+        <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+        <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c633-a543-f4d4-cf70" name="Terranic Greatsword &amp; Cytheron pattern Aegis" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1844-4936-0b27-e44a" name="Terranic greatsword" hidden="false" targetId="a537-f8a1-351d-8cdd" type="profile"/>
+        <infoLink id="8763-1b75-63da-8138" name="Cytheron pattern Aegis" hidden="false" targetId="4b2d-773a-b3f3-d384" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="15.0"/>
+        <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+        <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -17527,6 +17562,20 @@ embarked models disembark, roll a D6. On a 6, it explodes and each unit within 2
               <conditions>
                 <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c8a-a156-45f2-b831" type="instanceOf"/>
               </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="e8dd-7aa9-b719-71b0" name="Terranic Greatsword &amp; Cytheron pattern Aegis" hidden="false" collective="false" import="true" targetId="c633-a543-f4d4-cf70" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c8a-a156-45f2-b831" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0749-dd2b-52eb-0bb0" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
@@ -18550,22 +18599,22 @@ more than 9” away from any enemy models.</characteristic>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="93fa-3340-175d-fbe8" name="Pintle Weapons" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="93fa-3340-175d-fbe8" name="Pintle Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="2cc5-c83a-c294-0c1a">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a0d-b4a4-2897-bcdd" type="max"/>
       </constraints>
       <entryLinks>
         <entryLink id="af76-0179-7c12-f85f" name="Havoc launcher" hidden="false" collective="false" import="true" targetId="4cd2-4aea-c752-70f8" type="selectionEntry"/>
-        <entryLink id="2317-5fe2-04cb-6f7b" name="Heavy bolter" hidden="false" collective="false" import="true" targetId="d1f2-cf6b-5969-b8b4" type="selectionEntry"/>
         <entryLink id="bb00-c3a1-9ec8-5387" name="Heavy flamer" hidden="false" collective="false" import="true" targetId="5790-861d-0a59-cc8c" type="selectionEntry"/>
         <entryLink id="3bff-80ed-2ac6-bf60" name="Multi-melta" hidden="false" collective="false" import="true" targetId="c708-18ed-006d-d7b1" type="selectionEntry"/>
         <entryLink id="4e18-0d31-2c07-aa93" name="Twin boltgun" hidden="false" collective="false" import="true" targetId="1e4a-620f-aa58-042b" type="selectionEntry"/>
         <entryLink id="71b0-62f6-f97a-1fd3" name="Combi-flamer" hidden="false" collective="false" import="true" targetId="37ec-f7c5-e2f1-f8f4" type="selectionEntry"/>
         <entryLink id="90da-c9ec-d002-6359" name="Combi-grenade launcher" hidden="false" collective="false" import="true" targetId="0ffb-7305-172b-2e12" type="selectionEntry"/>
-        <entryLink id="c956-7cf9-937a-a38b" name="Combi-melter" hidden="false" collective="false" import="true" targetId="10f2-f9bd-11ad-0381" type="selectionEntry"/>
+        <entryLink id="c956-7cf9-937a-a38b" name="Combi-melta" hidden="false" collective="false" import="true" targetId="10f2-f9bd-11ad-0381" type="selectionEntry"/>
         <entryLink id="afaf-4e7d-73ec-1b07" name="Combi-plasma" hidden="false" collective="false" import="true" targetId="47a7-a2a6-8872-3ecf" type="selectionEntry"/>
         <entryLink id="32a5-63c7-6b7d-b305" name="Combi-volkite" hidden="false" collective="false" import="true" targetId="f32f-bd1e-2ccf-9173" type="selectionEntry"/>
         <entryLink id="39de-0a5e-14d7-3746" name="Combi-bolter" hidden="false" collective="false" import="true" targetId="3913-4cad-50ee-9244" type="selectionEntry"/>
+        <entryLink id="2cc5-c83a-c294-0c1a" name="Heavy bolter" hidden="false" collective="false" import="true" targetId="d1f2-cf6b-5969-b8b4" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="70ce-ec47-ed25-4ddd" name="Combi-weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="b9e4-5929-b4a0-5c0c">
@@ -18786,24 +18835,14 @@ more than 9” away from any enemy models.</characteristic>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e95-96ea-3745-9b5a" type="min"/>
       </constraints>
       <entryLinks>
-        <entryLink id="947d-6cfa-9c26-2473" name="Two lascannons" hidden="false" collective="false" import="true" targetId="1511-1d87-02fe-7131" type="selectionEntry"/>
-        <entryLink id="efc2-2045-8ed9-6ffe" name="Two heavy bolter" hidden="false" collective="false" import="true" targetId="5b37-d510-632c-26ea" type="selectionEntry"/>
-        <entryLink id="85cc-88b5-0b6a-a0bf" name="Two heavy flamer" hidden="false" collective="false" import="true" targetId="9ff4-c757-758f-2511" type="selectionEntry"/>
-      </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="9f5f-a95c-559e-4b85" name="Primarch" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4597-1551-d6c0-7935" type="max"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="376d-381e-e113-a933" name="Lion&apos;el Johnson" hidden="false" collective="false" import="true" type="model">
+        <entryLink id="947d-6cfa-9c26-2473" name="Two lascannons" hidden="false" collective="false" import="true" targetId="1511-1d87-02fe-7131" type="selectionEntry">
           <costs>
-            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
-            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
-            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+            <cost name="PL" typeId="b1e1-0497-949d-68af" value="1.0"/>
           </costs>
-        </selectionEntry>
-      </selectionEntries>
+        </entryLink>
+        <entryLink id="efc2-2045-8ed9-6ffe" name="Two heavy bolter" hidden="false" collective="false" import="true" targetId="5b37-d510-632c-26ea" type="selectionEntry"/>
+        <entryLink id="85cc-88b5-0b6a-a0bf" name="Two heavy flamers" hidden="false" collective="false" import="true" targetId="9ff4-c757-758f-2511" type="selectionEntry"/>
+      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="93a4-0c07-9949-600d" name="Relics" hidden="false" collective="false" import="true" defaultSelectionEntryId="8d9e-7653-019d-5cc6">
       <constraints>
@@ -19367,6 +19406,99 @@ more than 9” away from any enemy models.</characteristic>
               </profiles>
               <categoryLinks>
                 <categoryLink id="6e86-14cf-4cab-2deb" name="Scion of the Stormwing" hidden="false" targetId="d83b-fdc9-7cfd-df74" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+                <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+                <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e33e-c0e4-16a7-a2ed" name="Scion of the Deathwing" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aea7-8a3f-af51-6162" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa68-709a-12c6-7a65" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="612a-ac0d-3cc3-4bcf" name="Scion of the Deathwing" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="3117-79f3-eb21-c725">Any model of this unit can make Heroic Intervention moves. If it is a CHARACTER, it can perform a Heroic Intervention if the enemy is within 6” (rather than 3”) and can move up to 6” when doing so.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+                <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+                <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6da2-ba28-073e-109f" name="Scion of the Dreadwing" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e0a-d00a-783c-73b3" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b12-c986-ef70-483e" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="5aed-f7c4-d6a6-797e" name="Scion of the Dreadwing" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="3117-79f3-eb21-c725">This unit ignores any penalties for moving on the terrain and add +1 to wound roll in Shooting phase.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+                <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+                <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a130-579f-c35f-d046" name="Scion of the Firewing" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea5c-70a7-12f7-9cce" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0cc-d874-2bad-e15b" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="50d1-11a5-4e69-64cb" name="Scion of the Firewing" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="3117-79f3-eb21-c725">When units is resolving an attack against a Character unit, you can add 1 to hit rolls and wound rolls.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+                <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+                <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1dce-1e76-9e9b-0361" name="Scion of the Ironwing" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba05-6a71-c597-6691" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d47-3da3-9c3a-f15e" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="e7cf-cd14-c672-115c" name="Scion of the Ironwing" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="3117-79f3-eb21-c725">This unit hit on 5+ when firing Overwatch and can fire Overwatch without using Stratagem.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+                <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+                <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1958-02ba-77b8-a371" name="Scion of the Ravenwing" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9ec-f130-1974-e776" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b6d-2b70-0e97-e079" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="20ae-f389-2651-1968" name="Scion of the Ravenwing" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="3117-79f3-eb21-c725">If this unit Advances, it gains a 4+ invulnerable save against all shooting attacks until the start of your next Movement phase.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="5b2f-74f1-236d-b0f9" name="Scion of the Ravenwing" hidden="false" targetId="b788-c860-5f32-7231" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
@@ -21934,11 +22066,6 @@ Your opponent must also subtract 1 from hit rolls for attacks against this model
         <characteristic name="Abilities" typeId="8f3c-b1ed-80b8-dbfe">Each wound roll of an unmodified 6+ inflicts an additioal mortal wound on the target unit.</characteristic>
       </characteristics>
     </profile>
-    <profile id="275f-4540-fbc7-00e3" name="Cytheron pattern Aegis" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
-      <characteristics>
-        <characteristic name="Effect" typeId="3117-79f3-eb21-c725">Add 1 to armour saving throws made for the bearer. A model equipped with a Cytheron pattern Aegis has a 4+ Invulnerable save against Shooting attacks, and a 5+ Invulnerable save against attacks in Melee. Alternatively, if at least two models has been equipped with an Aegis and neither did not shoot nor fight this turn, they can give those Invulnerable saves to entire unit.</characteristic>
-      </characteristics>
-    </profile>
     <profile id="a90d-1141-a88f-a241" name="Brutal charge" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
       <characteristics>
         <characteristic name="Effect" typeId="3117-79f3-eb21-c725">When a model of this unit finishes a charge move, roll a dice; on a 4+ one enemy unit within 1” suffers a mortal wound.</characteristic>
@@ -22347,6 +22474,32 @@ as normal.</characteristic>
         <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">-1</characteristic>
         <characteristic name="D" typeId="fde9-623c-a082-78b0">1</characteristic>
         <characteristic name="Abilities" typeId="8f3c-b1ed-80b8-dbfe">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="52e2-f38e-8407-1c85" name="Covenant" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
+      <characteristics>
+        <characteristic name="Effect" typeId="3117-79f3-eb21-c725">During deployment, all models in this unit must be set up at the same time, they do not need to be in unit coherency. From that point on, each Legion TECHMARINE is treated as a separate unit.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3b01-d184-b334-c2cd" name="Battlesmith" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
+      <characteristics>
+        <characteristic name="Effect" typeId="3117-79f3-eb21-c725">At the end of your Movement phase this model can repair a single &lt;Legion&gt; VEHICLE within 1”. That model regains D3 wounds. A model can only be repaired once per turn.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4ff0-6c6d-b03a-7c53" name="Teranic greatsword" hidden="false" typeId="27fa-2a60-59a3-6273" typeName="Weapon(s)">
+      <characteristics>
+        <characteristic name="Range" typeId="fb7b-3fd3-e596-3848">Melee</characteristic>
+        <characteristic name="Type" typeId="198a-7eca-0c54-6f0a">Melee</characteristic>
+        <characteristic name="S" typeId="591d-883a-73fa-87d9">+3</characteristic>
+        <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">-3</characteristic>
+        <characteristic name="D" typeId="fde9-623c-a082-78b0">2</characteristic>
+        <characteristic name="Abilities" typeId="8f3c-b1ed-80b8-dbfe">Each wound roll of an unmodified 6+ inflicts an additioal mortal wound on the target unit.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4b2d-773a-b3f3-d384" name="Cytheron pattern Aegis" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
+      <characteristics>
+        <characteristic name="Effect" typeId="3117-79f3-eb21-c725">Add 1 to armour saving throws made for the bearer. A model equipped with a Cytheron pattern Aegis has a 4+ Invulnerable save against Shooting
+attacks, and a 5+ Invulnerable save against attacks in Melee.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6c8a-a156-45f2-b831" name="1 Dark Angels" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6c8a-a156-45f2-b831" name="1 Dark Angels" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Marshal of the Storm -&gt; Standard</comment>
   <categoryEntries>
     <categoryEntry id="1190-7c0d-b54b-e320" name="Dreadwing" hidden="false"/>
@@ -158,7 +158,7 @@
     <rule id="9402-3eda-598f-550b" name="Scions of the Hexagrammaton" hidden="false">
       <description>Dark Angels units can take additional upgrades from the Hexagrammaton or Hekatonystika (there is only one choice from the two lists).</description>
     </rule>
-    <rule id="26cc-1615-77d3-768d" name="Master of the Storm" hidden="true">
+    <rule id="26cc-1615-77d3-768d" name="Marshal of the Storm" hidden="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -166,7 +166,9 @@
           </conditions>
         </modifier>
       </modifiers>
-      <description>• Hold the Line: At the start of the Movement phase. After model in this unit suffered a wound, roll a dice; on a 6+, that wound is ignored. Unit cannot move this turn.
+      <description>Orders may only be issued to Dark Angels INFANTRY CORE units within 6” of this unit that have the Scion of the StormwIng upgrade. To issue an order, pick a target unit and choose which order you wish to issue from the table below. A unit may only be affected by one order per turn.
+
+• Hold the Line: At the start of the Movement phase. After model in this unit suffered a wound, roll a dice; on a 6+, that wound is ignored. Unit cannot move this turn.
 •  Volley Fire: At the start of the Shooting phase. Until the end of that phase, for the purposes of the Bolter Discipline ability, a Legion Tactical Squad unit is treated as if it had remained stationary in your previous Movement phase.
 • Full Assault: At the start of the Movement phase. This units add 1 to the Strength, if were Charged in the Charge phase.
 • Field Reserves: Before the battle. During deployment, you can set up this unit moving around the flanks instead of placing it on the battlefield. At the end of any of your  movement phases the unit can join the battle - set it up so that all models in the unit are within 6” of a your battlefield edge.</description>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="218d-602b-768b-7f56" name="WH30k unofficial 9th Edition" revision="11" battleScribeVersion="2.03" authorName="Lothar" authorContact="Please report any issues to the GitHub -&gt; Issues to:  github.com/rahtolsGitHub/Unofficial-30k-9th-edition/issues" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="218d-602b-768b-7f56" name="WH30k unofficial 9th Edition" revision="12" battleScribeVersion="2.03" authorName="Lothar" authorContact="Please report any issues to the GitHub -&gt; Issues to:  github.com/rahtolsGitHub/Unofficial-30k-9th-edition/issues" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <comment>BattleScribe data files for the unofficial Warhammer 30k 9th edition.</comment>
   <readme>Known Issues:
 
@@ -170,7 +170,12 @@ Shattered Legions: not yet implemented
     <categoryEntry id="5629-f2a6-f236-cb5b" name="Experimental" hidden="false"/>
     <categoryEntry id="3848-9a39-f276-b808" name="Loyalist" hidden="false"/>
     <categoryEntry id="8e10-6a5e-d7db-c85d" name="Traitor" hidden="false"/>
-    <categoryEntry id="342a-1773-87e1-6c23" name="Storm of War" hidden="false"/>
+    <categoryEntry id="342a-1773-87e1-6c23" name="Storm of War" hidden="false">
+      <comment>DA RoW</comment>
+    </categoryEntry>
+    <categoryEntry id="94f7-de75-3e21-8e70" name="Seeker&apos;s Arrow" hidden="false">
+      <comment>DA RoW</comment>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="4f23-15fd-4ba5-d3b2" name="Patrol Detachment (-2 CP)" hidden="false">
@@ -715,6 +720,7 @@ Shattered Legions: not yet implemented
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="342a-1773-87e1-6c23" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="94f7-de75-3e21-8e70" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -798,7 +804,20 @@ Shattered Legions: not yet implemented
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7517-97c9-abcf-7ee8" type="atLeast"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="2753-de7f-4226-571f" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="61c0-9e6f-481b-1518" type="notInstanceOf"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="94f7-de75-3e21-8e70" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2753-de7f-4226-571f" type="max"/>
+      </constraints>
       <forceEntries>
         <forceEntry id="f3d1-feb9-40c7-3dd5" name="Super-Heavy Detachment" hidden="false">
           <categoryLinks>
@@ -881,7 +900,7 @@ Shattered Legions: not yet implemented
   </entryLinks>
   <rules>
     <rule id="57db-7bb8-5bf6-c4ef" name="Objective Secured" hidden="false">
-      <description>If this detachment is comprised of only l egiones a startes units with the same &lt;Legion&gt; keyword, all Troops and non-HQ TERMINATOR units within this detachment gain this ability. Such a unit that is within range of an objective marker (as specified in the mission) controls the objective marker even if there are more enemy models within range of that objective marker. If an enemy unit within range of the same objective marker has a similar ability, then the objective marker is controlled by the player who has the most models within range of it as normal.</description>
+      <description>If this detachment is comprised of only Legiones Astartes units with the same &lt;Legion&gt; keyword, all TROOPS and non-HQ TERMINATOR units within this detachment gain this ability. Such a unit that is within range of an objective marker (as specified in the mission) controls the objective marker even if there are more enemy models within range of that objective marker. If an enemy unit within range of the same objective marker has a similar ability, then the objective marker is controlled by the player who has the most models within range of it as normal.</description>
     </rule>
   </rules>
   <sharedSelectionEntries>
@@ -1330,6 +1349,9 @@ Drawbacks:
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9309-fe0d-48f9-2c5b" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink id="575f-d224-e924-7bb2" name="Seeker&apos;s Arrow" hidden="false" targetId="94f7-de75-3e21-8e70" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
             <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
