@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6b91-b451-9459-3db3" name="4 Iron Warriors" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6b91-b451-9459-3db3" name="4 Iron Warriors" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Dominator in Standard list -&gt; combi weapons -&gt; volkite</comment>
   <categoryEntries>
     <categoryEntry id="9ad6-abd9-01a2-7445" name="Tyrant Siege Terminator" hidden="false"/>
@@ -68,7 +68,6 @@
         <categoryLink id="7d12-3be6-399a-cd40" name="Character" hidden="false" targetId="0749-dd2b-52eb-0bb0" primary="false"/>
         <categoryLink id="56e2-c7f4-fd7d-1ea3" name="Astartes" hidden="false" targetId="8eb7-c779-b4ba-c4ec" primary="false"/>
         <categoryLink id="15aa-5d66-278f-a469" name="Loyalist" hidden="false" targetId="3848-9a39-f276-b808" primary="false"/>
-        <categoryLink id="321b-bfdf-572b-3615" name="Warsmith" hidden="false" targetId="ff0b-4ecc-d1cd-850b" primary="false"/>
         <categoryLink id="32e5-0a3d-ed58-9b9f" name="Cortex Controller" hidden="false" targetId="b3c2-ab90-726b-1b9b" primary="false"/>
         <categoryLink id="bb0d-415d-f28a-0d17" name="Master of the Legion" hidden="false" targetId="5142-9e49-4ae3-54f8" primary="false"/>
         <categoryLink id="3ddb-66c5-78b9-9bc5" name="Melta grenades" hidden="false" targetId="a144-8fa9-9c04-8e93" primary="false"/>
@@ -286,7 +285,7 @@
       <infoLinks>
         <infoLink id="3d18-a4dc-96d4-1e25" name="Cataphractii Armour" hidden="false" targetId="ad1b-e439-caae-9c70" type="profile"/>
         <infoLink id="0bdb-b7c6-53e0-9d7a" name="Brutal charge" hidden="false" targetId="a90d-1141-a88f-a241" type="profile"/>
-        <infoLink id="6d83-2a65-5346-89e4" name="Bodyguard" hidden="false" targetId="a0dc-7498-2614-909b" type="profile"/>
+        <infoLink id="6d83-2a65-5346-89e4" name="Bodyguard" hidden="false" targetId="2267-d526-7122-8dd4" type="profile"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="bf96-8dfe-6e36-3a3a" name="Iron Warriors Dominator Cohort" hidden="false" collective="false" import="true">

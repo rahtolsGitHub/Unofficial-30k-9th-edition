@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="218d-602b-768b-7f56" name="WH30k unofficial 9th Edition" revision="12" battleScribeVersion="2.03" authorName="Lothar" authorContact="Please report any issues to the GitHub -&gt; Issues to:  github.com/rahtolsGitHub/Unofficial-30k-9th-edition/issues" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="218d-602b-768b-7f56" name="WH30k unofficial 9th Edition" revision="13" battleScribeVersion="2.03" authorName="Lothar" authorContact="Please report any issues to the GitHub -&gt; Issues to:  github.com/rahtolsGitHub/Unofficial-30k-9th-edition/issues" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <comment>BattleScribe data files for the unofficial Warhammer 30k 9th edition.</comment>
   <readme>Known Issues:
 
@@ -176,6 +176,12 @@ Shattered Legions: not yet implemented
     <categoryEntry id="94f7-de75-3e21-8e70" name="Seeker&apos;s Arrow" hidden="false">
       <comment>DA RoW</comment>
     </categoryEntry>
+    <categoryEntry id="6aea-6efe-f42e-bea6" name="Master of Signals" hidden="false"/>
+    <categoryEntry id="e2ed-bfd7-ade7-5716" name="Athanean" hidden="false"/>
+    <categoryEntry id="e746-aa89-9f91-71a7" name="Corvidae" hidden="false"/>
+    <categoryEntry id="290e-24bf-0da0-f9bb" name="Pavoni" hidden="false"/>
+    <categoryEntry id="6d57-1e47-2776-07b1" name="Pyrae" hidden="false"/>
+    <categoryEntry id="bd16-1fbe-a9a7-462c" name="Raptora" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="4f23-15fd-4ba5-d3b2" name="Patrol Detachment (-2 CP)" hidden="false">
@@ -215,20 +221,20 @@ Shattered Legions: not yet implemented
           <modifiers>
             <modifier type="set" field="1069-3d46-3589-a023" value="2.0">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a63d-9d96-aa81-a06f" type="notEqualTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a63d-9d96-aa81-a06f" type="lessThan"/>
               </conditions>
             </modifier>
-            <modifier type="decrement" field="1069-3d46-3589-a023" value="1.0">
+            <modifier type="increment" field="1069-3d46-3589-a023" value="1.0">
               <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4912-b312-83e0-ea3e" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="eb42-9caf-a22d-c897" repeats="1" roundUp="false"/>
               </repeats>
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a63d-9d96-aa81-a06f" type="atLeast"/>
               </conditions>
             </modifier>
-            <modifier type="increment" field="1069-3d46-3589-a023" value="1.0">
+            <modifier type="decrement" field="1069-3d46-3589-a023" value="1.0">
               <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eb42-9caf-a22d-c897" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4912-b312-83e0-ea3e" repeats="1" roundUp="false"/>
               </repeats>
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a63d-9d96-aa81-a06f" type="atLeast"/>
@@ -249,12 +255,12 @@ Shattered Legions: not yet implemented
           <modifiers>
             <modifier type="set" field="a77c-33dc-4b5a-789a" value="2.0">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a63d-9d96-aa81-a06f" type="notEqualTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a63d-9d96-aa81-a06f" type="lessThan"/>
               </conditions>
             </modifier>
             <modifier type="increment" field="a77c-33dc-4b5a-789a" value="1.0">
               <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eb42-9caf-a22d-c897" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="eb42-9caf-a22d-c897" repeats="1" roundUp="false"/>
               </repeats>
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a63d-9d96-aa81-a06f" type="atLeast"/>
@@ -262,7 +268,7 @@ Shattered Legions: not yet implemented
             </modifier>
             <modifier type="decrement" field="a77c-33dc-4b5a-789a" value="1.0">
               <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c39a-99d8-e84f-b5f9" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c39a-99d8-e84f-b5f9" repeats="1" roundUp="false"/>
               </repeats>
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a63d-9d96-aa81-a06f" type="atLeast"/>
@@ -287,7 +293,7 @@ Shattered Legions: not yet implemented
           <modifiers>
             <modifier type="increment" field="dfe5-3f66-8389-0d6e" value="1.0">
               <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c9bb-6ccb-efae-6184" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="eb42-9caf-a22d-c897" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
@@ -362,7 +368,7 @@ Shattered Legions: not yet implemented
           <modifiers>
             <modifier type="increment" field="bf3b-a07a-d48b-8a70" value="1.0">
               <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c9bb-6ccb-efae-6184" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="eb42-9caf-a22d-c897" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
@@ -435,7 +441,7 @@ Shattered Legions: not yet implemented
           <modifiers>
             <modifier type="increment" field="4c04-90dc-7b66-f59b" value="1.0">
               <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c9bb-6ccb-efae-6184" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="eb42-9caf-a22d-c897" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
@@ -582,7 +588,7 @@ Shattered Legions: not yet implemented
           <modifiers>
             <modifier type="increment" field="1cec-56aa-d1c6-5cd6" value="1.0">
               <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c9bb-6ccb-efae-6184" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="eb42-9caf-a22d-c897" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
@@ -661,7 +667,7 @@ Shattered Legions: not yet implemented
           <modifiers>
             <modifier type="increment" field="cb97-85ad-de50-17a0" value="1.0">
               <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c9bb-6ccb-efae-6184" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="eb42-9caf-a22d-c897" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
@@ -895,6 +901,26 @@ Shattered Legions: not yet implemented
     <entryLink id="34cb-fa7b-96a2-d498" name="Rites of War  (1.000 pts/50 PL, Master of the Legion)" hidden="false" collective="false" import="true" targetId="0c3a-c764-fb52-01c3" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="c8c8-5b56-5e6e-db0d" name="New CategoryLink" hidden="false" targetId="6772-cf1b-71fc-53b4" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="9651-c33f-c04b-60cd" name="Cult Arcana" hidden="true" collective="false" import="true" targetId="b34e-2f05-22c7-2fd1" type="selectionEntry">
+      <modifierGroups>
+        <modifierGroup>
+          <conditions>
+            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="718d-4c5c-8cb9-2bc1" type="instanceOf"/>
+          </conditions>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false"/>
+            <modifier type="set" field="bd06-7f8e-bd99-fb34" value="1.0"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd06-7f8e-bd99-fb34" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f61c-1164-75ea-f76b" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="e095-288f-6264-26fa" name="New CategoryLink" hidden="false" targetId="6772-cf1b-71fc-53b4" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -1162,8 +1188,8 @@ Shattered Legions: not yet implemented
       </costs>
     </selectionEntry>
     <selectionEntry id="0c3a-c764-fb52-01c3" name="Rites of War  (1.000 pts/50 PL, Master of the Legion)" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="9a33-8fe8-c4f0-7c5c" value="1.0">
+      <modifierGroups>
+        <modifierGroup>
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
@@ -1179,8 +1205,12 @@ Shattered Legions: not yet implemented
               </conditionGroups>
             </conditionGroup>
           </conditionGroups>
-        </modifier>
-      </modifiers>
+          <modifiers>
+            <modifier type="set" field="9a33-8fe8-c4f0-7c5c" value="1.0"/>
+            <modifier type="set" field="name" value="Rites of War"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
       <constraints>
         <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9a33-8fe8-c4f0-7c5c" type="max"/>
       </constraints>
@@ -1195,6 +1225,16 @@ Shattered Legions: not yet implemented
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+        <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+        <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b34e-2f05-22c7-2fd1" name="Cult Arcana" hidden="false" collective="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="33dd-1eb4-d3f5-182f" name="Cult Arcana" hidden="false" collective="false" import="true" targetId="49a0-3ed2-84dd-232c" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
@@ -2363,7 +2403,7 @@ Drawbacks:
           </constraints>
           <costs>
             <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
-            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+            <cost name="CP" typeId="1fac-937b-7466-575c" value="1.0"/>
             <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2806,6 +2846,105 @@ All INFANTRY in this detachment must be capable of being transported by a v eHic
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
+    <selectionEntryGroup id="49a0-3ed2-84dd-232c" name="Cult Arcana" hidden="false" collective="false" import="true" defaultSelectionEntryId="7d20-caa4-3a00-f669">
+      <comment>15 TS Cult selection fir the Army Setup</comment>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0a8-119a-af13-c985" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e087-8e44-55e6-e6e9" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="c9a5-9e93-b052-8696" name="Corvidae" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41c9-4b31-5e69-458e" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="a3cf-eb0a-a53c-7c8a" name="Cult &lt;Corvidae&gt;" hidden="false">
+              <description>Models from the Corvidae cult can re-roll hit rolls of 1 in Shooting phase, if they were stationary in the Movement phase.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="fb3a-fa00-d005-0158" name="Corvidae" hidden="false" targetId="e746-aa89-9f91-71a7" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a8e0-795e-45b5-1743" name="Pavoni" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85de-5182-a1e9-c562" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="4bf4-390a-b75b-548c" name="Cult &lt;Pavoni&gt;" hidden="false">
+              <description>Models from the Pavoni cult can re-roll failed charge rolls.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="d5bf-c7da-9dfa-071b" name="Pavoni" hidden="false" targetId="290e-24bf-0da0-f9bb" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7d20-caa4-3a00-f669" name="Athanean" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0204-c93c-202c-e274" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="c4c7-1ab5-3c54-64d4" name="Cult &lt;Athanean&gt;" hidden="false">
+              <description>Enemy Psykers suffer -1 to attempts to manifest psychic powers within 24” of models from the Athenaean cult.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="9bc9-d57a-7d72-9209" name="Athanean" hidden="false" targetId="e2ed-bfd7-ade7-5716" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0ce3-7881-5c6c-07ce" name="Pyrae" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d819-730f-36cd-6437" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="fe92-3dbf-a712-a953" name="Cult &lt;Pyrae&gt;" hidden="false">
+              <description>Models from the Pyrae cult make one additional attack when made Charge move this turn with Strength 5, AP -2, Damage 1.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="e374-1dd5-170c-81bd" name="Pyrae" hidden="false" targetId="6d57-1e47-2776-07b1" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ffb7-8581-791b-b923" name="Raptora" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0323-42d8-9f82-6d4b" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="0b2d-0e54-de95-1bc2" name="Cult &lt;Raptora&gt;" hidden="false">
+              <description>Models from the Raptora cult have a 6+ invulnerable save, or add 1 to their existing invulnerable save (maximum to the 4+ invulnerable save).</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="d202-97bd-2a19-9e8e" name="Raptora" hidden="false" targetId="bd16-1fbe-a9a7-462c" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedProfiles>
     <profile id="26e4-c01e-24f3-31ed" name="Explodes (6&quot;/D3)" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
@@ -2878,11 +3017,6 @@ All INFANTRY in this detachment must be capable of being transported by a v eHic
         <characteristic name="Effect" typeId="3117-79f3-eb21-c725">You can re-roll hit rolls of 1 made for friendly &lt;Legion&gt; CORE units within 6” of that model.</characteristic>
       </characteristics>
     </profile>
-    <profile id="a0dc-7498-2614-909b" name="Bodyguard" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
-      <characteristics>
-        <characteristic name="Effect" typeId="3117-79f3-eb21-c725">While a friendly &lt;Legion&gt; CHARACTER unIt that has a Wounds characteristic of 9 or less is within 3” of this unit, enemy models cannot target that CHARACTER unit with ranged attacks.</characteristic>
-      </characteristics>
-    </profile>
     <profile id="8925-da7d-a4ba-f8ad" name="Crushing Charge" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
       <characteristics>
         <characteristic name="Effect" typeId="3117-79f3-eb21-c725"> If a model with this ability has charged this turn, it gains +1 to its Strength characteristic until the end of the Fight phase.</characteristic>
@@ -2896,6 +3030,12 @@ All INFANTRY in this detachment must be capable of being transported by a v eHic
     <profile id="66e4-456d-bf5b-da8a" name="Flanking Manoeuvres" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
       <characteristics>
         <characteristic name="Effect" typeId="3117-79f3-eb21-c725">During deployment, you can set up this unit moving around the flanks instead of placing it on the battlefield. At the end of any of your Movement phases the unit can join the battle - set it up so that all models in the unit are within 6” of a battlefield edge of your choice and more than 9” from enemy models. A unit cannot use it’s Flanking Manoeuvres ability in the same turn that it moved off the board.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b644-3301-cc52-1c0a" name="Teleport Assault" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
+      <comment>IF Hammerfall RoW ability</comment>
+      <characteristics>
+        <characteristic name="Effect" typeId="3117-79f3-eb21-c725">During deployment, you can set up this unit in the teleportarium chamber instead of placing it on the battlefield. At the end of any of your Movement phases this unit can perform a teleport assault - set it up anywhere on the battlefield that is more than 9” away from any enemy models.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

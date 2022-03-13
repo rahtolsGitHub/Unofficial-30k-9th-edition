@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="18dc-6092-a0ca-5252" name="7 Imperial Fists" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="18dc-6092-a0ca-5252" name="7 Imperial Fists" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="c10e-574b-801a-fe34" name="Templar Brethren" hidden="false"/>
     <categoryEntry id="09c4-14f0-1145-0c95" name="Huscarls" hidden="false"/>
@@ -63,6 +63,7 @@
         <categoryLink id="4568-d3a5-19b9-621d" name="Praetor" hidden="false" targetId="c46a-7ccd-8c8b-bac2" primary="false"/>
         <categoryLink id="edac-c0fd-6056-4ec0" name="Master of the Legion" hidden="false" targetId="5142-9e49-4ae3-54f8" primary="false"/>
         <categoryLink id="5f2d-cc1e-5015-25a9" name="Fafnir Rann" hidden="false" targetId="816e-1a15-d61b-6095" primary="false"/>
+        <categoryLink id="72ee-6b5e-11af-9386" name="Void Hardened" hidden="false" targetId="ff02-cf36-1c2d-ab9b" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="82b1-153e-d9d4-87d3" name="Sigismund" hidden="false" collective="false" import="true" targetId="9eb7-c4be-30df-7d30" type="selectionEntry">
@@ -357,8 +358,8 @@
         </modifier>
       </modifiers>
       <infoLinks>
-        <infoLink id="c766-f326-cdab-cec2" name="Teleport Assault" hidden="false" targetId="25df-ace3-faa2-7b4f" type="profile"/>
-        <infoLink id="b6db-b611-ab7d-3062" name="Bodyguard" hidden="false" targetId="a0dc-7498-2614-909b" type="profile"/>
+        <infoLink id="c766-f326-cdab-cec2" name="Teleport Assault" hidden="false" targetId="b644-3301-cc52-1c0a" type="profile"/>
+        <infoLink id="b6db-b611-ab7d-3062" name="Bodyguard" hidden="false" targetId="2267-d526-7122-8dd4" type="profile"/>
         <infoLink id="24ca-ab77-6bd0-ac9b" name="Crushing Charge" hidden="false" targetId="8925-da7d-a4ba-f8ad" type="profile"/>
         <infoLink id="2dcb-256b-c6af-4ed8" name="Cataphractii Armour" hidden="false" targetId="ad1b-e439-caae-9c70" type="profile">
           <modifiers>
@@ -502,6 +503,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="901c-286c-f649-d654" name="Teleportation transponder" hidden="false" collective="false" import="true" targetId="2047-dd39-f9a1-9a43" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="12.0"/>
         <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
@@ -1008,14 +1012,22 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="567e-cb1f-38d3-3f60" type="max"/>
       </constraints>
       <profiles>
-        <profile id="d7af-6d31-7b7a-026f" name="Executioner" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
+        <profile id="d7af-6d31-7b7a-026f" name="Executioner&apos;s Tax" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
           <characteristics>
-            <characteristic name="Effect" typeId="3117-79f3-eb21-c725">When resolving an attack made with a melee weapon by this model against a CHARACTER unit, you can add 1 to the Damage Characteristic of this model’s melee weapons.</characteristic>
+            <characteristic name="Effect" typeId="3117-79f3-eb21-c725">Each time an attack is made by this model, an unmodified wound roll of 6 inflicts 1 mortal wound on the target in addition to any normal damage.</characteristic>
           </characteristics>
         </profile>
-        <profile id="2e65-980b-a03e-b6ac" name="Assault Cadre" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
+        <profile id="bf0f-35c0-b3c7-b9bc" name="Fafnir Rann" hidden="false" typeId="67c9-ee36-a193-36de" typeName="Unit">
           <characteristics>
-            <characteristic name="Effect" typeId="3117-79f3-eb21-c725">Each time you roll a hit roll of 6 in the Fight phase for a friendly ImperIal fIsts unit within 6&quot; of this unit, you can immediately make 1 additional attack for that model. These bonus attacks do not themselves generate additional attacks.</characteristic>
+            <characteristic name="M" typeId="37d7-d298-a04a-4e6c">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e065-bda1-02de-6f2e">2+</characteristic>
+            <characteristic name="BS" typeId="8003-bae2-5072-d024">2+</characteristic>
+            <characteristic name="S" typeId="430a-b60b-2a15-6186">4</characteristic>
+            <characteristic name="T" typeId="b550-6ea2-7a76-d49f">4</characteristic>
+            <characteristic name="W" typeId="3461-fc7e-2d85-5568">5</characteristic>
+            <characteristic name="A" typeId="0fd1-a74f-329d-e60e">5</characteristic>
+            <characteristic name="Ld" typeId="d8ad-d2df-5b05-f70c">9</characteristic>
+            <characteristic name="Save" typeId="33be-eb18-f17d-e4cc">2+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1034,32 +1046,46 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ada7-c525-dcca-4bb3" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a59-9b6a-0f32-68a3" type="min"/>
           </constraints>
-          <profiles>
-            <profile id="8ac2-85e9-673a-9728" name="Fafnir Rann" hidden="false" typeId="67c9-ee36-a193-36de" typeName="Unit">
-              <characteristics>
-                <characteristic name="M" typeId="37d7-d298-a04a-4e6c">6&quot;</characteristic>
-                <characteristic name="WS" typeId="e065-bda1-02de-6f2e">2+</characteristic>
-                <characteristic name="BS" typeId="8003-bae2-5072-d024">2+</characteristic>
-                <characteristic name="S" typeId="430a-b60b-2a15-6186">4</characteristic>
-                <characteristic name="T" typeId="b550-6ea2-7a76-d49f">4</characteristic>
-                <characteristic name="W" typeId="3461-fc7e-2d85-5568">5</characteristic>
-                <characteristic name="A" typeId="0fd1-a74f-329d-e60e">5</characteristic>
-                <characteristic name="Ld" typeId="d8ad-d2df-5b05-f70c">9</characteristic>
-                <characteristic name="Save" typeId="33be-eb18-f17d-e4cc">2+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <selectionEntries>
+            <selectionEntry id="401d-e9dc-69ca-f14b" name="The Headsman &amp; The Hunter" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a5d-8c0c-ca27-4b30" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d037-7947-fbca-92e8" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="0813-3ddb-a528-c8be" name="The Headsman &amp; The Hunter, Single Axe" hidden="false" typeId="27fa-2a60-59a3-6273" typeName="Weapon(s)">
+                  <characteristics>
+                    <characteristic name="Range" typeId="fb7b-3fd3-e596-3848">Melee</characteristic>
+                    <characteristic name="Type" typeId="198a-7eca-0c54-6f0a">Melee</characteristic>
+                    <characteristic name="S" typeId="591d-883a-73fa-87d9">+2</characteristic>
+                    <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">-3</characteristic>
+                    <characteristic name="D" typeId="fde9-623c-a082-78b0">2</characteristic>
+                    <characteristic name="Abilities" typeId="8f3c-b1ed-80b8-dbfe">All Hits inflicted by enemy models and allocated to Fafnir Rann must reduce their Strength by -1 (to a minimum of 1).</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="d718-5959-3cac-b21c" name="The Headsman &amp; The Hunter, Twinned Axe" hidden="false" typeId="27fa-2a60-59a3-6273" typeName="Weapon(s)">
+                  <characteristics>
+                    <characteristic name="Range" typeId="fb7b-3fd3-e596-3848">Melee</characteristic>
+                    <characteristic name="Type" typeId="198a-7eca-0c54-6f0a">Melee</characteristic>
+                    <characteristic name="S" typeId="591d-883a-73fa-87d9">+2</characteristic>
+                    <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">-3</characteristic>
+                    <characteristic name="D" typeId="fde9-623c-a082-78b0">2</characteristic>
+                    <characteristic name="Abilities" typeId="8f3c-b1ed-80b8-dbfe">Each time the bearer fights, it can make 1 additional attack with this weapon. Fafnir Rann is not counted as having a boarding shield for any rules that would grant him benefit for having a boarding shield.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+                <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+                <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <entryLinks>
             <entryLink id="f603-2547-e6dc-384c" name="Power sword" hidden="false" collective="false" import="true" targetId="5e1d-f70f-1614-2573" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd2f-3bb3-77a4-9f6d" type="max"/>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3588-30d7-661e-fbca" type="min"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="04d9-6049-f330-e50d" name="Master-crafted power axe" hidden="false" collective="false" import="true" targetId="fce1-9b34-89ea-a660" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="343b-d55e-b3d8-02ea" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="809f-1f44-cc0f-e199" type="min"/>
               </constraints>
             </entryLink>
             <entryLink id="b9b3-37d1-a5ba-0f48" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="13a2-c526-9ffe-7d82" type="selectionEntry">
@@ -1080,9 +1106,9 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b3e-aef0-651c-46f2" type="max"/>
           </constraints>
           <profiles>
-            <profile id="7cc2-154c-fd07-63ed" name="Unshakable" hidden="false" typeId="4c8f-9076-15da-eee0" typeName="Warlord Trait">
+            <profile id="7cc2-154c-fd07-63ed" name="The Unbroken Wall" hidden="false" typeId="4c8f-9076-15da-eee0" typeName="Warlord Trait">
               <characteristics>
-                <characteristic name="Effect" typeId="369e-5923-7e47-fb73">Roll a D6 each time this model suffers a wound, on a 6+ that wound is ignored.</characteristic>
+                <characteristic name="Effect" typeId="369e-5923-7e47-fb73">If this model is the Warlord, you can add 1 to Hit rolls made during the following Fight phase for friendly Legion BREACHER SIEGE SQUADS or PHALANX WARDER SQUADS units within 6”, if this unit either Charged or were Charged in the Charge phase. In your Command phase, select one friendly Legion BREACHER SIEGE SQUAD or PHALANX WARDER SQUAD within 6&quot; of this Warlord, each time you roll a hit roll of 6 in the Fight phase for a this unit, you can immediately make 1 additional attack for that model. These bonus attacks do not themselves generate additional attacks.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1093,9 +1119,12 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="03d5-d959-31f3-85e2" name="Teleportation transponder" hidden="false" collective="false" import="true" targetId="2047-dd39-f9a1-9a43" type="selectionEntry"/>
+      </entryLinks>
       <costs>
-        <cost name="PL" typeId="b1e1-0497-949d-68af" value="6.0"/>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="110.0"/>
+        <cost name="PL" typeId="b1e1-0497-949d-68af" value="5.0"/>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="100.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
       </costs>
     </selectionEntry>

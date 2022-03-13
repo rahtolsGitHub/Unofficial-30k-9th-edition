@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5173-4ef7-b125-f838" name="16 Sons of Horus" revision="9" battleScribeVersion="2.03" authorName="Lothar" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5173-4ef7-b125-f838" name="16 Sons of Horus" revision="10" battleScribeVersion="2.03" authorName="Lothar" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="54d1-7c00-2862-e45e" name="Justaerin" hidden="false"/>
     <categoryEntry id="30da-1742-49e7-ed79" name="Reavers" hidden="false"/>
@@ -728,7 +728,7 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="5a85-9c82-c276-f75a" name="Teleport Assault" hidden="false" targetId="25df-ace3-faa2-7b4f" type="profile"/>
+        <infoLink id="5a85-9c82-c276-f75a" name="Teleport Assault" hidden="false" targetId="b644-3301-cc52-1c0a" type="profile"/>
         <infoLink id="b9df-4c2b-b105-45e8" name="Cataphractii Armour" hidden="false" targetId="ad1b-e439-caae-9c70" type="profile"/>
         <infoLink id="81f5-0c33-f261-7b1b" name="Rites of Battle (Aura)" hidden="false" targetId="2ede-9b2b-d541-2d6a" type="profile"/>
       </infoLinks>

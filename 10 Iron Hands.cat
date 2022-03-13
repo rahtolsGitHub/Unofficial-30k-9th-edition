@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d785-7c96-1355-f98d" name="10 Iron Hands" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d785-7c96-1355-f98d" name="10 Iron Hands" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Cat Gorgon Terminators in Standard.cat, -&gt; Combi weapon -&gt; Volkite
 Cat Castrmen in Standards -&gt; Tank selection
 Cat Ferrus -&gt; Plasma blaster</comment>
@@ -98,7 +98,7 @@ Cat Ferrus -&gt; Plasma blaster</comment>
       </profiles>
       <infoLinks>
         <infoLink id="1f31-c786-dfa9-db6d" name="Angels of Death" hidden="false" targetId="d86e-f36b-a111-122e" type="profile"/>
-        <infoLink id="2378-1b9d-0ce7-7eea" name="Bodyguard" hidden="false" targetId="a0dc-7498-2614-909b" type="profile"/>
+        <infoLink id="2378-1b9d-0ce7-7eea" name="Bodyguard" hidden="false" targetId="2267-d526-7122-8dd4" type="profile"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="86dc-4022-df71-3989" name="Gorgon Terminator Squad" hidden="false" collective="false" import="true" defaultSelectionEntryId="d2cf-98ff-9b3b-cda9">
@@ -651,7 +651,7 @@ Cat Ferrus -&gt; Plasma blaster</comment>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="045e-5a23-fb4f-1838" name="Sperahead-Centurion Castrmen Orth" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="045e-5a23-fb4f-1838" name="Spearhead-Centurion Castrmen Orth" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="12ea-0d48-78ce-3f47" value="0.0">
           <conditions>

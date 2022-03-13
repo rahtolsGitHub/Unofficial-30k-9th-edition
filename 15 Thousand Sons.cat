@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="718d-4c5c-8cb9-2bc1" name="15 Thousand Sons" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="718d-4c5c-8cb9-2bc1" name="15 Thousand Sons" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="a83f-9bf4-0e23-2d1f" name="Castellax-Achea" hidden="false"/>
     <categoryEntry id="27ac-6143-d865-4659" name="Thousand Sons" hidden="false"/>

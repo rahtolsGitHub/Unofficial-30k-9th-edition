@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c6dd-878e-ff01-6361" name="3 Emperor&apos;s Children" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="c6dd-878e-ff01-6361" name="3 Emperor&apos;s Children" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="4d04-572c-f6c1-9c56" name="Phoenix Terminators" hidden="false"/>
     <categoryEntry id="a8b7-c2e5-f785-cc96" name="Palatine Blades" hidden="false"/>
@@ -88,6 +88,14 @@
       </categoryLinks>
     </entryLink>
   </entryLinks>
+  <rules>
+    <rule id="e4a0-3f95-009c-512a" name="Legion Traits" hidden="false">
+      <description>If your army is Battle-forged, all Emperor’s ChIldren INFANTRY, BIKER and DREADNOUGHT units in a detachment gain the following Legion Traits. Note due to their nature, CYBERNETICA CORTEX, THALLAX and SERVO-AUTOMATA units are the exception and do not benefit from Legion Traits.
+• Flawless Execution: Models with this ability add +1 to Advance and Charge rolls and recive +1 attack when charging, making Heroic Intervention or was charged.
+• Duellist’s Pride: If model in this unit is within Engagement range with an enemy CHARACTER; an Emperor’s ChIldren CHARACTER must direct all of his attacks against the enemy CHARACTER.
+• Martial Pride: astartes units with this ability suffer a -1 penalty to Combat Attrition tests during the Morale phase if an enemy CHARACTER killed a friendly Emperor’s ChIldren CHARACTER within 6” during the preceding Fight phase.</description>
+    </rule>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="28d7-9e7f-88c0-5042" name="Phoenix Terminators" hidden="false" collective="false" import="true" type="unit">
       <modifiers>

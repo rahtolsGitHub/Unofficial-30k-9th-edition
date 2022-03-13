@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="525b-fa7d-5930-4b16" name="12 World Eaters" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="525b-fa7d-5930-4b16" name="12 World Eaters" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Cat Red Butchers -&gt; Standard _&gt; Volkite charger
 Endryd -&gt; Archaeotech
 Knight Errant -&gt; Blackshields</comment>
@@ -1001,10 +1001,10 @@ Knight Errant -&gt; Blackshields</comment>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc5f-cb7f-36b0-cec8" type="max"/>
                       </constraints>
                     </entryLink>
-                    <entryLink id="bcbf-fe1a-b556-ce15" name="Barb-hook lash" hidden="false" collective="false" import="true" targetId="4278-0d9d-cf93-c1f8" type="selectionEntry"/>
-                    <entryLink id="d838-58c3-abde-9458" name="Excoriator chainaxe" hidden="false" collective="false" import="true" targetId="6915-70c7-d139-ca47" type="selectionEntry"/>
-                    <entryLink id="9c7a-4963-314d-6d41" name="Meteor hammer" hidden="false" collective="false" import="true" targetId="5816-efa4-9a2c-badb" type="selectionEntry"/>
-                    <entryLink id="242a-930b-964b-2828" name="Twin falax blades" hidden="false" collective="false" import="true" targetId="4789-898b-b948-a912" type="selectionEntry"/>
+                    <entryLink id="931f-ec0d-6ab0-0a6e" name="Twin falax blades" hidden="false" collective="false" import="true" targetId="3281-ae5a-684c-9c6f" type="selectionEntry"/>
+                    <entryLink id="9849-a439-b961-c082" name="Barb-hook lash" hidden="false" collective="false" import="true" targetId="377c-3cba-0497-5d6f" type="selectionEntry"/>
+                    <entryLink id="77f5-6127-1836-d307" name="Excoriator chainaxe" hidden="false" collective="false" import="true" targetId="ea6d-9fc6-eab6-cd65" type="selectionEntry"/>
+                    <entryLink id="24d2-18cf-de87-d1a2" name="Meteor hammer" hidden="false" collective="false" import="true" targetId="d042-44b1-c976-bca5" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -1143,50 +1143,6 @@ Knight Errant -&gt; Blackshields</comment>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4278-0d9d-cf93-c1f8" name="Barb-hook lash" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1487-4e83-399b-9f40" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="8ae6-1d24-2803-9403" name="Barb-hook lash" hidden="false" typeId="27fa-2a60-59a3-6273" typeName="Weapon(s)">
-          <characteristics>
-            <characteristic name="Range" typeId="fb7b-3fd3-e596-3848">Melee</characteristic>
-            <characteristic name="Type" typeId="198a-7eca-0c54-6f0a">Melee</characteristic>
-            <characteristic name="S" typeId="591d-883a-73fa-87d9">User</characteristic>
-            <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">-1</characteristic>
-            <characteristic name="D" typeId="fde9-623c-a082-78b0">2</characteristic>
-            <characteristic name="Abilities" typeId="8f3c-b1ed-80b8-dbfe">This weapon always wounds on a 2+; except against VEHICLES where it always needs a 6+.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <costs>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="5.0"/>
-        <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
-        <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="6915-70c7-d139-ca47" name="Excoriator chainaxe" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3165-5cc3-ebd5-9bf6" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="cd9f-3128-9691-41ba" name="Excoriator chainaxe" hidden="false" typeId="27fa-2a60-59a3-6273" typeName="Weapon(s)">
-          <characteristics>
-            <characteristic name="Range" typeId="fb7b-3fd3-e596-3848">Melee</characteristic>
-            <characteristic name="Type" typeId="198a-7eca-0c54-6f0a">Melee</characteristic>
-            <characteristic name="S" typeId="591d-883a-73fa-87d9">+2</characteristic>
-            <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">-2</characteristic>
-            <characteristic name="D" typeId="fde9-623c-a082-78b0">2</characteristic>
-            <characteristic name="Abilities" typeId="8f3c-b1ed-80b8-dbfe">You suffer -1 to hit rolls with this weapon. Re-roll failed wounds with this weapon.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <costs>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="10.0"/>
-        <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
-        <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="5816-efa4-9a2c-badb" name="Meteor hammer" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ce5-8f15-ebfc-b791" type="max"/>
@@ -1200,28 +1156,6 @@ Knight Errant -&gt; Blackshields</comment>
             <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">-1</characteristic>
             <characteristic name="D" typeId="fde9-623c-a082-78b0">2</characteristic>
             <characteristic name="Abilities" typeId="8f3c-b1ed-80b8-dbfe">You get +1 to hit rolls with this weapon.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <costs>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="5.0"/>
-        <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
-        <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="4789-898b-b948-a912" name="Twin falax blades" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="369b-a6f8-cf91-da03" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="6c11-b771-23bb-1982" name="Twin falax blades" hidden="false" typeId="27fa-2a60-59a3-6273" typeName="Weapon(s)">
-          <characteristics>
-            <characteristic name="Range" typeId="fb7b-3fd3-e596-3848">Melee</characteristic>
-            <characteristic name="Type" typeId="198a-7eca-0c54-6f0a">Melee</characteristic>
-            <characteristic name="S" typeId="591d-883a-73fa-87d9">+1</characteristic>
-            <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">-1</characteristic>
-            <characteristic name="D" typeId="fde9-623c-a082-78b0">1</characteristic>
-            <characteristic name="Abilities" typeId="8f3c-b1ed-80b8-dbfe">Each time the bearer fights exclusively with this weapon in the Fight phase, it makes 2 extra attacks with this weapon.</characteristic>
           </characteristics>
         </profile>
       </profiles>

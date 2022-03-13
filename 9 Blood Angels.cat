@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4ea7-b77b-fea1-d31f" name="9 Blood Angels" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4ea7-b77b-fea1-d31f" name="9 Blood Angels" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="c6d3-76be-1e8c-52d7" name="Dawnbreaker Cohort" hidden="false"/>
     <categoryEntry id="09d9-dc6e-a65c-da76" name="Crimson Paladins" hidden="false"/>
     <categoryEntry id="90a6-b49a-c123-116d" name="Angel&apos;s Tears" hidden="false"/>
     <categoryEntry id="12b8-051a-ee4a-d392" name="Aster Crohne" hidden="false"/>
-    <categoryEntry id="0b60-1841-f603-bdc3" name="Dominion Zephon" hidden="false"/>
     <categoryEntry id="f633-d59c-fd14-cbe6" name="Raldoron" hidden="false"/>
     <categoryEntry id="be44-67ae-7ea9-e88c" name="Sanguinus" hidden="false"/>
   </categoryEntries>
@@ -73,7 +72,7 @@
         <categoryLink id="b1bb-9af7-df6b-c77a" name="Fly" hidden="false" targetId="150d-38e7-8c25-f30c" primary="false"/>
         <categoryLink id="753c-78ff-417b-fdd5" name="Jump Pack" hidden="false" targetId="ee19-27ba-2661-90fe" primary="false"/>
         <categoryLink id="44d5-6d09-bde9-c012" name="Champion" hidden="false" targetId="f785-2815-7502-4768" primary="false"/>
-        <categoryLink id="d812-a025-0287-cec1" name="Dominion Zephon" hidden="false" targetId="0b60-1841-f603-bdc3" primary="false"/>
+        <categoryLink id="410e-56e5-b09c-45b6" name="Dominion Zephon" hidden="false" targetId="bbc7-7fc1-d15c-7fa6" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="d331-490e-96f2-b3dd" name="Chapter Master Raldoron" hidden="false" collective="false" import="true" targetId="6835-0246-7715-0a06" type="selectionEntry">
@@ -385,8 +384,8 @@
       </profiles>
       <infoLinks>
         <infoLink id="27a1-5a9f-aa9c-6132" name="Cataphractii Armour" hidden="false" targetId="ad1b-e439-caae-9c70" type="profile"/>
-        <infoLink id="78ea-3eb2-88bb-6c20" name="Bodyguard" hidden="false" targetId="a0dc-7498-2614-909b" type="profile"/>
-        <infoLink id="8904-6fbd-855c-6bbe" name="Teleport Assault" hidden="false" targetId="25df-ace3-faa2-7b4f" type="profile"/>
+        <infoLink id="78ea-3eb2-88bb-6c20" name="Bodyguard" hidden="false" targetId="2267-d526-7122-8dd4" type="profile"/>
+        <infoLink id="8904-6fbd-855c-6bbe" name="Teleport Assault" hidden="false" targetId="b644-3301-cc52-1c0a" type="profile"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="8e46-04aa-022b-cf89" name="Crimson Paladins" hidden="false" collective="false" import="true" defaultSelectionEntryId="8106-1cca-653f-6ac1">
@@ -821,6 +820,7 @@
                       </constraints>
                     </entryLink>
                     <entryLink id="c13d-2760-406d-6999" name="Angel&apos;s Tears grenade launcher" hidden="false" collective="false" import="true" targetId="7ae5-d445-9b5b-7b00" type="selectionEntry"/>
+                    <entryLink id="1ba5-20d0-efe7-1153" name="Hand flamer" hidden="false" collective="false" import="true" targetId="f7ef-20b9-3f63-cf3f" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -873,6 +873,8 @@
                   <entryLinks>
                     <entryLink id="0d76-2a29-03da-f407" name="Volkite serpenta" hidden="false" collective="false" import="true" targetId="27ee-ce60-6bbc-8fb4" type="selectionEntry"/>
                     <entryLink id="0acb-b5c0-4231-180b" name="Plasma pistol" hidden="false" collective="false" import="true" targetId="ecbf-0a25-ef0e-5868" type="selectionEntry"/>
+                    <entryLink id="e600-cfb8-8763-d121" name="Hand flamer" hidden="false" collective="false" import="true" targetId="f7ef-20b9-3f63-cf3f" type="selectionEntry"/>
+                    <entryLink id="840b-ab02-38b6-5f47" name="Inferno pistol" hidden="false" collective="false" import="true" targetId="1d97-72b3-3465-0dba" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="92cf-149a-cd19-3616" name="Weapon Option II" hidden="false" collective="false" import="true" defaultSelectionEntryId="51ca-9392-2303-71b6">
@@ -1062,9 +1064,9 @@
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="feb2-eae6-5181-5b9e" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="2470-4166-1f57-4a27" value="0.0">
+        <modifier type="add" field="category" value="26c1-e6bf-4904-500b">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b67b-0730-060b-94d4" type="notEqualTo"/>
+            <condition field="selections" scope="3da3-b11e-79aa-38de" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="880c-9038-f139-50c6" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1085,9 +1087,9 @@
             <characteristic name="Save" typeId="33be-eb18-f17d-e4cc">3+</characteristic>
           </characteristics>
         </profile>
-        <profile id="2e8e-c643-f154-7873" name="Exquisite Bionics" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
+        <profile id="2e8e-c643-f154-7873" name="Paragon of Restoration" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
           <characteristics>
-            <characteristic name="Effect" typeId="3117-79f3-eb21-c725">Roll a D6 each time this model suffers a wound, on a 6+ that wound is ignored.</characteristic>
+            <characteristic name="Effect" typeId="3117-79f3-eb21-c725">Roll a D6 each time this model suffers a wound, on a 6+ that wound is ignored. The first time in any battle that Dominion Zephon loses his last Wound, or is otherwise removed from play as a casualty, the controlling player must immediately roll a D6. On a result of 4+, he remains in play with a single Wound remaining instead of being removed or destroyed.</characteristic>
           </characteristics>
         </profile>
         <profile id="a9f0-8350-d3d6-616d" name="Chain Fire" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
@@ -1097,7 +1099,7 @@
         </profile>
         <profile id="04f1-ee12-12d1-436b" name="Honour or Death" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
           <characteristics>
-            <characteristic name="Effect" typeId="3117-79f3-eb21-c725">This model must perform a Heroic Intervention if it is able to do so. It can perform a Heroic Intervention if there are any enemy units within 6” of it instead of 3” if any of those enemy units is a CHARACTER, and when doing so can move up to 6” instead of 3” so long as it ends that move closer to theclosest enemy CHARACTER model.</characteristic>
+            <characteristic name="Effect" typeId="3117-79f3-eb21-c725">This model is eligible to perform a Heroic Intervention if it is within 6” horizontally and 5” vertically of any enemy unit, instead of 3” horizontally and 5” vertically. Each time this model makes a Heroic Intervention move, so long as it ends that moveeither closer to the closest enemy model or within Engagement Range of an enemy CHARACTER unit, it can move up to 6”. All other rules for Heroic Interventions still apply.</characteristic>
           </characteristics>
         </profile>
         <profile id="6ead-5e18-50f7-705a" name="Martial Superiority" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
@@ -1109,6 +1111,7 @@
       <infoLinks>
         <infoLink id="1987-d737-e096-4981" name="Refractor field" hidden="false" targetId="5367-173b-e2b4-3093" type="profile"/>
         <infoLink id="51d1-2d16-cd6a-fc96" name="Spiritual Leader" hidden="false" targetId="4f94-6fe9-c531-a9fb" type="profile"/>
+        <infoLink id="d72d-1e23-f22d-e1a1" name="Furious Charge" hidden="false" targetId="f9d1-c4ee-c343-18ac" type="profile"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry id="f49a-c4c1-b88c-a1b7" name="Dominion Zephon" hidden="false" collective="false" import="true" type="model">
@@ -1149,6 +1152,11 @@
         <entryLink id="5c50-c2c6-e051-b0c2" name="Melta grenades" hidden="false" collective="false" import="true" targetId="10bc-7a48-6e2d-a4f5" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3dac-7f2c-d775-544a" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="880c-9038-f139-50c6" name="Warlord" hidden="false" collective="false" import="true" targetId="4b3d-47e1-77ef-ba88" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ccd-7be9-d42d-6d11" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>

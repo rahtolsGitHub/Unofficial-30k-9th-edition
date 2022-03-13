@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6030-1e69-d3ca-6a48" name="6 Space Wolves" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6030-1e69-d3ca-6a48" name="6 Space Wolves" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Category:
 Varagyr in Standard, as Combiweapons -&gt; Volkite</comment>
   <categoryEntries>
@@ -10,6 +10,8 @@ Varagyr in Standard, as Combiweapons -&gt; Volkite</comment>
     <categoryEntry id="3d1e-1aed-de62-7272" name="Fenrisian Wolf" hidden="false"/>
     <categoryEntry id="ac08-21f3-0153-c192" name="The Wolf-kin of Russ" hidden="false"/>
     <categoryEntry id="699f-95b1-064d-f4ea" name="Leman Russ" hidden="false"/>
+    <categoryEntry id="2543-d026-5a99-cd68" name="Caster of Runes" hidden="false"/>
+    <categoryEntry id="dce6-0450-3f1d-9176" name="Speaker of the Dead" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="a9dc-f761-b567-7c3d" name="Deathsworn Pack" hidden="false" collective="false" import="true" targetId="8f81-ac29-c974-ee36" type="selectionEntry">
@@ -106,6 +108,27 @@ Varagyr in Standard, as Combiweapons -&gt; Volkite</comment>
       <categoryLinks>
         <categoryLink id="0007-d845-4d8e-0db3" name="New CategoryLink" hidden="false" targetId="e662-8e86-894a-6009" primary="true"/>
         <categoryLink id="cdb3-be51-1764-6399" name="Elite" hidden="false" targetId="c39a-99d8-e84f-b5f9" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="0635-5a96-9153-d33c" name="Caster of Runes" hidden="false" collective="false" import="true" targetId="48c8-a9be-d49f-50f6" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="9eaf-e37d-0d74-09c9" name="Infantry" hidden="false" targetId="c9bb-6ccb-efae-6184" primary="false"/>
+        <categoryLink id="9929-bd96-608b-9e7f" name="New CategoryLink" hidden="false" targetId="1a28-aa9c-3555-8be9" primary="true"/>
+        <categoryLink id="bbce-f819-42a4-7e31" name="Character" hidden="false" targetId="0749-dd2b-52eb-0bb0" primary="false"/>
+        <categoryLink id="f771-c3cd-0bf1-fe6e" name="Astartes" hidden="false" targetId="8eb7-c779-b4ba-c4ec" primary="false"/>
+        <categoryLink id="f57c-9399-ac91-8a64" name="Psyker" hidden="false" targetId="8278-c2c7-5e4d-036c" primary="false"/>
+        <categoryLink id="54a9-c97c-9416-f14d" name="Consul" hidden="false" targetId="d6e2-65fc-5769-3375" primary="false"/>
+        <categoryLink id="69c3-c6b4-6688-1fb8" name="Caster of Runes" hidden="false" targetId="2543-d026-5a99-cd68" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="74cd-fa29-af83-91fb" name="Speaker of the Dead" hidden="false" collective="false" import="true" targetId="0d9f-febd-d826-c4c6" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e453-0265-d9ac-8c20" name="Infantry" hidden="false" targetId="c9bb-6ccb-efae-6184" primary="false"/>
+        <categoryLink id="9b8d-04de-9e02-dc1a" name="Character" hidden="false" targetId="0749-dd2b-52eb-0bb0" primary="false"/>
+        <categoryLink id="e3e8-bf86-bd22-abef" name="Astartes" hidden="false" targetId="8eb7-c779-b4ba-c4ec" primary="false"/>
+        <categoryLink id="1d7a-756a-9b7d-8686" name="New CategoryLink" hidden="false" targetId="1a28-aa9c-3555-8be9" primary="true"/>
+        <categoryLink id="d42d-ca25-d94a-14ab" name="Speaker of the Dead" hidden="false" targetId="dce6-0450-3f1d-9176" primary="false"/>
+        <categoryLink id="9a77-7927-5b0b-2a53" name="Consul" hidden="false" targetId="d6e2-65fc-5769-3375" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -1401,7 +1424,618 @@ Flanking Manoeuvres: During deployment, you can set up this unit moving around t
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="48c8-a9be-d49f-50f6" name="Caster of Runes" hidden="false" collective="false" import="true" type="model">
+      <modifierGroups>
+        <modifierGroup>
+          <conditions>
+            <condition field="selections" scope="48c8-a9be-d49f-50f6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d074-5a64-1d4d-94bb" type="equalTo"/>
+          </conditions>
+          <modifiers>
+            <modifier type="remove" field="category" value="c9bb-6ccb-efae-6184"/>
+            <modifier type="add" field="category" value="1945-c681-9fe3-943b"/>
+          </modifiers>
+        </modifierGroup>
+        <modifierGroup>
+          <conditions>
+            <condition field="selections" scope="48c8-a9be-d49f-50f6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2cc-bcae-e0c0-4066" type="equalTo"/>
+          </conditions>
+          <modifiers>
+            <modifier type="remove" field="category" value="c9bb-6ccb-efae-6184"/>
+            <modifier type="add" field="category" value="1945-c681-9fe3-943b"/>
+            <modifier type="add" field="category" value="150d-38e7-8c25-f30c"/>
+          </modifiers>
+        </modifierGroup>
+        <modifierGroup>
+          <conditions>
+            <condition field="selections" scope="48c8-a9be-d49f-50f6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7375-1a14-6469-0d38" type="equalTo"/>
+          </conditions>
+          <modifiers>
+            <modifier type="add" field="category" value="ee19-27ba-2661-90fe"/>
+            <modifier type="add" field="category" value="150d-38e7-8c25-f30c"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <profiles>
+        <profile id="9062-d549-a304-8968" name="Psyker" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
+          <characteristics>
+            <characteristic name="Effect" typeId="3117-79f3-eb21-c725">This model can attempt to manifest two psychic powers in each friendly Psychic phase, and attempt to Deny one psychic power in each enemy Psychic phase. It knows the Smite power and two psychic powers from the Tempestas discipline.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4310-f132-d639-603e" name="Runic Matrix" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
+          <characteristics>
+            <characteristic name="Effect" typeId="3117-79f3-eb21-c725">The caster of runes may re-roll the dice used when Denying a psychic power. When casting two psychic powers in the same turn, the second power suffers -1 to the psychic test as the caster of runes conserves his power.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="c3e0-9ee7-d725-ed27" name="Legion Centurion" hidden="false" targetId="50fc-0e53-a17a-a08c" type="profile">
+          <modifiers>
+            <modifier type="set" field="8003-bae2-5072-d024" value="2+"/>
+          </modifiers>
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="48c8-a9be-d49f-50f6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7375-1a14-6469-0d38" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="37d7-d298-a04a-4e6c" value="12&quot;"/>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="48c8-a9be-d49f-50f6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cc-bcae-e0c0-4066" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="37d7-d298-a04a-4e6c" value="15&quot;"/>
+                <modifier type="set" field="33be-eb18-f17d-e4cc" value="2+"/>
+                <modifier type="set" field="b550-6ea2-7a76-d49f" value="5"/>
+                <modifier type="set" field="3461-fc7e-2d85-5568" value="5"/>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="48c8-a9be-d49f-50f6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d074-5a64-1d4d-94bb" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="37d7-d298-a04a-4e6c" value="14&quot;"/>
+                <modifier type="set" field="b550-6ea2-7a76-d49f" value="5"/>
+                <modifier type="set" field="3461-fc7e-2d85-5568" value="5"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="8a48-0a73-1af2-60f6" name="Tactical Precision" hidden="false" targetId="40d4-caa3-13e0-b225" type="profile"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="5423-28f0-c319-30b2" name="Wargear" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="0bb7-0380-bab5-96e7" name="Melta grenades" hidden="false" collective="false" import="true" targetId="10bc-7a48-6e2d-a4f5" type="selectionEntry"/>
+            <entryLink id="d39c-e9fe-32dd-e5e2" name="Protective Wargear" hidden="false" collective="false" import="true" targetId="f5df-2c1c-e1bb-0421" type="selectionEntryGroup"/>
+            <entryLink id="4952-52e3-be30-52cd" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="13a2-c526-9ffe-7d82" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d930-a143-482a-ed4e" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d77d-9878-7f60-2e4d" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="7375-1a14-6469-0d38" name="Jump Pack" hidden="false" collective="false" import="true" targetId="3803-e8cd-9c3a-0492" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="e832-b1f2-5635-71ed" value="0.0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="48c8-a9be-d49f-50f6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d074-5a64-1d4d-94bb" type="atLeast"/>
+                        <condition field="selections" scope="48c8-a9be-d49f-50f6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2cc-bcae-e0c0-4066" type="atLeast"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e832-b1f2-5635-71ed" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="18.0"/>
+                <cost name="PL" typeId="b1e1-0497-949d-68af" value="1.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="d074-5a64-1d4d-94bb" name="Space Marine Bike" hidden="false" collective="false" import="true" targetId="6568-c9ff-0d6f-ef94" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="c958-06d9-2844-2cdd" value="0.0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="48c8-a9be-d49f-50f6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7375-1a14-6469-0d38" type="atLeast"/>
+                        <condition field="selections" scope="48c8-a9be-d49f-50f6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2cc-bcae-e0c0-4066" type="atLeast"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c958-06d9-2844-2cdd" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="18.0"/>
+                <cost name="PL" typeId="b1e1-0497-949d-68af" value="1.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="a2cc-bcae-e0c0-4066" name="Legion Scimitar Jetbike" hidden="false" collective="false" import="true" targetId="cf06-3223-5fb7-6fa2" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="d7a1-73ab-17fc-74f3" value="0.0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="48c8-a9be-d49f-50f6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7375-1a14-6469-0d38" type="equalTo"/>
+                        <condition field="selections" scope="48c8-a9be-d49f-50f6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d074-5a64-1d4d-94bb" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7a1-73ab-17fc-74f3" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="21.0"/>
+                <cost name="PL" typeId="b1e1-0497-949d-68af" value="2.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="e340-bcb3-7a29-545d" name="Sonic shriekers" hidden="false" collective="false" import="true" targetId="4d17-503d-aab7-4b22" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="7d1c-87af-e360-5cb4" name="Weapon Options" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3eb7-0604-330d-2102" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fbc1-c50e-6a1d-3701" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="97c5-5125-8b78-7500" name="Bolt pistol" hidden="false" collective="false" import="true" targetId="0d02-cc1b-2fda-b9c5" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="812d-5bdf-4641-d48c" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="48c8-a9be-d49f-50f6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="97c5-5125-8b78-7500" type="notEqualTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eeb9-fa78-ae60-47d1" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="812d-5bdf-4641-d48c" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="398c-2eaf-0fb5-cddb" name="Pistols" hidden="false" collective="false" import="true" targetId="6962-523a-2db1-5813" type="selectionEntryGroup">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26c0-9682-728a-43a3" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="7d22-5148-4d29-75e3" name="Melee Weapons" hidden="false" collective="false" import="true" targetId="5374-7c56-0218-8159" type="selectionEntryGroup">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4630-82f5-0e31-3081" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="3856-1a20-3c78-7976" name="Warlord" hidden="false" collective="false" import="true" targetId="d324-14c9-6767-bbe7" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e662-8e86-894a-6009" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="5d87-594b-082d-9e37" name="Tempestas Discipline" hidden="false" collective="false" import="true" targetId="cdaa-0e6b-8b06-1a9d" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="486b-a28c-b9b6-abab" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b80c-e8c3-c681-0753" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="22a7-f460-f742-c179" name="Smite" hidden="false" collective="false" import="true" targetId="7847-83f6-a6df-e084" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5de-8575-4fe1-0307" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9756-ba59-2be1-459d" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="671b-c326-ce30-b816" name="Force Weapons" hidden="false" collective="false" import="true" targetId="89ac-b421-3ef7-1be5" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b7a-14c9-86d1-4bbd" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="73b3-261d-ff6b-88af" name="Ranged Weapons" hidden="false" collective="false" import="true" targetId="7416-d09b-9681-6b20" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8a4-8521-2f1c-932f" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="b1e1-0497-949d-68af" value="6.0"/>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="80.0"/>
+        <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0d9f-febd-d826-c4c6" name="Speaker of the Dead" hidden="false" collective="false" import="true" type="model">
+      <modifierGroups>
+        <modifierGroup>
+          <conditions>
+            <condition field="selections" scope="0d9f-febd-d826-c4c6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a4f-ae01-8590-377c" type="equalTo"/>
+          </conditions>
+          <modifiers>
+            <modifier type="remove" field="category" value="c9bb-6ccb-efae-6184"/>
+            <modifier type="add" field="category" value="1945-c681-9fe3-943b"/>
+          </modifiers>
+        </modifierGroup>
+        <modifierGroup>
+          <conditions>
+            <condition field="selections" scope="0d9f-febd-d826-c4c6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9599-2267-922d-e8fd" type="equalTo"/>
+          </conditions>
+          <modifiers>
+            <modifier type="remove" field="category" value="c9bb-6ccb-efae-6184"/>
+            <modifier type="add" field="category" value="1945-c681-9fe3-943b"/>
+            <modifier type="add" field="category" value="150d-38e7-8c25-f30c"/>
+          </modifiers>
+        </modifierGroup>
+        <modifierGroup>
+          <conditions>
+            <condition field="selections" scope="0d9f-febd-d826-c4c6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1a58-9428-c35b-d423" type="equalTo"/>
+          </conditions>
+          <modifiers>
+            <modifier type="add" field="category" value="ee19-27ba-2661-90fe"/>
+            <modifier type="add" field="category" value="150d-38e7-8c25-f30c"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <profiles>
+        <profile id="bb7c-00ba-300d-537d" name="Oath of the Dead (Aura)" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
+          <characteristics>
+            <characteristic name="Effect" typeId="3117-79f3-eb21-c725">You can re-roll failed hit rolls in the Fight phase for friendly Space Wolves CORE, DEATHSWORN or CHARACTER units within 6” of this model.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1a02-b384-72c2-08b8" name="Healing Balms" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
+          <characteristics>
+            <characteristic name="Effect" typeId="3117-79f3-eb21-c725">At the end of your Movement phase, this model can heal one friendly &lt;Legion&gt; INFANTRY or &lt;Legion&gt; BIKER model unit is within 3&quot; of it. That model regains up to D3 lost wounds. Each model can only be healed once per turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="39de-27b3-bbc7-2326" name="Spiritual Leader (Aura)" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
+          <characteristics>
+            <characteristic name="Effect" typeId="3117-79f3-eb21-c725">Friendly Space Wolves CORE or CHARACTER units can use this model’s Leadership Characteristic instead of their own whilst they are within 6” of this model.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2a0b-a9c6-d4ea-6359" name="Litanies of Battle" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
+          <characteristics>
+            <characteristic name="Effect" typeId="3117-79f3-eb21-c725">This model knows the Litany of Hate and one litany from the Litanies of Battle. At the start of the battle round, this model can recite one litany it knows that has not already been recited by a friendly model that battle round. Roll one D6; on a 3+ the recited litany is inspiring and takes effect until the end of that battle round.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="8311-37be-9a82-b2a2" name="Legion Centurion" hidden="false" targetId="50fc-0e53-a17a-a08c" type="profile">
+          <modifiers>
+            <modifier type="set" field="8003-bae2-5072-d024" value="2+"/>
+          </modifiers>
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="0d9f-febd-d826-c4c6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1a58-9428-c35b-d423" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="37d7-d298-a04a-4e6c" value="12&quot;"/>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="0d9f-febd-d826-c4c6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9599-2267-922d-e8fd" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="37d7-d298-a04a-4e6c" value="15&quot;"/>
+                <modifier type="set" field="33be-eb18-f17d-e4cc" value="2+"/>
+                <modifier type="set" field="b550-6ea2-7a76-d49f" value="5"/>
+                <modifier type="set" field="3461-fc7e-2d85-5568" value="5"/>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="0d9f-febd-d826-c4c6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a4f-ae01-8590-377c" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="37d7-d298-a04a-4e6c" value="14&quot;"/>
+                <modifier type="set" field="b550-6ea2-7a76-d49f" value="5"/>
+                <modifier type="set" field="3461-fc7e-2d85-5568" value="5"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="4262-136e-c1d5-80d4" name="Tactical Precision" hidden="false" targetId="40d4-caa3-13e0-b225" type="profile"/>
+        <infoLink id="be87-f340-9797-f6c8" name="Fear" hidden="false" targetId="c21c-6b1f-04a2-add0" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="e486-1422-7590-4022" name="Wargear" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="c6e8-48ac-b5fa-24dd" name="Melta grenades" hidden="false" collective="false" import="true" targetId="10bc-7a48-6e2d-a4f5" type="selectionEntry"/>
+            <entryLink id="95e7-7eb9-4f5e-9328" name="Protective Wargear" hidden="false" collective="false" import="true" targetId="f5df-2c1c-e1bb-0421" type="selectionEntryGroup"/>
+            <entryLink id="ff06-666f-da8b-9098" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="13a2-c526-9ffe-7d82" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="394f-8cd2-cc1f-26bf" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f08c-51dd-7099-11cd" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="1a58-9428-c35b-d423" name="Jump Pack" hidden="false" collective="false" import="true" targetId="3803-e8cd-9c3a-0492" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="261d-287a-779e-4f90" value="0.0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="0d9f-febd-d826-c4c6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9599-2267-922d-e8fd" type="atLeast"/>
+                        <condition field="selections" scope="0d9f-febd-d826-c4c6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a4f-ae01-8590-377c" type="atLeast"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="261d-287a-779e-4f90" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="18.0"/>
+                <cost name="PL" typeId="b1e1-0497-949d-68af" value="1.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="9a4f-ae01-8590-377c" name="Space Marine Bike" hidden="false" collective="false" import="true" targetId="6568-c9ff-0d6f-ef94" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="845a-6275-a803-b057" value="0.0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="0d9f-febd-d826-c4c6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9599-2267-922d-e8fd" type="atLeast"/>
+                        <condition field="selections" scope="0d9f-febd-d826-c4c6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a58-9428-c35b-d423" type="atLeast"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="845a-6275-a803-b057" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="18.0"/>
+                <cost name="PL" typeId="b1e1-0497-949d-68af" value="1.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="9599-2267-922d-e8fd" name="Legion Scimitar Jetbike" hidden="false" collective="false" import="true" targetId="cf06-3223-5fb7-6fa2" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="8101-4381-3597-561c" value="0.0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="0d9f-febd-d826-c4c6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a4f-ae01-8590-377c" type="equalTo"/>
+                        <condition field="selections" scope="0d9f-febd-d826-c4c6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a58-9428-c35b-d423" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8101-4381-3597-561c" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="9484-733c-9847-f18b" value="21.0"/>
+                <cost name="PL" typeId="b1e1-0497-949d-68af" value="2.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="42a9-d6ee-4060-e6c4" name="Sonic shriekers" hidden="false" collective="false" import="true" targetId="4d17-503d-aab7-4b22" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="b6ec-abdc-67f3-3ffe" name="Weapon Options" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="09f1-0acf-0e42-040a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ab35-cd26-adb4-ca64" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="851b-2d63-1c04-dd0f" name="Bolt pistol" hidden="false" collective="false" import="true" targetId="0d02-cc1b-2fda-b9c5" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="422d-22d1-af37-604b" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="0d9f-febd-d826-c4c6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="851b-2d63-1c04-dd0f" type="notEqualTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7dbd-605c-633c-726c" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="422d-22d1-af37-604b" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="8e49-48e5-bc9c-6e19" name="Pistols" hidden="false" collective="false" import="true" targetId="6962-523a-2db1-5813" type="selectionEntryGroup">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eda3-fb8f-3519-fdb8" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="d0e7-ce10-e683-6c6d" name="Melee Weapons" hidden="false" collective="false" import="true" targetId="5374-7c56-0218-8159" type="selectionEntryGroup">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e276-02bd-46ad-3f2b" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="3331-0ba7-fafa-c788" name="Ranged Weapons" hidden="false" collective="false" import="true" targetId="7416-d09b-9681-6b20" type="selectionEntryGroup">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f80f-19a9-b514-5df6" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="e3e4-f54a-4195-d7ee" name="Warlord" hidden="false" collective="false" import="true" targetId="d324-14c9-6767-bbe7" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e662-8e86-894a-6009" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="3421-6e56-4e3f-258f" name="Power maul" hidden="false" collective="false" import="true" targetId="e64d-22e3-3ce4-2338" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9a1-7bf7-f908-caf0" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a457-17bc-da2d-4f26" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="7e5a-2bec-1b3e-a4b9" name="Litanies of Battle" hidden="false" collective="false" import="true" targetId="7216-90ce-9b61-1016" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b91-c15c-571a-741f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f87e-11a9-737b-2bc8" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="f466-a5ed-f114-b7c9" name="Litanies of Hate" hidden="false" collective="false" import="true" targetId="f215-0f46-82e2-1e90" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="119d-7675-3206-2405" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b58-d993-58e4-ac0c" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="14f1-c32d-fa93-29f0" name="Garm-blood vial" hidden="false" collective="false" import="true" targetId="050e-daba-1f55-4ff0" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f99-0fdd-c2d7-c487" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b72b-4198-741e-cbd8" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="b1e1-0497-949d-68af" value="5.0"/>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="75.0"/>
+        <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="050e-daba-1f55-4ff0" name="Garm-blood vial" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="a911-7c41-2c0d-b98d" name="Garm-blood vial" hidden="false" typeId="27fa-2a60-59a3-6273" typeName="Weapon(s)">
+          <characteristics>
+            <characteristic name="Range" typeId="fb7b-3fd3-e596-3848">8&quot;</characteristic>
+            <characteristic name="Type" typeId="198a-7eca-0c54-6f0a">Grenade D3+1</characteristic>
+            <characteristic name="S" typeId="591d-883a-73fa-87d9">*</characteristic>
+            <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">0</characteristic>
+            <characteristic name="D" typeId="fde9-623c-a082-78b0">1</characteristic>
+            <characteristic name="Abilities" typeId="8f3c-b1ed-80b8-dbfe">Hits with this weapon always wound on a 4+. Any hit rolls of unmodified 6+ are resolved with AP-3. Blast weapon.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="3.0"/>
+        <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+        <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="cdaa-0e6b-8b06-1a9d" name="Tempestas Discipline" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="f1a8-2cf7-3f65-0d52" name="1 Storm Caller" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b373-6275-cbb3-7a72" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="a415-ec64-dfde-8e21" name="1 Storm Caller" hidden="false" typeId="ff00-663b-bf30-6678" typeName="Librarius Discipline">
+              <characteristics>
+                <characteristic name="Warp Charge" typeId="e3ce-1169-9915-c24c">6</characteristic>
+                <characteristic name="Effect" typeId="0165-b4f3-86f2-624b">If manifested, then until the start of your next Psychic phase, the psyker and any friendly Space Wolves CORE or CHARACTERs units within 6” of him count as receiving the benefits of Light Cover .</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="16d5-e83a-60f2-961b" name="2 Tempest&apos;s Wrath" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc4d-ee5f-d0a1-55a9" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="b1ef-fea2-d594-c5b3" name="2 Tempest&apos;s Wrath" hidden="false" typeId="ff00-663b-bf30-6678" typeName="Librarius Discipline">
+              <characteristics>
+                <characteristic name="Warp Charge" typeId="e3ce-1169-9915-c24c">6</characteristic>
+                <characteristic name="Effect" typeId="0165-b4f3-86f2-624b">If manifested, pick an enemy unit within 24” of the psyker. Your opponent must subtract 1 from any hit rolls they make for that unit until the start of your next Psychic phase.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b340-d70c-68b5-6376" name="3 Living Lightning" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a99-399e-3aaf-d263" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="a959-a554-05f8-df67" name="3 Living Lightning" hidden="false" typeId="ff00-663b-bf30-6678" typeName="Librarius Discipline">
+              <characteristics>
+                <characteristic name="Warp Charge" typeId="e3ce-1169-9915-c24c">6</characteristic>
+                <characteristic name="Effect" typeId="0165-b4f3-86f2-624b">If manifested, the closest visible enemy unit within 18&quot; of the psyker suffers D3 mortal wounds. Then roll one D6, on a 2-4 the closest other enemy unit within 6&quot; of and visible to that unit suffers 1 mortal wound, on 5+, it suffers D3 mortal wounds.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1cfe-7a8f-59cc-c841" name="4 Murderous Hurricane" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f5b-178e-191c-815d" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="1fb1-b2a5-6e6a-9cee" name="4 Murderous Hurricane" hidden="false" typeId="ff00-663b-bf30-6678" typeName="Librarius Discipline">
+              <characteristics>
+                <characteristic name="Warp Charge" typeId="e3ce-1169-9915-c24c">6</characteristic>
+                <characteristic name="Effect" typeId="0165-b4f3-86f2-624b">If manifested, pick an enemy unit within 18” of the psyker. Until the start of your next Psychix phase. If that unit is not wholly on or within a terrain feature, that unit cannot fire Overwatch. In the Fight phase, that unit is not eligble to fight until after all eligble Space Wolves units from your army have done so.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b259-fab9-18bf-0752" name="6 Jaws of the World Wolf" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f49-fd14-ae26-320c" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3bb4-c9be-4f1d-7d7b" name="6 Jaws of the World Wolf" hidden="false" typeId="ff00-663b-bf30-6678" typeName="Librarius Discipline">
+              <characteristics>
+                <characteristic name="Warp Charge" typeId="e3ce-1169-9915-c24c">6</characteristic>
+                <characteristic name="Effect" typeId="0165-b4f3-86f2-624b">If manifested, select one enemy unit within 18&quot; of and visible to this Psyker. Roll one D6 for each model in that unit, adding 1 to the result if the result of the Psychic test was 9 or more. For each roll if a 6+, that unit suffers 1 mortal wound.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ca76-e8af-91a2-d2ef" name="5 Fury of the Wolf Spirits" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a052-c6da-0f25-0858" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="9d4e-b210-b3e5-e090" name="5 Fury of the Wolf Spirits" hidden="false" typeId="ff00-663b-bf30-6678" typeName="Librarius Discipline">
+              <characteristics>
+                <characteristic name="Warp Charge" typeId="e3ce-1169-9915-c24c">6</characteristic>
+                <characteristic name="Effect" typeId="0165-b4f3-86f2-624b">If manifested, select one friendly Space Wolves unit within 18&quot; of this Psyker. Until the start of your next Psychic phase, each time a model in that unit makes an attack, armour the Armour Penetration Characteristic of that attack is increased by 1 (i.e. AP 0 becomes AP -1, AP -1 becomes AP -2).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
   <sharedProfiles>
     <profile id="6571-47c2-bb05-2d18" name="Yimiria Stasis Bombs" hidden="false" typeId="8e66-667e-e09b-c25b" typeName="Stratagem">
       <characteristics>
