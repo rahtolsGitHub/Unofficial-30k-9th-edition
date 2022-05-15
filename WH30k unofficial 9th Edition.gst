@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="218d-602b-768b-7f56" name="WH30k unofficial 9th Edition" revision="13" battleScribeVersion="2.03" authorName="Lothar" authorContact="Please report any issues to the GitHub -&gt; Issues to:  github.com/rahtolsGitHub/Unofficial-30k-9th-edition/issues" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="218d-602b-768b-7f56" name="WH30k unofficial 9th Edition" revision="14" battleScribeVersion="2.03" authorName="Lothar" authorContact="Please report any issues to the GitHub -&gt; Issues to:  github.com/rahtolsGitHub/Unofficial-30k-9th-edition/issues" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <comment>BattleScribe data files for the unofficial Warhammer 30k 9th edition.</comment>
   <readme>Known Issues:
 
@@ -890,10 +890,6 @@ Shattered Legions: not yet implemented
       </categoryLinks>
     </entryLink>
     <entryLink id="6949-a9b7-8c84-850d" name="Fealty" hidden="false" collective="false" import="true" targetId="7852-1619-272b-dfe0" type="selectionEntry">
-      <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bf3-66d4-99d7-cc74" type="min"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4145-5144-52ec-8a97" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="de9f-fb6c-c7d6-8155" name="New CategoryLink" hidden="false" targetId="6772-cf1b-71fc-53b4" primary="true"/>
       </categoryLinks>

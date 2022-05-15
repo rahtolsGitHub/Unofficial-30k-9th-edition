@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="da54-2db0-7d98-7b89" name="Standard Units and Equipment Library" revision="28" battleScribeVersion="2.03" authorName="Lothar" authorContact="Please report any issues to the GitHub:" library="true" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="da54-2db0-7d98-7b89" name="Standard Units and Equipment Library" revision="29" battleScribeVersion="2.03" authorName="Lothar" authorContact="Please report any issues to the GitHub:" library="true" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="13" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>This catalogue contains basic units and equipment available to all Legions. It&apos;s imported as standard library by the specific Legion catalogues.</comment>
   <publications>
     <publication id="ea1d-c177-1851-0466" name="Legiones Astartes: Army List 2.14"/>
@@ -255,6 +255,8 @@
     </categoryEntry>
     <categoryEntry id="0170-eb6c-6ce3-b9c1" name="Contemptor Mortis" hidden="false"/>
     <categoryEntry id="77c1-b5de-ff35-2963" name="Contemptor Cortus" hidden="false"/>
+    <categoryEntry id="f898-cd3d-acc1-085c" name="Diabolist" hidden="false"/>
+    <categoryEntry id="0d00-0431-8803-7190" name="Daemon" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="e47a-1a76-7652-69f7" name="Legion Praetor" hidden="false" collective="false" import="true" targetId="a21e-ecd1-95e8-545e" type="selectionEntry">
@@ -1811,9 +1813,14 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
           </conditions>
         </modifier>
         <modifier type="add" field="category" value="8278-c2c7-5e4d-036c">
-          <conditions>
-            <condition field="selections" scope="a21e-ecd1-95e8-545e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3059-e362-3bab-e8f0" type="atLeast"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="a21e-ecd1-95e8-545e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3059-e362-3bab-e8f0" type="atLeast"/>
+                <condition field="selections" scope="a21e-ecd1-95e8-545e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f91-074f-c420-d5cc" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <modifierGroups>
@@ -1993,6 +2000,25 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
               <costs>
                 <cost name="pts" typeId="9484-733c-9847-f18b" value="3.0"/>
               </costs>
+            </entryLink>
+            <entryLink id="2f91-074f-c420-d5cc" name="Burning Lore" hidden="false" collective="false" import="true" targetId="b9ed-b2a6-c86f-36f0" type="selectionEntry">
+              <comment>17 WB Legion Specific War Gear</comment>
+              <entryLinks>
+                <entryLink id="d764-1482-11ba-1ec2" name="General Librarius Powers" hidden="false" collective="false" import="true" targetId="c028-2cf9-b9b4-978a" type="selectionEntryGroup">
+                  <modifiers>
+                    <modifier type="set" field="3990-b5f5-c609-d991" value="1.0"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d132-ac1b-24e6-683d" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="54b4-3710-e4ca-7989" name="Smite" hidden="false" collective="false" import="true" targetId="7847-83f6-a6df-e084" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f96-4b2b-e047-efc4" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64d1-b56d-5288-5f54" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -2431,7 +2457,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
         <infoLink id="d842-a272-8452-1b12" name="Volkite charger" hidden="false" targetId="496c-d428-006c-9b27" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="10.0"/>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="5.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
       </costs>
@@ -2560,7 +2586,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
         <infoLink id="d219-816b-af8e-23ed" name="Plasma gun, Supercharge" hidden="false" targetId="cd8d-1ef9-d613-edc8" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="10.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
       </costs>
@@ -2608,14 +2634,9 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
     <selectionEntry id="d1f2-cf6b-5969-b8b4" name="Heavy bolter" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="9484-733c-9847-f18b" value="20.0">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7484-8228-82e5-5b9f" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20be-1fc6-2109-1f7e" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c9bb-6ccb-efae-6184" type="notInstanceOf"/>
+          </conditions>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -2653,8 +2674,18 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
           </conditions>
         </modifier>
         <modifier type="add" field="category" value="8278-c2c7-5e4d-036c">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="3320-39aa-cd0d-6ef3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bee0-4dcf-5164-a2a7" type="atLeast"/>
+                <condition field="selections" scope="3320-39aa-cd0d-6ef3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cbdc-efa8-7e16-9324" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="26c1-e6bf-4904-500b">
           <conditions>
-            <condition field="selections" scope="3320-39aa-cd0d-6ef3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cbdc-efa8-7e16-9324" type="atLeast"/>
+            <condition field="selections" scope="3320-39aa-cd0d-6ef3" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b439-e744-3e58-8ecf" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2747,6 +2778,25 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
                 <cost name="pts" typeId="9484-733c-9847-f18b" value="3.0"/>
               </costs>
             </entryLink>
+            <entryLink id="bee0-4dcf-5164-a2a7" name="Burning Lore" hidden="false" collective="false" import="true" targetId="b9ed-b2a6-c86f-36f0" type="selectionEntry">
+              <comment>17 WB Legion Specific War Gear</comment>
+              <entryLinks>
+                <entryLink id="2ba4-3ef6-79d7-0446" name="General Librarius Powers" hidden="false" collective="false" import="true" targetId="c028-2cf9-b9b4-978a" type="selectionEntryGroup">
+                  <modifiers>
+                    <modifier type="set" field="3990-b5f5-c609-d991" value="1.0"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fbe7-18bd-670f-cbbd" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="6630-800e-3f02-3a46" name="Smite" hidden="false" collective="false" import="true" targetId="7847-83f6-a6df-e084" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57b8-aa19-0a3d-1a28" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d91d-123d-81dc-b1d4" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="bba2-0693-a4eb-f680" name="Weapon Options" hidden="false" collective="false" import="true">
@@ -2771,7 +2821,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
               <modifiers>
                 <modifier type="set" field="4ba8-e50d-8365-29ac" value="0.0">
                   <conditions>
-                    <condition field="selections" scope="3320-39aa-cd0d-6ef3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc7b-7d87-fc8b-9d9a" type="notEqualTo"/>
+                    <condition field="selections" scope="3320-39aa-cd0d-6ef3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="db4a-91ec-d4f0-d810" type="notEqualTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -3192,6 +3242,11 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6bf3-12d9-56c1-aab1" type="notEqualTo"/>
               </conditions>
             </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="718d-4c5c-8cb9-2bc1" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d80-768f-255e-6899" type="max"/>
@@ -3575,14 +3630,9 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
     <selectionEntry id="5790-861d-0a59-cc8c" name="Heavy flamer" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="9484-733c-9847-f18b" value="15.0">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7484-8228-82e5-5b9f" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20be-1fc6-2109-1f7e" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c9bb-6ccb-efae-6184" type="notInstanceOf"/>
+          </conditions>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -3673,6 +3723,11 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
         <modifier type="add" field="category" value="0e58-1b85-2967-be22">
           <conditions>
             <condition field="selections" scope="1462-3ccb-4159-013e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f948-02c8-fb35-6d42" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="26c1-e6bf-4904-500b">
+          <conditions>
+            <condition field="selections" scope="1462-3ccb-4159-013e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b59-a79e-59ac-e77e" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3807,6 +3862,20 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
           <modifiers>
             <modifier type="add" field="category" value="ee19-27ba-2661-90fe"/>
             <modifier type="add" field="category" value="150d-38e7-8c25-f30c"/>
+          </modifiers>
+        </modifierGroup>
+        <modifierGroup>
+          <conditions>
+            <condition field="selections" scope="1462-3ccb-4159-013e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="056a-c50f-b813-08e9" type="equalTo"/>
+          </conditions>
+          <modifiers>
+            <modifier type="add" field="category" value="0d00-0431-8803-7190"/>
+            <modifier type="add" field="category" value="f898-cd3d-acc1-085c"/>
+            <modifier type="add" field="category" value="8278-c2c7-5e4d-036c">
+              <conditions>
+                <condition field="selections" scope="1462-3ccb-4159-013e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3336-03f0-b24d-a511" type="atLeast"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </modifierGroup>
       </modifierGroups>
@@ -3955,7 +4024,6 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
                         <condition field="selections" scope="1462-3ccb-4159-013e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d8c7-78b0-c966-ef53" type="atLeast"/>
                         <condition field="selections" scope="1462-3ccb-4159-013e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dbc7-6754-77a7-f720" type="atLeast"/>
                         <condition field="selections" scope="1462-3ccb-4159-013e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ff8-b28c-ffba-2603" type="atLeast"/>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c89-a667-64f9-e959" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="06ca-8fb3-0e20-a000" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f948-02c8-fb35-6d42" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="deca-1671-fa85-066d" type="equalTo"/>
@@ -3993,6 +4061,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="06ca-8fb3-0e20-a000" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f948-02c8-fb35-6d42" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="deca-1671-fa85-066d" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="056a-c50f-b813-08e9" type="equalTo"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -4020,6 +4089,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f948-02c8-fb35-6d42" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="06ca-8fb3-0e20-a000" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c89-a667-64f9-e959" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="056a-c50f-b813-08e9" type="equalTo"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -4061,6 +4131,38 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
               <costs>
                 <cost name="pts" typeId="9484-733c-9847-f18b" value="3.0"/>
               </costs>
+            </entryLink>
+            <entryLink id="3336-03f0-b24d-a511" name="Burning Lore" hidden="false" collective="false" import="true" targetId="b9ed-b2a6-c86f-36f0" type="selectionEntry">
+              <comment>17 WB Special Wargear</comment>
+              <modifiers>
+                <modifier type="set" field="584a-810b-7c2d-6754" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="1462-3ccb-4159-013e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f35b-ba2e-1bd2-de8f" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="584a-810b-7c2d-6754" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e7a2-c86e-8f88-8947" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="056a-c50f-b813-08e9" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <entryLinks>
+                <entryLink id="7e67-609f-be45-fbe9" name="Smite" hidden="false" collective="false" import="true" targetId="7847-83f6-a6df-e084" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fce8-f912-d962-e297" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f4b-8666-d9bc-c8f6" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="5767-4fc2-15c5-e424" name="General Librarius Powers" hidden="false" collective="false" import="true" targetId="c028-2cf9-b9b4-978a" type="selectionEntryGroup">
+                  <modifiers>
+                    <modifier type="set" field="3990-b5f5-c609-d991" value="1.0"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10a8-e0b9-211e-20a9" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -4387,8 +4489,18 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
     <selectionEntry id="23d2-dd1f-a41e-a452" name="Legion Centurion in Terminator Armour" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="add" field="category" value="8278-c2c7-5e4d-036c">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="23d2-dd1f-a41e-a452" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59a2-9ffc-9531-a083" type="atLeast"/>
+                <condition field="selections" scope="23d2-dd1f-a41e-a452" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2ba4-621b-d958-f49a" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="26c1-e6bf-4904-500b">
           <conditions>
-            <condition field="selections" scope="23d2-dd1f-a41e-a452" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59a2-9ffc-9531-a083" type="atLeast"/>
+            <condition field="selections" scope="23d2-dd1f-a41e-a452" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bf99-9d31-b2be-99e2" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -4530,6 +4642,37 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
               <costs>
                 <cost name="pts" typeId="9484-733c-9847-f18b" value="3.0"/>
               </costs>
+            </entryLink>
+            <entryLink id="2ba4-621b-d958-f49a" name="Burning Lore" hidden="false" collective="false" import="true" targetId="b9ed-b2a6-c86f-36f0" type="selectionEntry">
+              <comment>17 Word Bearer Special Wargear</comment>
+              <modifiers>
+                <modifier type="set" field="584a-810b-7c2d-6754" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e7a2-c86e-8f88-8947" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="584a-810b-7c2d-6754" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="23d2-dd1f-a41e-a452" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a237-7241-9d37-96e8" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <entryLinks>
+                <entryLink id="ff0f-3962-2471-e9cf" name="Smite" hidden="false" collective="false" import="true" targetId="7847-83f6-a6df-e084" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa08-5b64-c273-6e02" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a092-05c5-d299-0445" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="e129-b36f-f28e-aea6" name="General Librarius Powers" hidden="false" collective="false" import="true" targetId="c028-2cf9-b9b4-978a" type="selectionEntryGroup">
+                  <modifiers>
+                    <modifier type="set" field="3990-b5f5-c609-d991" value="1.0"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a66-fbd9-269e-ca52" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -5276,14 +5419,9 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
     <selectionEntry id="c708-18ed-006d-d7b1" name="Multi-melta" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="9484-733c-9847-f18b" value="25.0">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7484-8228-82e5-5b9f" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20be-1fc6-2109-1f7e" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c9bb-6ccb-efae-6184" type="notInstanceOf"/>
+          </conditions>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -5958,6 +6096,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
             <modifier type="decrement" field="9484-733c-9847-f18b" value="2.0"/>
           </modifiers>
         </entryLink>
+        <entryLink id="dac7-f969-2029-a9da" name="Dark Channeling" hidden="false" collective="false" import="true" targetId="3d44-c0df-fc16-b67d" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="10.0"/>
@@ -6486,6 +6625,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink id="4cbc-f01a-00aa-e001" name="Dark Channeling" hidden="false" collective="false" import="true" targetId="3d44-c0df-fc16-b67d" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="6.0"/>
@@ -6506,14 +6646,9 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
     <selectionEntry id="45d4-8431-b1ac-e060" name="Missile launcher" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="9484-733c-9847-f18b" value="20.0">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7484-8228-82e5-5b9f" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20be-1fc6-2109-1f7e" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c9bb-6ccb-efae-6184" type="notInstanceOf"/>
+          </conditions>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -8433,16 +8568,16 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fd2d-5166-5e2b-7544" name="Legion Tactical Squad" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="fd2d-5166-5e2b-7544" name="Legion Tactical Squad" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="increment" field="b1e1-0497-949d-68af" value="5.0">
+        <modifier type="increment" field="b1e1-0497-949d-68af" value="4.0">
           <conditions>
-            <condition field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+            <condition field="selections" scope="fd2d-5166-5e2b-7544" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
           </conditions>
         </modifier>
-        <modifier type="increment" field="b1e1-0497-949d-68af" value="5.0">
+        <modifier type="increment" field="b1e1-0497-949d-68af" value="3.0">
           <conditions>
-            <condition field="selections" scope="parent" value="15.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+            <condition field="selections" scope="fd2d-5166-5e2b-7544" value="15.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -8652,6 +8787,11 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="ba05-48e1-1a5b-cf99" name="Dark Channeling" hidden="false" collective="false" import="true" targetId="3d44-c0df-fc16-b67d" type="selectionEntry">
+          <comment>17 WB extra</comment>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="10.0"/>
         <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
@@ -8946,6 +9086,9 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="3d28-c578-5a4c-f042" name="Dark Channeling" hidden="false" collective="false" import="true" targetId="3d44-c0df-fc16-b67d" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
@@ -9196,6 +9339,9 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cad5-5f77-07ca-a3b6" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4456-797b-c870-208c" type="min"/>
                   </constraints>
+                  <costs>
+                    <cost name="pts" typeId="9484-733c-9847-f18b" value="3.0"/>
+                  </costs>
                 </entryLink>
                 <entryLink id="a025-567d-7e05-407a" name="Bolt pistol" hidden="false" collective="false" import="true" targetId="4976-37da-bc47-4e2c" type="selectionEntry">
                   <constraints>
@@ -9277,6 +9423,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3777-6f00-e80d-9dd6" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="d518-feb6-be29-6624" name="Dark Channeling" hidden="false" collective="false" import="true" targetId="3d44-c0df-fc16-b67d" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="11.0"/>
@@ -11240,14 +11387,9 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
     <selectionEntry id="e000-c319-67e8-d7f1" name="Heavy bolter" hidden="false" collective="true" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="9484-733c-9847-f18b" value="20.0">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7484-8228-82e5-5b9f" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20be-1fc6-2109-1f7e" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c9bb-6ccb-efae-6184" type="notInstanceOf"/>
+          </conditions>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -11266,14 +11408,9 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
     <selectionEntry id="ebe3-b17d-f613-63a1" name="Plasma cannon" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="9484-733c-9847-f18b" value="15.0">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7484-8228-82e5-5b9f" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20be-1fc6-2109-1f7e" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c9bb-6ccb-efae-6184" type="notInstanceOf"/>
+          </conditions>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -11861,14 +11998,9 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
     <selectionEntry id="fdb1-db4f-93e2-a90d" name="Lascannon" hidden="false" collective="true" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="9484-733c-9847-f18b" value="25.0">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7484-8228-82e5-5b9f" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20be-1fc6-2109-1f7e" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c9bb-6ccb-efae-6184" type="notInstanceOf"/>
+          </conditions>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -11889,10 +12021,10 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
         </modifier>
         <modifier type="set" field="9484-733c-9847-f18b" value="25.0">
           <conditionGroups>
-            <conditionGroup type="or">
+            <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7484-8228-82e5-5b9f" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20be-1fc6-2109-1f7e" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c9bb-6ccb-efae-6184" type="notInstanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5c85-eff3-f1d5-dba2" type="notInstanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -11910,14 +12042,9 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
     <selectionEntry id="d8d3-3ba0-e219-b30b" name="Heavy flamer" hidden="false" collective="true" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="9484-733c-9847-f18b" value="15.0">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7484-8228-82e5-5b9f" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20be-1fc6-2109-1f7e" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c9bb-6ccb-efae-6184" type="notInstanceOf"/>
+          </conditions>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -12386,14 +12513,9 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
     <selectionEntry id="b2c2-2f3e-b002-4c1a" name="Multi-melta" hidden="false" collective="true" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="9484-733c-9847-f18b" value="25.0">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7484-8228-82e5-5b9f" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20be-1fc6-2109-1f7e" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c9bb-6ccb-efae-6184" type="notInstanceOf"/>
+          </conditions>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -12408,14 +12530,9 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
     <selectionEntry id="659a-9500-80d0-920b" name="Missile launcher" hidden="false" collective="true" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="9484-733c-9847-f18b" value="20.0">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7484-8228-82e5-5b9f" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20be-1fc6-2109-1f7e" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c9bb-6ccb-efae-6184" type="notInstanceOf"/>
+          </conditions>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -12432,14 +12549,9 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon wi
     <selectionEntry id="a7c6-3950-af92-8803" name="Plasma cannon" hidden="false" collective="true" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="9484-733c-9847-f18b" value="15.0">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7484-8228-82e5-5b9f" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20be-1fc6-2109-1f7e" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c9bb-6ccb-efae-6184" type="notInstanceOf"/>
+          </conditions>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -19728,7 +19840,7 @@ by 1 until the end of that phase. However, if this is chosen, roll a D6 for each
       </costs>
     </selectionEntry>
     <selectionEntry id="0ad0-a7f5-6e1e-d398" name="Psyker" hidden="true" collective="false" import="true" type="upgrade">
-      <comment>15 TS Legion Specific war gear</comment>
+      <comment>15 TS Legion Specific War Gear</comment>
       <modifiers>
         <modifier type="set" field="b1e1-0497-949d-68af" value="1.0">
           <conditions>
@@ -20008,6 +20120,77 @@ Infantry.</characteristic>
         <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
         <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
         <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3d44-c0df-fc16-b67d" name="Dark Channeling" hidden="true" collective="false" import="true" type="upgrade">
+      <comment>Upgrade 17 WB Traitor</comment>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2afc-5be1-bc21-e806" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="056a-c50f-b813-08e9" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d86a-f411-c653-8d41" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="4f9c-563a-b4e0-bed7" name="Dark Channeling" hidden="false">
+          <description>At the start of the game, roll D3 on the following table:
+
+1. The unit may re-roll failed hit rolls in the first round of combat.
+2. The models in the unit have +1 Strength.
+3. The unit has +1 to invulnerable save (6+ if before that did not have it and to the maximum of 4+).</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="PL" typeId="b1e1-0497-949d-68af" value="1.0"/>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="20.0"/>
+        <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1f78-7f9a-8376-c335" name="Tainted weapon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2c8a-081b-ccea-2b0b" name="Tainted weapon" hidden="false" targetId="8dbc-ddda-24b2-9448" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="10.0"/>
+        <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+        <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b9ed-b2a6-c86f-36f0" name="Burning Lore" hidden="false" collective="false" import="true" type="upgrade">
+      <comment>17 WB Legion Specific Wargear</comment>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2afc-5be1-bc21-e806" type="notInstanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="feb2-eae6-5181-5b9e" type="lessThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="584a-810b-7c2d-6754" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="e9a3-5ab3-27a6-dd82" name="Burning Lore" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
+          <characteristics>
+            <characteristic name="Effect" typeId="3117-79f3-eb21-c725">This model gains the PSYKER keyword, knows Smite and one other psychic power from the Librarius discipline. They may attempt to manifest one
+psychic power in each friendly Psychic phase and attempt to Deny one psychic power in each enemy Psychic phase.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="9484-733c-9847-f18b" value="20.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -20483,6 +20666,48 @@ Infantry.</characteristic>
             <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="82ad-5f63-eee5-90f3" name=" Legion Warlord Trait: Anvil of Strength" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1d7-6b44-3c3d-5e55" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile id="7e3f-7f9d-b589-54f4" name="Anvil of Strength" hidden="false" typeId="4c8f-9076-15da-eee0" typeName="Warlord Trait">
+              <characteristics>
+                <characteristic name="Effect" typeId="369e-5923-7e47-fb73">Add 1 to the Strength Characteristic of your Warlord.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3920-3219-4bd9-8695" name=" Legion Warlord Trait: Voice of Lorgar" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2afc-5be1-bc21-e806" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile id="980f-5ddc-a395-4a87" name="Voice of Lorgar" hidden="false" typeId="4c8f-9076-15da-eee0" typeName="Warlord Trait">
+              <characteristics>
+                <characteristic name="Effect" typeId="369e-5923-7e47-fb73">Increase the range of any aura abilities on your Warlord’s datasheet by 3”.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="6962-523a-2db1-5813" name="Pistols" hidden="false" collective="false" import="true">
@@ -20514,6 +20739,7 @@ Infantry.</characteristic>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a148-87de-90c9-d041" type="instanceOf"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2190-af77-dc28-e6c8" type="notEqualTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="deca-1671-fa85-066d" type="notEqualTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="056a-c50f-b813-08e9" type="notEqualTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -20602,6 +20828,7 @@ Infantry.</characteristic>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c89-a667-64f9-e959" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2190-af77-dc28-e6c8" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="deca-1671-fa85-066d" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="056a-c50f-b813-08e9" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -20656,6 +20883,7 @@ Infantry.</characteristic>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ff8-b28c-ffba-2603" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c89-a667-64f9-e959" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="deca-1671-fa85-066d" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="056a-c50f-b813-08e9" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -20755,14 +20983,14 @@ Infantry.</characteristic>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ce7-6ab0-6cef-0f04" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="8f77-0f44-c77c-1c5e" name="Solarite power gauntlet" hidden="false" collective="false" import="true" targetId="ddc2-9f43-7bb7-f2ac" type="selectionEntry">
+        <entryLink id="8f77-0f44-c77c-1c5e" name="Solarite power gauntlet" hidden="true" collective="false" import="true" targetId="ddc2-9f43-7bb7-f2ac" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" field="hidden" value="false">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18dc-6092-a0ca-5252" type="notInstanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0749-dd2b-52eb-0bb0" type="notInstanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="18dc-6092-a0ca-5252" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0749-dd2b-52eb-0bb0" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -20830,6 +21058,15 @@ Infantry.</characteristic>
           </modifiers>
         </entryLink>
         <entryLink id="3ae9-3f0b-bb79-ed5e" name="Power scythe" hidden="false" collective="false" import="true" targetId="355b-07da-e40e-fac3" type="selectionEntry"/>
+        <entryLink id="b9ff-8c14-807a-d15a" name="Tainted weapon" hidden="false" collective="false" import="true" targetId="1f78-7f9a-8376-c335" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2afc-5be1-bc21-e806" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="7416-d09b-9681-6b20" name="Ranged Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="215d-0be9-c287-3293">
@@ -21584,6 +21821,45 @@ more than 9” away from any enemy models.</characteristic>
             <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
             <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
             <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="056a-c50f-b813-08e9" name="Diabolist Consul" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a148-87de-90c9-d041" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2afc-5be1-bc21-e806" type="notInstanceOf"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="feb2-eae6-5181-5b9e" type="lessThan"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile id="d785-73db-bde4-71f7" name="Boundless Rage" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
+              <characteristics>
+                <characteristic name="Effect" typeId="3117-79f3-eb21-c725">This model can re-roll failed to hit rolls during the Fight phase when targeting models with the LOYALIST keyword. May not take a power fist, chainfist, thunder hammer, Bike, Jetbike or Terminator armour.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="7ba6-2c1b-26ff-2092" name="Daemonic" hidden="false" targetId="d166-02a7-6eef-39f7" type="profile"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink id="dbde-62d4-23de-99c5" name="Burning Lore" hidden="false" collective="false" import="true" targetId="b9ed-b2a6-c86f-36f0" type="selectionEntry"/>
+          </entryLinks>
+          <costs>
+            <cost name="PL" typeId="b1e1-0497-949d-68af" value="1.0"/>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="10.0"/>
+            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -22636,7 +22912,7 @@ more than 9” away from any enemy models.</characteristic>
           <profiles>
             <profile id="ae00-c043-1d17-a4f2" name="Barbaran Thurible" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
               <characteristics>
-                <characteristic name="Effect" typeId="3117-79f3-eb21-c725">relIC. Your opponent must subtract 1 from the Toughness Characteristic of any units within 6&quot; of the bearer of the Barbaran Thurible.</characteristic>
+                <characteristic name="Effect" typeId="3117-79f3-eb21-c725">RELIC. Your opponent must subtract 1 from the Toughness Characteristic of any units within 6&quot; of the bearer of the Barbaran Thurible.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -22667,6 +22943,55 @@ determining how far this model Advances and reduce its Movement Characteristic t
           </profiles>
           <categoryLinks>
             <categoryLink id="1fe7-d2e4-57eb-0d4e" name="Relic" hidden="false" targetId="f167-065b-cf1a-2dc8" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a42c-df1a-e3d8-2abb" name=" Legion Relic:  Conversion Dissonator" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4bfd-2408-6066-bbe4" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile id="372b-494c-44d5-0680" name="Conversion Dissonator" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
+              <characteristics>
+                <characteristic name="Effect" typeId="3117-79f3-eb21-c725">RELIC. Enemy units within 6” suffer a -1 penalty to invulnerable save</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="a58c-6994-8dd3-60fa" name="Relic" hidden="false" targetId="f167-065b-cf1a-2dc8" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
+            <cost name="CP" typeId="1fac-937b-7466-575c" value="0.0"/>
+            <cost name="PL" typeId="b1e1-0497-949d-68af" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0eac-2753-bed7-9170" name=" Legion Relic:  Zeroth Conductor Shield" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1d7-6b44-3c3d-5e55" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile id="ca92-9b5b-2354-db3c" name="Zeroth Conductor Shield" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
+              <characteristics>
+                <characteristic name="Effect" typeId="3117-79f3-eb21-c725">RELIC. This Relic grants the bearer a 3+ invulnerable save. If the bearer succeeds on the save throw, then the attacker suffers one mortal wound for each
+successful saving throw.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="84f5-569a-e3fa-1229" name="Relic" hidden="false" targetId="f167-065b-cf1a-2dc8" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="9484-733c-9847-f18b" value="0.0"/>
@@ -26453,6 +26778,21 @@ attacks, and a 5+ Invulnerable save against attacks in Melee.</characteristic>
     <profile id="73e0-128b-2e70-c555" name="Psychic Hood" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
       <characteristics>
         <characteristic name="Effect" typeId="3117-79f3-eb21-c725">You can add 1 to Deny the Witch tests you take for this model against enemy psykers within 12”.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d166-02a7-6eef-39f7" name="Daemonic" hidden="false" typeId="2324-ae93-2fea-0b85" typeName="Ability">
+      <characteristics>
+        <characteristic name="Effect" typeId="3117-79f3-eb21-c725">This model has a 5+ invulnerable save.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8dbc-ddda-24b2-9448" name="Tainted weapon" hidden="false" typeId="27fa-2a60-59a3-6273" typeName="Weapon(s)">
+      <characteristics>
+        <characteristic name="Range" typeId="fb7b-3fd3-e596-3848">Melee</characteristic>
+        <characteristic name="Type" typeId="198a-7eca-0c54-6f0a">Melee</characteristic>
+        <characteristic name="S" typeId="591d-883a-73fa-87d9">User</characteristic>
+        <characteristic name="AP" typeId="d174-04e0-bc7b-ea6c">-1</characteristic>
+        <characteristic name="D" typeId="fde9-623c-a082-78b0">D6</characteristic>
+        <characteristic name="Abilities" typeId="8f3c-b1ed-80b8-dbfe">-</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

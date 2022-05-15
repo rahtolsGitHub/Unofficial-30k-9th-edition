@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4ea7-b77b-fea1-d31f" name="9 Blood Angels" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4ea7-b77b-fea1-d31f" name="9 Blood Angels" revision="13" battleScribeVersion="2.03" library="false" gameSystemId="218d-602b-768b-7f56" gameSystemRevision="13" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="c6d3-76be-1e8c-52d7" name="Dawnbreaker Cohort" hidden="false"/>
     <categoryEntry id="09d9-dc6e-a65c-da76" name="Crimson Paladins" hidden="false"/>
